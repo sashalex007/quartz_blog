@@ -34,8 +34,8 @@ The most popular direct drive conversion for the ender3 3d-printing platform. [g
 
 ## Blogs
 
-[Computer science blog](https://blog.alexpokho.xyz/leetcode)
-[Data structures and algorithms blog](https://blog.alexpokho.xyz/DSA)
+[Computer science blog](https://alexpokho.xyz/leetcode)
+[Data structures and algorithms blog](https://alexpokho.xyz/DSA)
 
 
 ## Interests

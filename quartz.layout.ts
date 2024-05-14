@@ -38,6 +38,13 @@ export const defaultContentPageLayout: PageLayout = {
     ),
   ],
   right: [
+    Component.MobileOnly(Component.RecentNotes({
+      title: "Recent Writing",
+      limit: 5,
+      filter: (f) =>
+        f.slug!.startsWith("") && f.slug! !== "index" && !f.frontmatter?.noindex,
+      linkToMore: "leetcode/" as SimpleSlug,
+    })),
     Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
