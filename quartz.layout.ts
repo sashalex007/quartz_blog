@@ -30,10 +30,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "Recent Writing",
-        limit: 4,
+        limit: 5,
         filter: (f) =>
           f.slug!.startsWith("") && f.slug! !== "index" && !f.frontmatter?.noindex,
-        linkToMore: "/" as SimpleSlug,
+        linkToMore: "leetcode/" as SimpleSlug,
       }),
     ),
   ],
