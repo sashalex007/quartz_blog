@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "Alexandre Pokhodoun",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "blog.alexpohko.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
@@ -28,24 +28,24 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
+          light: "#FBF7EE",
+          lightgray: "#e0dcd3",
           gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          darkgray: "#2A354B",
+          dark: "#08142C",
+          secondary: "#274B75",
+          tertiary: "#71a094",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
+          light: "#001915",
+          lightgray: "#053a31",
+          gray: "#324c46",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
+          secondary: "#4f7d79",
           tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          highlight: "rgba(31, 79, 69, 0.15)",
         },
       },
     },
@@ -69,6 +69,7 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
+      Plugin.HardLineBreaks()
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
