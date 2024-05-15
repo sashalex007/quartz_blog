@@ -32,13 +32,13 @@ Firmware and mobile app for nRF51 and mpu6050 utilization in high performance ap
 The most popular direct drive conversion for the ender3 3d-printing platform. [github](https://github.com/sashalex007/speedDrive)
 
 
-## Blogs
+## Blog
 
-[Computer science blog](https://alexpokho.xyz/leetcode)
-[Data structures and algorithms blog](https://alexpokho.xyz/DSA)
+[Computer science articles](https://alexpokho.xyz/leetcode)
+[Data structures and algorithms articles](https://alexpokho.xyz/DSA)
 
 
-## Interests
+## Other interests
 
 [[3d printing]]
 [[keyboards]]
