@@ -1,5 +1,5 @@
 ---
-creation date: <%     tp.file.creation_date() %>
+date: 2024-05-15
 ---
 **Link:** https://leetcode.com/problems/minimum-suffix-flips/
 #### Solution:

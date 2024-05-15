@@ -1,4 +1,6 @@
-
+---
+date: 2024-05-15
+---
 **Link:** https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/
 #### Solution:
 

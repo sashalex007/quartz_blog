@@ -1,4 +1,6 @@
-
+---
+date: 2024-05-15
+---
 **Link:** https://leetcode.com/problems/next-greater-element-ii/
 #### Solution:
 

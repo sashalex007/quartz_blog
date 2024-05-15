@@ -1,4 +1,6 @@
-
+---
+date: 2024-05-15
+---
 **Link:** https://leetcode.com/problems/number-of-ways-to-select-buildings/
 #### Solution:
 

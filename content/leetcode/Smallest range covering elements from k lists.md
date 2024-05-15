@@ -1,4 +1,6 @@
-
+---
+date: 2024-05-15
+---
 **Link:** https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/
 #### Solution:
 

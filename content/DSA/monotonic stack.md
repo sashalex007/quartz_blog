@@ -1,3 +1,6 @@
+---
+date: 2024-05-13
+---
 
 **DSA:** [[stack]], [[subarray]], [[sorted order]]
 

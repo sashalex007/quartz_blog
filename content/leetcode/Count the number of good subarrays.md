@@ -1,4 +1,6 @@
-
+---
+date: 2024-05-15
+---
 **Link:** https://leetcode.com/problems/count-the-number-of-good-subarrays/
 #### Solution:
 

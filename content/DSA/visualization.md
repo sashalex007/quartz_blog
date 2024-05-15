@@ -1,3 +1,6 @@
+---
+date: 2024-05-13
+---
 
 **Visual complexity**
 Try to compress the visualization to take less space in the mind. Use a 3d compression! 
