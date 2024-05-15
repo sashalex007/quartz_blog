@@ -2,11 +2,12 @@
 title: Hello!
 date: 2024-05-14
 ---
-![[avatar.7221bac8dfe2d6e74e72-1.jpg]]
+![[avatar.7221bac8dfe2d6e74e72-1-1-transformed 2.jpeg]]
 
 I love building cool and beautiful stuff! Experienced in web development (full-stack), android development, Python and C++...with a side specialization in deep learning. 
   
 When I'm not programming, I'm spending time with my [[family]] or busy on a [[3d printing]] project (probably for my [[keyboard]]!). I also love [[skiing]] and [[tennis]]!
+
 
 ## Blog
 
