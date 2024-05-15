@@ -4,15 +4,23 @@ date: 2024-05-14
 ---
 ![[avatar.7221bac8dfe2d6e74e72-1.jpg]]
 
-I like building cool and beautiful stuff! Experienced in web development (full-stack), android development, Python and C++...with a side specialization in machine learning. 
+I love building cool and beautiful stuff! Experienced in web development (full-stack), android development, Python and C++...with a side specialization in deep learning. 
   
-I love solving problems that enable me to build stuff that scales! My areas of interest are time & space complexity optimization, scalable architectures, machine learning and beautiful UI's.
+When I'm not programming, I'm spending time with my [[family]] or busy on a [[3d printing]] project (probably for my [[keyboard]]!). I also love [[skiing]] and [[tennis]]!
+
+## Blog
+
+[Computer science articles](https://alexpokho.xyz/leetcode)
+[Data structures and algorithms articles](https://alexpokho.xyz/DSA)
 
 
-## Recent projects
+## Things I work on
 
 [Hivebase](https://hivebase.net)
--SaaS for large scale apiculture applications.
+SaaS for large scale apiculture applications.
+
+[Synther](https://synther.io)
+Media watch-together service.
 
 [Winter Instruments](https://winterinstruments.shop)
 Sporting equipment engineering and manufacturing. [github](https://github.com/sashalex007/winter-instruments)
@@ -31,20 +39,6 @@ Firmware and mobile app for nRF51 and mpu6050 utilization in high performance ap
 
 [SpeedDrive](https://www.thingiverse.com/thing:3816051)
 The most popular direct drive conversion for the ender3 3d-printing platform. [github](https://github.com/sashalex007/speedDrive)
-
-
-## Blog
-
-[Computer science articles](https://alexpokho.xyz/leetcode)
-[Data structures and algorithms articles](https://alexpokho.xyz/DSA)
-
-
-## Other interests
-
-[[3d printing]]
-[[keyboards]]
-[[skiing]]
-[[tennis]]
 
 ## Resume
 
