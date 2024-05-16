@@ -64,12 +64,12 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
+      Plugin.HardLineBreaks(),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.HardLineBreaks()
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
