@@ -11,7 +11,7 @@ This is an excellent example of what I call a "transformation" problem. Not tran
 
 The problem is asking us to pop numbers from the left or right of `nums` until `x` can be made zero (with minimum pops). When you view the problem in those terms, techniques like 2-pointer come to mind...which don't work because its impossible to make a locally optimal decision about which pointer gets moved. 
 
-Instead of concerning ourselves with the left and right partitions or `nums`, we turn our focus to the contiguous middle partition connecting both sides! With this approach, we can simply find the longest such middle partition whose sum ensures that the sum of the left and right partitions amount to `x`. The sum to look for in our middle partition is trivial to derive: 
+Instead of concerning ourselves with the left and right partitions of `nums`, we turn our focus to the contiguous middle partition connecting both sides! With this approach, we can simply find the longest such middle partition whose sum ensures that the sum of the left and right partitions amount to `x`. The sum to look for in our middle partition is trivial to derive: 
 
 ```
 needs = sum(nums) - x
@@ -19,7 +19,7 @@ needs = sum(nums) - x
 
 Ergo, the result would be the total length of `nums`  minus `max_len_middle_partion` (the number of elements in left and right partitions). 
 
-There are three notable edge cases. If `x > sum(nums)`, its impossible; return `-1`. If `x == sum(nums)`, return `len(nums)`. The third edge case is a bit more subtle. There could be no way to sum up to `needs` even if `sum(nums)` permits it so we take that into consideration when returning the result (for example there is no subarray in  `[1,3]`  that has a sum of `2`). 
+There are three notable edge cases. If `x > sum(nums)`, its impossible; return `-1`. If `x == sum(nums)`, return `len(nums)`. The third edge case is a bit more subtle. There could be no way to sum up to `needs` even if `sum(nums)` is permissive so we take that into consideration when returning the result (for example there is no subarray in  `[1,3]`  that has a sum of `2`). 
 
 
 **Implementation**

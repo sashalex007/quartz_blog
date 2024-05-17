@@ -3,31 +3,14 @@
 // put your custom CSS here!
 @use "./variables.scss" as *;
 
-body[data-slug="index"] img {
-  filter: invert(0%);
-  opacity: 0.85;
-}
-
 body {
   position: relative;
   min-height: 100vh;
 }
 
-#texture {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("/static/texture.png");
-  mix-blend-mode: hard-light;
-  pointer-events: none;
-  z-index: -1;
+pre {
+    tab-size: 4;
 }
-
-[saved-theme="dark"] #texture {
-  mix-blend-mode: overlay;
-}
-
-
 
 .left {
   display: grid !important;
@@ -94,3 +77,4 @@ hr {
 audio::-webkit-media-controls-panel {
   background-color: var(--lightgray);
 }
+
