@@ -79,5 +79,3 @@ def edit_distance(word1, word2):
 
 
 #review 
-
-

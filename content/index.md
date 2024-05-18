@@ -23,7 +23,7 @@ SaaS for large scale apiculture applications.
 [Synther](https://synther.io)
 Media watch-together service.
 
-[Winter Instruments](https://winterinstruments.shop)
+[Winter Instruments](https://winterinstruments.store)
 Sporting equipment engineering and manufacturing. [github](https://github.com/sashalex007/winter-instruments)
 
 [CloudlessCam](https://github.com/sashalex007/cloudlessCam)
