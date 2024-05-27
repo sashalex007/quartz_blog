@@ -29,7 +29,7 @@ def min_pushes(word):
 	if len(word) <= 8:
 		return len(word)
 	res = 0
-	counts = [8, 24, 48] #number of presses per whole 8
+	counts = [8, 24, 48] #number of presses per row of whole 8
 	rows = len(word) // 8
 	res += counts[rows-1]
 	remaining = len(word) % (rows*8) #get remaining
