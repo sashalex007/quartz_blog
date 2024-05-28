@@ -11,7 +11,7 @@ There are two main problems with symbols on low-key-count boards:
 
 What I'm proposing is a hybrid approach. The concept is very simple: symbols are mapped on a layer *and* each symbol also gets an equivalent combo (with a pseudo-mod-key). How does this work? When you type a single `<`, you hit the combo. When you type `<=`, you hit the combo for `<` but *keep holding* the pseudo-mod-key and press the `=` key. The combo works as expected, but while the pseudo-mod-key is held, the symbol layer is active. 
 
-Why am I calling it a pseudo-mod-key? Because it works similar to a dedicated mod/activation key, but the activation of the layer is only available through a combo + holding action. Every symbol is mapped as a combo with the same pseudo-mod-key (per layer). The timing does take some getting used to, but after a couple of days I've found it to be VERY fast and natural. This approach also works very well for num layers. 
+Why am I calling it a pseudo-mod-key? Because it works similar to a dedicated mod/activation key, but the activation of the layer is only available through a combo + holding action. Every symbol is mapped as a combo with the same pseudo-mod-key (per layer). The timing does take some getting used to, but after a couple of days I've found it to be *very fast* and natural with virtually zero misfires. This approach also works very well for num layers. 
 
 This neat functionality can be achieved with a parametrized ZMK macro:
 ```
