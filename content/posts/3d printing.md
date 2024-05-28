@@ -5,7 +5,7 @@ date: 2024-05-26
 
 [SpeedDrive v1](https://www.thingiverse.com/thing:3816051)
 
-[Winter instruments](winterinstruments.store)
+[Winter instruments](https://winterinstruments.store)
 
 [Thingiverse profile (random projects)](https://www.thingiverse.com/sashalex007/designs)
 

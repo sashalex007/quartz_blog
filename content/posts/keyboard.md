@@ -14,4 +14,4 @@ With 30 degree tenting
 Wiring
 ![[Screenshot 2024-04-29 at 6.29.31 PM.png]]
 
-[[Combo-layer hybrid keymap]]
+How I use these keyboards: [[Combo-layer hybrid keymap]]
