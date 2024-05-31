@@ -1,5 +1,5 @@
 ---
-date:
+date: 2024-05-27
 ---
 **Topics:** [[set]], [[graph]], [[connected component]]
 
