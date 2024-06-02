@@ -31,8 +31,10 @@ def distribute_candies(n, limit):
 ```
 
 **Visual** 
+![[IMG_413CF61B7ECA-1.jpeg]]
 
-
+**Mnemonic:**
+Triplets of children in queue entering candy store
 
 #review 
 
