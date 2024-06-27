@@ -36,7 +36,7 @@ def generate_trees(n):
 	return dfs(1, n)
 
 #time: o(n*catalan(n)) 
-#there are (4**n)/n**1.5 unique trees with n nodes... this is the catalan number
+#there are (4**n)/n**1.5 unique trees with n nodes... this is an aproximation of the nth catalan number. 
 #each unique tree takes o(n) time to build. 
 
 
