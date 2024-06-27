@@ -9,7 +9,7 @@ date: 2024-06-22
 **Intuition**
 The key idea here is just to gather all the nodes in sorted order and construct a new tree with the middle of the sorted nodes as the parent, and passing the left and right partitions as children respectively (recursively).
 
-Why does this work? Because using the mid as the parent ensures that there are the same number children to the left of the parent and to the right (or not greater than one more which is ok because our depth can be off by one on either side of the tree). And because a BST has no duplicates, we can do this recursively to build a balanced BST
+Why does this work? Because using the mid as the parent ensures that there are the same number children to the left of the parent and to the right (or not greater than one more which is ok because our depth can be off by one on either side of the tree). And because a BST has no duplicates, we can do this recursively to build a balanced BST.
 
 **Implementation**
 ```python
