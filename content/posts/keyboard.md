@@ -1,7 +1,11 @@
 ---
 date: 2024-05-26
 ---
-**34 key daily driver (columnar, wireless)**
+**Custom dactyl build (daily driver)**
+[reddit](https://www.reddit.com/r/ErgoMechKeyboards/comments/1dy9ghc/custom_build_based_on_dactylcc/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+![[PHOTO-2024-07-07-21-00-32.jpg]]
+
+**Chocofi build (columnar, wireless)**
 [reddit post](https://www.reddit.com/r/ErgoMechKeyboards/comments/1clg7mf/second_build_chocofi_layout_minus_a_thumb_button/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 ![[Screenshot 2024-05-06 at 6.54.15 AM.png]]
 

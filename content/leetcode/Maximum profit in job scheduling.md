@@ -44,7 +44,7 @@ def max_profit(startTime, endTime, profit):
 #memory: o(n)
 ```
 
-There is also a very interesting heap solution which is also more space efficient (and slightly more time efficient). The idea simulate starting each jobs with the maximum profit that has been seen so far. In other words, every job started gets added to a min heap with the profit from that job, plus the max profit that has been popped off the heap. In some sense, this is similar to space-optimized bottom-up DP. 
+There is also a very interesting heap solution which is also more space efficient (and slightly more time efficient). The idea is to simulate starting each job with the maximum profit that has been seen so far. In other words, every job started gets added to a min heap with the profit from that job, plus the max profit that has been popped off the heap. In some sense, this is similar to space-optimized bottom-up DP. 
 
 **Implementation (heap)**
 ```python
