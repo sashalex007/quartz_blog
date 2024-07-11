@@ -7,7 +7,7 @@ date: 2024-07-11
 **Topics**: [[BFS]], [[Dijkstra's]]
 
 **Intuition**
-This is a classic weighted graph problem with a slight twist. The problem asks for a the maximum time to reach all nodes, so naturally this would be the max value in the `times` hash map after minimum times to reach every node has been discovered. This  can be done with either an optimized [[BFS]] or [[Dijkstra's]] algorithm. An adjacency list is required for either one.
+This is a classic weighted graph problem with a slight twist. The problem asks for a the minimum time to reach all nodes, so naturally this would be the max value in the `times` hash map after minimum times to reach every node has been discovered. This  can be done with either an optimized [[BFS]] or [[Dijkstra's]] algorithm. An adjacency list is required for either one.
 
 **Implementation (BFS)**
 ```python
