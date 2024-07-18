@@ -4,7 +4,7 @@ date: 2024-07-18
 **Link:** https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
 #### Solution:
 
-**Topics**: [[recursion]]
+**Topics**: [[recursion]], [[linked list]]
 
 **Intuition**
 It should be instantly clear that the solution is recursive because of the multi-level data structure. For example, a child node can have nodes that it is connected to that themselves have children...so its clear that however we flatten the list, we should do it recursively. 
@@ -41,7 +41,7 @@ def flatten_list(head)
 	return head
 			
 #time: o(n)
-#memory: o(n) #stack size
+#memory: o(n) #stack space
 ```
 
 **Mnemonic**
