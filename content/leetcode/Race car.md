@@ -11,11 +11,11 @@ This is a very interesting problem! I recognized right away that this was either
 
 There are only two paths we can choose...we can either continue accelerating or reverse. Of course we could explore all possibilities indiscriminately to find the shortest path, but this would result in MLE so we have to find some optimizations. 
 
-The key insight here is choosing the right time to reverse. Acceleration is the default mode and that branch should always be explored (ok, within reason but for these constrains we can assume this to be the case). So how do we chose when to explore the reversing branch?
+The key insight here is choosing the right time to reverse. Acceleration is the default mode and that branch should always be explored (ok, within reason but for these constraints we can assume this to be the case). So how do we chose when to explore the reversing branch?
 
 If the `curr_pos + speed > target` and `speed > 0`, then we should explore the reverse branch. This condition is equivalent to "overshooting" the target, so we should consider the possibility that its better to reverse twice to slow down! But is it always better to slow down?
 
-No! It may be the case that we **should** overshoot and **then** reverse. Or it may be the case that we should oscillate around the target before converging...thats why we always explore the "accelerate" branch. Technically this does result in in a branch that approaches infinity, and just as many spurious "reverse" branches...we could come up with some conditions to kill these branches but for the constrains of the problem `target <= 10**4`, there is no need. 
+No! It may be the case that we **should** overshoot and **then** reverse. Or it may be the case that we should oscillate around the target before converging...thats why we always explore the "accelerate" branch. Technically this does result in a branch that approaches infinity, and just as many spurious "reverse" branches...we could come up with some conditions to kill these branches but for the constraints of the problem `target <= 10**4`, there is no need. 
 
 **Implementation**
 ```python
@@ -41,5 +41,6 @@ There is a marble some distance away from you. Your task is to pick up the marbl
 ![[IMG_E5D3B6D9B1BE-1.jpeg]]
 
 #review 
+#hard 
 
 
