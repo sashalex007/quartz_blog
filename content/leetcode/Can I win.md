@@ -26,7 +26,7 @@ Now lets decide how we keep track of our pool of moves. Each move taken cannot b
 
 While my suggested approach appears clever, it has a fatal and very subtle flaw. If we keep only `total` as a parameter, then caching the function will cause errant results. Why? Because we can have **the same total, but a different set of available moves!!!** What this means is that for the same total, we could have different results...but if we cache the first returned value for a given `total`, all the other branches for `total` (with different moves available) remain **unexplored!** The moral here, is that if we want to have `total` as the single dimension of our search space, then we cannot cache. And if we cannot cache, we get TLE. 
 
-So what is the remedy here? The solution is to include `moves_available` as a function parameter. But how? Lists and sets are mutable and thus cannot be hashed...so how does this help? **Tuple** to the rescue! We can keep a list of moves available as a tuple, which is a hash-able type...and the side benefit is that the tuple will be in increasing order so the optimal move can be found in o(1) time. 
+So what is the remedy here? The solution is to include `moves_available` as a function parameter. But how? Lists and sets are mutable and thus cannot be hashed...so how does this help? **Tuple** to the rescue! We can keep a list of moves available as a tuple, which is a hash-able type...and the side benefit is that the tuple will be in increasing order so the optimal move can be found in `o(1)` time. 
 
 **Implementation**
 ```python
@@ -59,5 +59,6 @@ Imagine catching a Tupperware container. Inside the container is a list of dista
 ![[IMG_613DA0D94301-1.jpeg]]
 
 #review 
+#hard 
 
 
