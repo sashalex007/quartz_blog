@@ -30,7 +30,7 @@ Lets keep going...append 8!
 
 ```
 
-But what about the gaps? In the second last iteration of our algorithm, we jumped from a max of 3 to a max of 7...why is it guaranteed that 5 and 6 can be formed? **It is guaranteed because previously we proved that 1 and 2 can be formed,  and since we are adding 4, it can be added to 1 and 2 to form 5 and 6**. 
+But what about the gaps? In the second last iteration of our algorithm, we jumped from a max of 3 to a max of 7...why is it guaranteed that 5 and 6 can also be formed? **It is guaranteed because previously we proved that 1 and 2 can be formed,  and since we are adding 4, it can be added to 1 and 2 to form 5 and 6**. 
 
 Basically, by following the algorithm, we keep a "bank" of numbers that are guaranteed to be formed, and when we append to the array, we are also guaranteed to form every number between the range `old_max to new_max`. 
 
@@ -46,7 +46,7 @@ This is the case because we can never extend beyond `current_max + 1` and still 
 [0,1,2,5] invalid because 4 cannot be formed. 
 ```
 
-The above is a simple example...but it holds in all cases. We can NEVER use more than `current_max + 1` to extend our range. If you think about it, it make sense because if `current_max` is the max of the range, then **ONLY** the existence of `current_max + 1` can actually form the value of `current_max + 1`....it can also form many others but its the only value that can be added to the array that ensures no gaps. 
+For `current_max + 1` to be formed, it must exist **ALONE** because any number that exists before it, would by definition create a subset with `current_max + 1` that would exceed the value of `current_max + 1`.  The `current_max`  is the cumulative sum of the array...the does not exist a subset inside the array that could form `current_max+1` or greater because `current_max` **already contains all elements...it is the limit**. 
 
 **Implementation**
 ```python
