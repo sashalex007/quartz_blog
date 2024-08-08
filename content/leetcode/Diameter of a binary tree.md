@@ -7,7 +7,7 @@ date: 2024-05-15
 **Topics**: [[DFS]]
 
 **Intuition**
-The key insight for this problem is understanding that we should alway bubble up the longest path, but before doing that we maximize the longest path from the right + the longest path from the left! This ensures that our diameter can pass through any node. 
+The key insight for this problem is understanding that we should always bubble up the longest path, but before doing that we maximize the longest path from the right + the longest path from the left! This ensures that our diameter can pass through any node. 
 
 Note: This is a bit different from most recursive problems in the sense that we can't pass the diameter up the call-stack, we can only evaluate it momentarily at each node. 
 
