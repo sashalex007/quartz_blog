@@ -45,7 +45,7 @@ The most popular direct drive conversion for the ender3 3d-printing platform. [g
 
 <iframe
 	title='resume'
-	src="https://drive.google.com/file/d/1OQ0BXvkaSjP_tQ8iYP-Lp2_DZiXfhFmi/preview"
+	src="https://drive.google.com/file/d/1JLSoPlO5gM1zpKG5m55SStNUA7gV0HQl/preview"
 	frameBorder="0"
 	scrolling="auto"
 	height="400"
@@ -54,3 +54,5 @@ The most popular direct drive conversion for the ender3 3d-printing platform. [g
 		display: 'block'
 	}}
 ></iframe>
+
+
