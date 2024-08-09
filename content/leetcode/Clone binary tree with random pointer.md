@@ -2,6 +2,7 @@
 date: 2024-05-21
 ---
 **Link:** https://leetcode.com/problems/clone-binary-tree-with-random-pointer/
+**Almost the same:** https://leetcode.com/problems/copy-list-with-random-pointer/
 #### Solution:
 
 **Topics**: [[DFS]], [[hash map]]
