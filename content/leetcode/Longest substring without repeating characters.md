@@ -7,7 +7,7 @@ date: 2024-08-19
 **Topics**: [[sliding window]], [[set]]
 
 **Intuition**
-Trivial sliding window problem. The idea here is to take the shrink the window while the current character exists in the set. After ensuring it's not in the set, add it to the set and the length of the set is the length of the current substring with only unique characters. 
+Trivial sliding window problem. The idea here is to shrink the window while the current character exists in the set. After ensuring it's not in the set, add it to the set and the length of the set is the length of the current substring with only unique characters. 
 
 **Implementation**
 ```python
