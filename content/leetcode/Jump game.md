@@ -7,7 +7,7 @@ date: 2024-08-20
 **Topics**: [[greedy]], [[DFS]]
 
 **Intuition**
-This can be solved with a simple DFS, but at best it will be `o(n*n)` because of the high branching factor (every position `i` has a range of possible positions from `i+1 to i+nums[i]`. Without caching, it's `o(n*n*n)`.
+This can be solved with a simple DFS, but at best it will be `o(n*n)` because of the high branching factor (every position `i` has a range of possible positions from `i+1 to i+nums[i]`. Without caching, it's `o(n*n*n)`. BFS is even worse because we can't early exit. 
 
 The DFS solution passes all test cases, however there is a greedy solution that is `o(n)`. This one is pretty tricky to come up with. The key idea is to start from the back, and see if we can reach the **minimum necessary position**. What does this mean?
 
