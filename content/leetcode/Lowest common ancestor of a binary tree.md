@@ -9,7 +9,7 @@ date: 2024-08-21
 **Intuition**
 This is not the most difficult tree problem, but the implementation can become very bloated without the right strategy. The idea is to propagate either `True` or `False` up to the parent node (`True` if the node is either `p` or `q`, `False` otherwise). So if the returned values of left and right branches are both `True`, then this is the parent node. 
 
-A notable edge case is if the current node is itself the lowest common ancestor...in which case we must account for that. Python supports boolean addition (`False = 0, True = 1`) , which allows for an extremely clean implementation here.
+A notable edge case is if the current node is itself the lowest common ancestor...in which case we, must account for that. Python supports boolean addition (`False = 0, True = 1`) , which allows for an extremely clean implementation here.
 
 **Implementation**
 ```python
