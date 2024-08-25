@@ -76,7 +76,7 @@ def comb_sum(candidates, target):
 A parent **can not** have duplicate children. 
 
 **Visual** 
-![[IMG_B85F6CC2ADE3-1.jpeg]]
+![[IMG_BE496F166FD0-1.jpeg]]
 
 #review 
 #hard 
