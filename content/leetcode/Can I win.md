@@ -4,7 +4,7 @@ date: 2024-07-25
 **Link:** https://leetcode.com/problems/can-i-win/
 #### Solution:
 
-**Topics**: [[DP]]
+**Topics**: [[DP]], [[game theory]]
 
 **Intuition**
 This is legitimately a very difficult problem. It seems easy but its absolutely riddled with edge-cases. There is only one implementation (to my knowledge) that can pass all the cases and it is not obvious to me how that implementation is different from others that I have tried. Its still not entirely clear to me what "playing optimally" actually means in this context but I'll do my best to explain. 
