@@ -9,7 +9,7 @@ date: 2024-08-28
 **Intuition**
 These "optimal play" problems will typically be DP...it's just a matter of setting up the recursion correctly...which is not an easy task at all. I eventually did find a solution but unfortunately it was not efficient enough to pass all the test cases. I missed a couple of key insights on my first attempt. 
 
-Basically, we need to know 3 things to set up the recursion properly. 
+Basically, we need to know 3 things to set up the recursion properly:
 1. the range of `piles` that we have to work with
 2. whose turn it is
 3. the score (or a representation of it)
