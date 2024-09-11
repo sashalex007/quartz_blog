@@ -18,27 +18,32 @@ initialize a boolean list that represents the state (prime or not prime) of all 
 The first two indices are 0 and 1, and neither are primes so we just initialize them as false.
 
 primes = [False, False, True, True, True, True, True, True, True, True]
-                        ^
                         
+
+						
 So we move to the first prime index 2 (first True from the left), and set all multiples of 2 to False, as 2, 6, 8 are composite numbers. 
 
 primes = [False, False, True, True, False, True, False, True, False, True]
                         ^           *            *            *
+
 
 Move to the next prime (3) and set all multiples of 3 to False (6, 9)
 
 primes = [False, False, True, True, False, True, False, True, False, False]
                               ^                  *                   *
 
+
 Move to the next prime (5), all multiples are out of range.
 
 primes = [False, False, True, True, False, True, False, True, False, False]
                                            ^
 
+
 Move to the next prime (7), all multiples are out of range. 
 
 primes = [False, False, True, True, False, True, False, True, False, False]
                                                         ^
+
 
 So, we have 2,3,5,7 as all the primes smaller than 10, which is correct.
 ```
@@ -74,7 +79,6 @@ def count_primes(n):
 **Visual**
 
 ![[Animation_Sieve_of_Eratosth.gif]]
-
 
 #review 
 #hard 
