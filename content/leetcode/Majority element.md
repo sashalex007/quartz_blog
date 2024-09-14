@@ -18,7 +18,7 @@ Why does this work? Basically, the frequency of the majority element will eventu
 See here:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Boyer-Moore_MJRTY.svg/300px-Boyer-Moore_MJRTY.svg.png)
-
+ 
 Note that this **only** works for the majority element, NOT the most frequent. Furthermore a second pass is required to verify if the candidate indeed occurred more than `n/2` times. For this problem we are guaranteed a majority element, so we can skip the second pass. 
 
 **Implementation**
@@ -27,11 +27,11 @@ def maj_element(nums):
 	count = 0
 	cand = None
 	for num in nums:
-		if count == 0:
-			cand = num
-			
 		if num == cand:
 			count += 1
+		elif count == 0:
+			cand = num
+			count = 1
 		else:
 			count -= 1
 	return cand
