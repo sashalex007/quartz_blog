@@ -15,7 +15,7 @@ One can imagine that we can copy only once and then paste `n` times for a total 
 
 There is one little implementation trick that I missed on my first solution. Essentially, we don't have to simulate copies and pastes precisely because this creates edge cases that must be handled. For example, if we have chosen to copy then in makes no sense to choose copy again right after...in fact this leads to stack overflow because the number of characters on the notepad will never increase. I got around this be adding a condition `chars != clipboard` to allow copies and avoid stack overflow, but this is not the most elegant solution. 
 
-Basically we can bundle a copy and paste together, and compute this as two calculations! 
+Basically we can bundle a copy and paste together, and compute this as two operations! 
 
 **Implementation (DP)**
 ```python
