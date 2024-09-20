@@ -15,7 +15,7 @@ This is actually exactly why we cannot solve [[Subarray sum equals k]] with a sl
 
 [[Contiguous array]] is essentially the same problem as this, except in that one we reduce the problem to [[Subarray sum equals k]] where `k = 0` and we also store indices to reconstruct the length of the valid partition. 
 
-For this problem we do essentially the same thing as in [[Contiguous array]], except instead of storing looking for a sum that has been seen previously, we look for a **(count[i]%2) of vowels** that has been seen previously!
+For this problem we do essentially the same thing as in [[Contiguous array]], except instead of looking for a sum that has been seen previously, we look for a **(count[i]%2) of vowels** that has been seen previously!
 
 For example:
 ```
