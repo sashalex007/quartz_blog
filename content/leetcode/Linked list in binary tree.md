@@ -4,7 +4,7 @@ date: 2024-09-20
 **Link:** https://leetcode.com/problems/linked-list-in-binary-tree/
 #### Solution:
 
-**Topics**: [[tree]], [[linked list]], [[dfs]]
+**Topics**: [[tree]], [[linked list]], [[DFS]]
 
 **Intuition**
 This is a pretty easy problem but sadly I struggled with it because I was committed to solving it with a single [[DFS]] function and nothing more. This led to branch factor explosion, and a myriad of edge cases. I made it work, but it was ugly. 
