@@ -27,7 +27,7 @@ def balance_tree(root):
 		if l > r:
 			return None
 		mid = (l + r) // 2
-		parent = TreeNone(nodes[mid])
+		parent = TreeNode(nodes[mid])
 		parent.left = build_tree(l, mid-1)
 		parent.right = build_tree(mid+1, r)
 		return parent
