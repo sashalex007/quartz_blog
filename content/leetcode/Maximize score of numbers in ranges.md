@@ -92,5 +92,6 @@ def max_score(start, d):
 ![[IMG_9C902F52B548-1.jpeg]]
 
 #review 
-
+#hard 
+#insane 
 
