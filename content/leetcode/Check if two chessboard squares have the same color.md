@@ -90,7 +90,7 @@ So all that remains is to compute the anti-diagonal for each square and return t
 ```python
 def same_color(coordinate1, coordinate2):
 	def color(pos):
-		x = ord(pos[0]) - ord('A') + 1
+		x = ord(pos[0]) - ord('a') + 1
 		y = int(pos[1])
 		return (x - y) % 2 == 0
 	return color(coordinate1) == color(coordinate2)

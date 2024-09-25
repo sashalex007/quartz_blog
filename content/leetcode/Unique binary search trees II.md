@@ -4,7 +4,7 @@ date: 2024-06-27
 **Link:** https://leetcode.com/problems/unique-binary-search-trees-ii/
 #### Solution:
 
-**Topics**: [[DFS]], [[DP]], [[recursion]], [[catalan number]]
+**Topics**: [[DFS]], [[DP]], [[recursion]], [[catalan number]], [[divide and conquer]]
 
 **Intuition**
 This is quite an interesting problem, and in some ways the core insight is not dissimilar to [[Balance a binary search tree]]. If we look at the constraints and nature of the problem, it's pretty clear that this is a backtracking problem... so how is it similar to [[Balance a binary search tree]]?
