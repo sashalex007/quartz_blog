@@ -38,7 +38,6 @@ We can use back-tracking to optimize this recursion and keep the current path an
 
 Essentially the [[DFS]] traversal "climbs back" up the path it came before exploring the new leftmost path. Backtracking leverages this property to save resources. 
 
-
 **Implementation (Backtracking)**
 ```python
 def path_sum2(root, targetSum):
