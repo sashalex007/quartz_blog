@@ -83,7 +83,7 @@ The reason this works is because we don't have to consider **all** negative prod
 For example:
 ```
     [-2, 1,-2,-1]
-max  -2  1 -2  4  <--- the min became the max because we did not discard -4!
+max  -2  1 -2  4 <--- the min became the max because we did not discard -4!
 min  -2 -2 -4 -1 
             ^    
 ```
