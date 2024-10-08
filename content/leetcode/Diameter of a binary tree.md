@@ -35,6 +35,11 @@ def diameter(root)
 **Visual** 
 ![[IMG_06B1346803DB-1.jpeg]]
 
+**Review 1**
+Nice problem. This technique is pretty common in path-finding tree problems where the best path may not pass through the root. 
+
+Same technique: [[Maximum path sum]]
+
 #review 
 
 

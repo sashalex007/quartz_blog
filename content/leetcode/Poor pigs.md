@@ -63,6 +63,9 @@ visuals from this solution https://leetcode.com/problems/poor-pigs/solutions/935
 ![[546342db-390a-4e5e-adf9-d124abec0b74_1605349509.07897.png]]
 ![[bafa63d4-1dae-4ef5-8b81-67eb85fafd86_1605349693.3704822.png]]
 
+**Review 1**
+Just remember that 1 pig can test 2 buckets (lives or dies) in one round of testing...likewise 2 pigs can test `2**2` buckets...or `2**n` more generally. So we keep increasing `n` until we reach or exceed buckets. If more tests are permitted (`minutesToTest//minutesToDie`) we increase the base. 
+
 #review 
 #hard 
 

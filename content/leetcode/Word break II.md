@@ -53,5 +53,30 @@ def word_break(s, word_dict):
 ![[IMG_F3C83AFF2D4A-1.jpeg]]
 ![[IMG_F2D49F0DF583-1.jpeg]]
 
+**Review 1**
+We can also use [[back tracking]] for this problem for a minor boost in memory efficiency. 
+
+**Implementation (back tracking)**
+```python
+def word_break2(s, wordDict):
+	res = []
+	words = set(wordDict)
+	sent = []
+	
+	def dfs(i):
+		if i == len(s):
+			res.append(' '.join(sent))
+			return
+		
+		word = ''
+		for j in range(i, len(s)):
+			word += s[j]
+			if word in words:
+				sent.append(word)
+				dfs(j+1)
+				sent.pop()
+	dfs(0)
+	return res
+```
 
 #review 

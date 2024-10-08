@@ -59,6 +59,9 @@ def min_subarray(nums, target):
 **Visual** 
 ![[blog/leetcode/_pics/IMG_07BA8D061DEB-1.jpeg]]
 
+**Review 1**
+Easy problem. The binary search solution is stupid...no idea why they would ask for that as a follow up or why I found it tricky earlier. 
+
 #review 
 
 

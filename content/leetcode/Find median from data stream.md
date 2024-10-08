@@ -74,6 +74,9 @@ class median_finder:
 **Visual** 
 ![[IMG_CD76D42D6DA8-1.jpeg]]
 
+**Review 1**
+Straight forward, but remember to push the first `num` to the `max_heap` (left partition) if comparing against min_heap. This prevents some edge cases. 
+
 #review 
 
 

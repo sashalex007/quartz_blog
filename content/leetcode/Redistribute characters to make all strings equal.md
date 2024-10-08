@@ -33,6 +33,9 @@ def distribute_chars(words):
 **Visual** 
 ![[IMG_D75D39983648-1.jpeg]]
 
+**Review 1**
+Too easy. Solved in 10 seconds. 
+
 #review 
 
 

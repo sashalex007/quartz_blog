@@ -55,6 +55,13 @@ def min_replacements(nums):
 **Visual** 
 ![[IMG_244A6B9E6867-1.jpeg]]
 
+**Review 1**
+I knew this problem had a greedy solution but I forgot the math trick. It is actually very clever. Not too different from [[Find missing observations]].
+
+1. The length of the subarray produced by splitting is `ceil(nums[i] / nums[i+1])`. Its rounded up because the remainder takes a full spot. 
+2. The leftmost number is `nums[i+1] // length`. 
+3. The number of operations is `length - 1` because a length of two is created by one operation. 
+
 
 #review 
 

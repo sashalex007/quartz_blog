@@ -54,6 +54,11 @@ def topo_order(num_courses, prerequisites):
 **Visual** 
 ![[IMG_45776302B72B-1.jpeg]]
 
+**Review 1**
+I again spent too much time thinking about where to start from...for topological ordering it does not matter at all because we **append** to the topologically ordered list. Appending a node to a list after all it's children have been visited guarantees that all dependencies are added to the list before the node itself! If that node is itself a dependency of another node, it's parents will be added later on to the list; thus the topological ordering is maintained. 
+
+One more thing about this problem. It's important to frame the relationships correctly. The last course to take (the one with the most prerequisites) is the *root* of the graph, and the courses that have no dependencies are the leaves. If we set up the problem this way, then the course with the most dependencies is the last one added to list...which is the ordering that is demanded in the problem statement! If we set up the problem in the opposite way, then the resulting topological array will be in reverse order....not a terrible outcome but we will have to do a spurious reversal. 
+
 #review 
 
 

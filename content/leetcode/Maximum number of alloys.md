@@ -11,7 +11,7 @@ The key to this problem is understanding that if we can make X alloys with a mac
 
 The upper bound of alloys is a bit tricky, but logically it cannot be more than `sum(stock)+budget` if we assume the best case of a composition of all 1's. 
 
-It may be tempting to simulate each alloy being created iteratively, but this result in TLE and with some simple math, we can compute if a machine can create X many alloys in `O(len(compostion[i]))` time instead of `O(qty)` time. The key is to compute the total number of each metal needed is to determine the number of each metal needed (metal * qty) and subtract the stock. Then if the number of metals needed is greater than zero, we multiply that by the respective cost and add that to total cost. If the total cost is smaller than the budget, we can create that quantity. If we can create that quantity with even a single machine, we then move our binary search towards the upper bound.
+It may be tempting to simulate each alloy being created iteratively, but this results in TLE and with some simple math, we can compute if a machine can create X many alloys in `O(len(compostion[i]))` time instead of `O(qty)` time. The key is to compute the total number of each metal needed is to determine the number of each metal needed (metal * qty) and subtract the stock. Then if the number of metals needed is greater than zero, we multiply that by the respective cost and add that to total cost. If the total cost is smaller than the budget, we can create that quantity. If we can create that quantity with even a single machine, we then move our binary search towards the upper bound.
 
 **Implementation**
 ```python
@@ -47,6 +47,9 @@ def max_alloys(composition, stock, cost, budget):
 ![[IMG_3EA88BFEE3FB-1.jpeg]]
 
 ![[IMG_2D73961D8D8A-1.jpeg]]
+
+**Review 1**
+Nice [[binary search]] problem. Just perform a [[binary search]] for each machine on the number of alloys that can be created while staying under budget. Take the max of all. 
 
 #review 
 

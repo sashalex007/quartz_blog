@@ -32,5 +32,15 @@ def win_max(nums, k):
 **Visual** 
 ![[IMG_FF2D249A9347-1.jpeg]]
 
+**Review 1**
+Fun problem! I thought initially that there should be a result for every index so I wrote some dumb and unnecessary code. Basically, you can start appending results on the first complete sliding window:
+
+```
+k = 3
+nums = [-7,-8,7,5,7,1,6,0]
+              ^
+              start adding to result here.
+```
+
 #review 
 

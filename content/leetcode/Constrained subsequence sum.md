@@ -39,7 +39,17 @@ def max_subseq(nums, k):
 **Visual** 
 
 ![[IMG_3E044793589B-1.jpeg]]
+
+**Review 1**
+This is a very tricky problem. I fell into the DP trap for a second time here. To be honest, I have never seen a heap being used in this way, and the intuition is completely alien to me. That being said, the solution does make sense. 
+
+Basically, we are applying [[kadanes]] at every possible index but the current sum is not the running sum, rather it is the sum at the top of the heap. But first we "clean" the heap from subsequence sums that end at an index that we cannot select. 
+
+Essentially we maintain a heap of "running sums" (so to speak) and we constrain them by popping off the ones that cannot be selected. This is essentially [[kadanes]], but we take our sum from the top of the heap (if it is inside the constraint)
+
+
 #review 
 #hard
+#insane 
 
 

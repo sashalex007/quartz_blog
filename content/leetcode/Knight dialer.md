@@ -65,6 +65,10 @@ This is the diagram from LC editorial:
 
 **Memory encoding**
 ![[IMG_1953C65F3DD2-1 1.jpeg]]
+
+**Review 1**
+As an experiment I wanted to see if this problem is possible with backtracking. Indeed it is but it results in TLE. Furthermore, when you take the current move out of the function, you can no longer cache it. A cacheable function must be a 2d [[DP]] `dfs(move, length)` because for example the move  `3`  at a length of `5` will have the same number of possibilities no matter what, so it make sense to process this only once and simply return the cached value upon future visitations (in this case visitations to `(3, 5)`). 
+
 #review 
 
 

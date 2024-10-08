@@ -49,6 +49,15 @@ def fence(trees):
 ![[IMG_E62D0224547F-1.jpeg]]
 ![[IMG_5AADF3133A6D-1.jpeg]]
 
+**Review 1**
+The above solution is kind of absurd and unintuitive. Monotone chain is **waaaaaaay** simpler and intuitively makes alot more sense. 
+
+The key idea is to solve in 2 passes. The lower hull, and then the upper hull. Basically, we sort by X and then keep a monotonically increasing stack based on the slope with the current tree and the top of the stack. Do the same in reverse and add every tree in both stacks to a set...this is the result. 
+
+Note: when we compute slope with the formula `(y-y2)/(x-x2)`, division by 0 is possible so give these cases a slope of `inf` as these trees are right on top of each-other and draw a straight line up the graph. In some cases these trees will draw the left or right boundary so they must be considered. 
+
+![[IMG_46C3B0C2BA34-1.jpeg]]
+
 #review 
 #hard 
 

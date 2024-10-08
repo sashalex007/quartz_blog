@@ -44,6 +44,11 @@ def power_of2(n):
 **Visual** 
 ![[IMG_2261B2000F2F-1.jpeg]]
 
+**Review 1**
+At first my mind went to a bitwise solution... since powers of 2 have the property of only a single flipped bit. Unfortunately that is the wrong line of thought because since the numbers can be reordered, there is no bitwise operation that can restore a power of 2 ordering since permutations work differently in bits. 
+
+The natural approach is frequency map...or frequency array. 
+
 #review 
 
 

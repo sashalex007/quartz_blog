@@ -45,6 +45,9 @@ def rotate_image(matrix):
 **Visual** 
 ![[IMG_E8294CBEC88D-1.jpeg]]
 
+**Review 1**
+I remembered the trick. Not much more to it. **Transpose + Reflect**
+
 #review 
 
 

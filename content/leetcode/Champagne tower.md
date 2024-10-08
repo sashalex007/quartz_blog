@@ -35,6 +35,11 @@ def champ_tower(poured, query_row, query_glass):
 **Visual** 
 ![[IMG_B4A044CDD094-1.jpeg]]
 
+**Review 1**
+Remember that a cup can have up to two parents that feed it champagne, so we must set up the tower to reflect the reality. Each row is one longer than the previous. A cup's left child is simply `tower[row+1][col]`, and right child is `tower[row+1][col+1]`.
+
+This is not too different from the configuration in [[Kth symbol in grammar]] except in that problem the tree is 1-indexed and a child can only have one parent. 
+
 #review 
 
 

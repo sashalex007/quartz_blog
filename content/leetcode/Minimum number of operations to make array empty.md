@@ -55,6 +55,10 @@ def min_operations(nums):
 ![[IMG_714E6254FA59-1.jpeg]]
 ![[IMG_AE1CFCA9D276-1.jpeg]]
 ![[blog/leetcode/_pics/IMG_FEB07AE32C38-1.jpeg]]
+
+**Review 1**
+Using `ceil(count/3)` is very clever here. I was thinking to add an extra operation if `count % 3 == 1`...which works but `ceil` does the job more elegantly. 
+
 #review 
 
 

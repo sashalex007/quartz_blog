@@ -69,6 +69,13 @@ def integer_break(n):
 **Visual** 
 ![[IMG_C1CF072403FE-1.jpeg]]
 
+**Review 1**
+I actually remembered that we can greedily take 3's away from n for the max product. There are some edge cases though. 
+
+1. If the remainder of `n % 3 == 1` then we take one 3 away and multiply by 4. 
+2. If `n % 3 == 2` then take all the 3's and multiply by 2. 
+3. if `n % 3 == 0` take all 3's. 
+4. if `n < 4` return `n-1`
 
 #review 
 

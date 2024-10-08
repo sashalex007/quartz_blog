@@ -37,6 +37,23 @@ def path_crossing(path):
 **Visual** 
 ![[IMG_4E2C673D9ECD-1.jpeg]]
 
-#review 
+**Review 1**
+Easy problem, but the implementation above is kind of ugly and does not translate well to other problems of this type such as [[Walking robot simulation]]. Do this instead:
 
+**Implementation (generic)**
+```python
+def path_cross(path)
+	visited = set([(0, 0)])
+	x, y = 0, 0
+	dirs = {'N':(0,1),'S':(0,-1),'E':(1,0),'W':(-1,0)}
+	for d in path:
+		i, j = dirs[d]
+		if (x+i, y+j) in visited:
+			return True
+		x, y = x+i, y+j
+		visited.add((x, y))
+	return False
+```
+
+#review 
 

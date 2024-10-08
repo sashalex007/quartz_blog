@@ -69,6 +69,21 @@ def painting_walls(cost, time):
 **Visual** 
 ![[IMG_C9396155DCEB-1.jpeg]]
 
+**Review 1**
+I misread the problem and thought we were solving for minimum time and found a DP solution there. The actual problem here is requires solving for min cost! I comes down to the following:
+
+We can either incur the cost of painting the wall and then recruit our free painter, or we can not do anything with the hopes that the free painter will get to that wall at some point when we do chose to incur cost. 
+
+For example:
+```
+cost = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+time = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 100]
+
+In the above case, we can see that it make sense to wait until the last wall to incur the cost, because that last wall takes 100 units of time which means that our free painter can paint 100 walls. We only need 12 walls painted, so since 101 (including the wall painted by our paid painter) is greater than 12, all walls have been painted at a cost of 1. 
+
+Essentially we are looking for the subsequence that reaches num_walls the cheapest. The walls don't have to be painted in any particular order so subsequence works here. 
+```
+
 #review 
 
 

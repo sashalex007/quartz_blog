@@ -39,8 +39,8 @@ def beautiful_string(s, k):
 #memory: o(1) ...or o(n) if considering the result (worst case its the whole string)
 ```
 
-**Visual** 
-
+**Review 1**
+For some reason I thought "lexicographically smallest" simply meant the earliest beautiful substring in the string `s`. This is not the case, the beautiful substrings are to be taken in isolation and compared to each other lexicographically. I did realize this a bit later, but it would have been more optimal to have read the question correctly. 
 
 #review 
 

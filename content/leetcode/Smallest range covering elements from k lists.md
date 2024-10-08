@@ -67,4 +67,9 @@ def smallest_range(nums): #nums is a list of lists
 **Visual** 
 ![[IMG_1FEF8A950825-1.jpeg]]
 
+**Review 1**
+Two things to bear in mind:
+1. As soon as a row goes out of bounds, we can return the result because the range can only increase!
+2. When we pop off the heap, we are shrinking it such that only `k` elements can be inside, so don't use the popped element for evaluating the range...instead use the top of the heap after pushing the next element onto the heap!
+
 #review 

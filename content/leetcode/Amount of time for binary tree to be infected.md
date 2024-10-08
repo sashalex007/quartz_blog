@@ -47,6 +47,9 @@ def time_infected(root, start):
 **Visual** 
 ![[IMG_02A67346B2B8-1.jpeg]]
 
+**Review 1**
+BFS is trivial, I still don't fully understand the DFS solution but essentially you need to count depths differently depending on where the start was found...in other-words its very annoying. Stick to BFS for this problem type. 
+
 #review 
 
 

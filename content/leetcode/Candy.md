@@ -28,6 +28,9 @@ def candy(ratings):
 **Visual** 
 ![[IMG_025C319D64C9-1.jpeg]]
 
+**Review 1**
+Crushed this one. The forward pass is logical but the backward pass is interesting. In the backwards pass its important to recognize that we only make a modification if `ratings[i] > ratings[i+1]` **and** `candies[i] <= candies[i+1]`. This is because we don't want to ruin the work we have done in the forward pass. Its perfectly possible that the rating is greater but we are already meeting the requirements. 
+
 #review 
 
 

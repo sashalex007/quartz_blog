@@ -26,4 +26,8 @@ We also don't want to revisit buses because this would result in a cycle and con
 **Visual**
 ![[IMG_8BFF88A4CBC8-1.jpeg]]
 
-#review
+**Review 1**
+It's not about the target stop because as soon as you get on a bus that has the target stop in it's route, you can consider yourself at the stop because there is no stop-to-stop time penalty. In other words, since we are looking for the minimum number of transfers then it is conceivable that the route with the lowest number of transfers will have the highest number of stops. 
+
+#review 
+

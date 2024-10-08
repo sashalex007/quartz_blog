@@ -35,6 +35,9 @@ def max_sum_part(arr, k):
 **Visual** 
 ![[IMG_97AFCFA4449C-1.jpeg]]
 
+**Review 1**
+Great problem. Solved it pretty fast. The key is realizing that this is a subsequence problem. Why? Because all the different contiguous splits are just contiguous subsequences! 
+
 #review 
 
 

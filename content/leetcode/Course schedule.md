@@ -45,6 +45,9 @@ def course_schedule(num_courses, prerequisites):
 **Visual** 
 same as [[Course schedule II]]
 
+**Review 1**
+Same as [[Course schedule II]], but lets take a moment to look at the time/space complexity. It does seem like the time complexity should be `o(V)`  where `V` is the number of nodes, and since our DFS can visit a node only once (because of the visited set), the complexity is seemingly `o(V)`...however a subtle point is that even if a child has been visited, we still iterate through the connections in order to examine them. This accounts for `o(E)` complexity. Thus the the time complexity is `o(V+E)`. 
+
 #review 
 
 

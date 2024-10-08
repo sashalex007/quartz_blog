@@ -31,6 +31,8 @@ def max_len(arr):
 **Visual** 
 ![[blog/leetcode/_pics/IMG_61F38C310C1A-1.jpeg]]
 
+**Review 1**
+Again I was not sure if caching should be used or not. The constraints are tiny so either way works...but in this case it's better not to use it because the chances that you will get the same string at the same index are zero unless we have duplicates in `arr`. We can just clean `arr` from duplicates and get the best possible complexity which is `2**n` because we have to check all subsequences (where n is the length of the set of `arr`). 
 
 #review 
 

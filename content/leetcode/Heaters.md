@@ -65,6 +65,8 @@ def heaters(houses, heaters):
 **Visual** 
 ![[IMG_BA78A5AAF7A0-1.jpeg]]
 
+**Review 1**
+Don't forget to sort if you are trying to use binary search :clown:
 
 #review 
 #hard 

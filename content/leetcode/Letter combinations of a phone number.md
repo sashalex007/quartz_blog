@@ -44,6 +44,37 @@ def letter_combinations(digits):
 **Visual** 
 ![[IMG_CB7FCBE6762C-1.jpeg]]
 
+**Review 1**
+The iterative solution is probably more intuitive:
+
+**Implementation (iterative)**
+```python
+def letter_combos(digits):
+	if len(digits) == 0:
+		return []
+	mapping = {
+		'2': 'abc',
+		'3': 'def',
+		'4': 'ghi',
+		'5': 'jkl',
+		'6': 'mno',
+		'7': 'pqrs',
+		'8': 'tuv',
+		'9': 'wxyz'
+	}
+	
+	res = ['']
+	for num in digits:
+		new_res = []
+		for char in mapping[num]:
+			for combo in res:
+				new_res.append(combo + char)
+		res = new_res
+	return res
+```
+
+Note on the time complexity: Each digit can have at most 4 possibilities therefore the complexity is `o(4**n)` where `n` is the number of digits. Think in bits!
+
 #review 
 
 

@@ -4,7 +4,7 @@ date: 2024-05-15
 **Link:** https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/
 #### Solution:
 
-**DSA**: [[sorted order]]
+**DSA**: [[sorted order]], [[counting sort]], [[suffix sum]]
 
 **Intuition**
 This is kind of and interesting problem. The constraints are so low that even a quadratic solution works fine, but the `nlogn` solution is pretty interesting. The key is to sort the numbers in ascending order, and see if the current element is greater or equal to the number of elements remaining. There are a few edge cases though when doing it this way.
@@ -41,6 +41,24 @@ def spec_array(nums):
 **Visual** 
 
 ![[IMG_134E215376B9-1.jpeg]]
+
+**Review 1**
+Interesting problem. I found the binary search solution almost instantly, and then did the counting sort / prefix sum solution...cool technique. 
+
+**Implementation (counting sort + prefix sum)**
+```python
+def special(nums):
+	counts = [0]*1001
+	for num in nums:
+		counts[num] += 1
+
+	curr = 0
+	for i in range(len(counts)-1, -1, -1):
+		curr += counts[i]
+		if curr == i:
+			return i
+	return -1
+```
 
 #review 
 

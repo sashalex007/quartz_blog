@@ -7,7 +7,7 @@ date: 2024-10-02
 **Topics**: [[heap]]
 
 **Intuition**
-This is a very subtle problem and it took me a while to figure out how to approach it. I initially thought it could be solved with two points like merging two sorted lists but this approach fails because this approach is limited to generating only `m+n` pairs, but in this problem `k` can go all the way up to `n*m`! 
+This is a very subtle problem and it took me a while to figure out how to approach it. I initially thought it could be solved with two pointers like merging two sorted lists but this approach fails because this approach is limited to generating only `m+n` pairs, but in this problem `k` can go all the way up to `n*m`! 
 
 There is a very simple and elegant way to use a min heap to generate all the pairs. Basically if `nums1[i] + nums2[j]` is the smallest pair, then the next smallest pair will be either `nums1[i+1] + nums2[j]` or `nums1[i] + nums2[j+1]`! 
 
@@ -49,5 +49,6 @@ def k_smallest_pairs(nums1, nums2, k):
 ```
 
 #review 
+#hard 
 
 
