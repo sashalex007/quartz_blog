@@ -32,8 +32,18 @@ def arithmetic_subs(nums):
 **Visual** 
 ![[IMG_4CF455CA3179-1.jpeg]]
 
+**Review 1**
+Insane problem. I figured out the right approach but could not remember/figure out how to implement it correctly such that the right amount of subsequences are calculated. 
+
+Basically, we keep a hash map of counts for every index. This hash map stores the counts of differences seen so far (iterating up to i). If a difference has already been seen at the j index, we add the count to the result, and then add that count to the current hash map value at the difference key! Why do we do this? 
+
+Well, adding the count to the result makes sense because if the count is 1, it means the difference has already been seen so therefore the length of the subsequence is 2...so with the current, that makes for a valid arithmetic sequence of length 3!
+
+So then why do we add the seen value to the current hash map? Because this is akin to storing the number of arithmetic sequences that can be made with that difference and that index. This is the "reservoir". 
+
+Overall this problem is very confusing, but still a great one. 
 
 #review 
 #hard 
-
+#insane 
 

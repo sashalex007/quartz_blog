@@ -34,6 +34,9 @@ def apply_discount(sentence, discount):
 **Visual** 
 ![[IMG_A7DD865CDA2D-1.jpeg]]
 
+**Review 1**
+Most of these parsing problems require splitting. Split by spaces, if the start is `$` and the rest is a digit, apply the discount. Join back into a sentence at the end.
+
 #review 
 
 

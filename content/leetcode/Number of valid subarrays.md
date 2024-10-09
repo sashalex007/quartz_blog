@@ -36,5 +36,31 @@ def valid_subarrays(nums):
 **Visual** 
 ![[IMG_C78706BD982B-1.jpeg]]
 
+**Review 1**
+Very quickly I understood to use a monotonic stack but I spent a little bit of time figuring out how to count the subarrays correctly. Basically, we find the **next smaller** number using an increasing monotonic stack and the length of the subarray right before number that did the popping is added to the result. Numbers that do not get popped have valid subarrays that extend to the end of the list so handle them accordingly. 
+
+This is different from the approach that I have described above but I think it's more intuitive to use the indices directly. The above implementation is equivalent to holding a reservoir, but it's a bit too clever and not very generic. This code is longer but more intuitive IMO. 
+
+[[Next greater element II]]
+[[Sliding window maximum]]
+
+**Implementation (Intuitive)**
+```python
+def val_sub(nums):
+	res = 0
+	stack = []
+	for i, num in enumerate(nums):
+		while stack and num < stack[-1][0]:
+			_, index = stack.pop()
+			length = i - index
+			res += length
+		stack.append((num, i))
+
+	while stack:
+		_, index = stack.pop()
+		res += len(nums) - index
+		
+	return res
+```
 
 #review 

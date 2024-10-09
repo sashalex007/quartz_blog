@@ -38,6 +38,9 @@ def min_avg_diff(nums):
 **Visual** 
 ![[IMG_16F7A4A56DB4-1.jpeg]]
 
+**Review 1**
+I initially thought to solve this with a prefix/suffix sum array but missed that you don't need the suffix array because the sum of the right partition is simply `total - left_sum`. So basically we must increment `left_sum` by `nums[i]` and derive `right_sum`. To compute the average we must also divide by `n`. In the case of the left partition `n = i+1` and for the right `n = len(nums) - (i+1)`. Compute the absolute difference and keep the min index. 
+
 #review 
 
 

@@ -38,7 +38,9 @@ def is_cousins(root, x, y):
 **Visual** 
 ![[IMG_8A2A481CFA70-1.jpeg]]
 
-
+**Review 1**
+Easy problem but my implementation above is kind of overcomplicated. Technically it's optimal because there is only one pass but for a range of 2-100 nodes there is no point. Just create a DFS function to return a tuple of `(parent, level)` for each target `x, y`.
+Then just do a compare on the parent and level. 
 
 #review 
 

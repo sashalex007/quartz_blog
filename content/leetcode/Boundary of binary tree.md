@@ -58,6 +58,8 @@ def boundary(root):
 
 ![[IMG_9E047690A31B-1.jpeg]]
 
+**Review 1**
+Just be mindful of the edge cases. Don't add the root or leaf nodes in the left and right boundary traversal. 
 
 #review 
 

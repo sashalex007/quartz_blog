@@ -41,6 +41,20 @@ def num_arithmetic_slices(nums):
 **Visual** 
 ![[IMG_58D16A0AFD55-1.jpeg]]
 
+**Review 1**
+Again, not reading the problem and assuming that I know what an arithmetic sequence is has bitten me in the ass. For whatever reason I thought I remembered this problem and falsely assumed that an arithmetic sequence is if 3 elements are increasing or decreasing by 1 (`1,2,3,4`)....this is obviously not the case. An arithmetic sequence is any sequence that is increasing or decreasing consecutively by the same number for example:
+
+```
+1,2,3,4
+
+2,4,6,8
+
+100, 200, 300
+
+-1, -2, -3
+```
+
+Other than the stupid oversight, I got the "reservoir" pattern correct. 
 
 #review 
 
