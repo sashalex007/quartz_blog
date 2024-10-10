@@ -36,6 +36,15 @@ def furthest_building(heights, ladders, bricks):
 **Visual** 
 ![[IMG_9324E728FFCE-1.jpeg]]
 
+**Review 1**
+Again, I solved it very quickly with binary search but the pure heap solution evaded me! The heap solution is insanely clever so I don't feel too bad! Maybe I would have gotten there if I spent more than 5 minutes on it. 
+
+Basically we keep a min_heap of all the positive differences (jumps that must use either bricks or a ladder). If the length of the heap is smaller than ladders, it means we don't have to use even a single brick. If the length is greater than ladders, we pop off the heap and we decrement `bricks` by that difference!
+
+The intuition is quite hard because the mind goes to using ladders greedily with a max_heap, but here we are doing the reverse! The min_heap creates a kind of implied greedy usage of ladders and we only use bricks when the heap exceeds the number of ladders! 
+
+This is basically the same as [[Kth largest element in an array]]! But in this case we are keeping our `k` is `ladders`! So we are guaranteed to have all the largest differences at any point in the heap! 
+
 #review 
 #hard
 

@@ -48,6 +48,8 @@ def min_flips(target):
 
 ![[IMG_F2C620CC03BA-1.jpeg]]
 
+**Review 1**
+Very easy medium. Not much to say about this one. 
 
 #review 
 
