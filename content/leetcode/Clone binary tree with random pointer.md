@@ -39,6 +39,8 @@ def clone_tree(root):
 
 ![[IMG_00CA1BA139D1-1.jpeg]]
 
+**Review 1**
+Solved this one pretty quickly. Just remember to use `nodeCopy` class instead of `Node` class for creating copies. Also, remember to add copies to the hash map as soon as they are created to prevent cycles (one of the children could have a random pointer that points back to the parent). 
 
 #review 
 

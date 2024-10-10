@@ -61,6 +61,12 @@ def word_search_ii(board, words):
 **Visual** 
 
 ![[IMG_51488C1A2018-1.jpeg]]
+
+**Review 1**
+Great problem! It was very easy this time around. Don't forget to put the word itself in the trie under the `#` key. Use a [[back tracking]] strategy to avoid cycles. Also, don't forget to pop off the `#` delimiter once a word has been found; this is so that we don't look for this word again (you can imagine a board of all `a` searching for `aaa...`. ,finding it once is enough).  
+
+Also don't forget to pop off `trie[char]` if the hash-map is empty....otherwise there is no effect to popping the delimiter. 
+
 #review 
 #hard 
 

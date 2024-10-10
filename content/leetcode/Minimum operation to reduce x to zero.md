@@ -50,7 +50,14 @@ def min_operations(nums, x):
 **Visual** 
 ![[IMG_A63F78A91F24-1.jpeg]]
 
+**Review 1**
+I fell into the DP trap with this one. DP is a valid way to solve this problem but the complexity will be `o(n*n)` because we would need to keep two pointers `l, r` in the DFS cached function. 
+
+Upon further analysis, this problem wants us to find the smallest partitions on the left and/or right that sum up to `x`. Or in other words, the longest possible subarray in the middle (or starting at either or both sides) that sums to `sum(nums)-x`!
+
+Spend a bit more time thinking about the problem rather than assume one approach is correct...especially if the first thing that comes to mind is DP. 
 
 #review 
+#hard
 
 

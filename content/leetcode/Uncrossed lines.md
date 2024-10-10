@@ -55,7 +55,7 @@ def uncrossed_lines(nums1, nums2):
 				take = 1 + dfs(i+1, k+1)
 				break 
 				#no need to look further, as the first connection seen 
-				#diallows the least number of connections, so if this
+				#disallows the least number of connections, so if this
 				#connection is not worth making then by definition all 
 				#other connections in front of it would also not be 
 				#worth making
@@ -73,5 +73,13 @@ def uncrossed_lines(nums1, nums2):
 
 ![[IMG_9783F8D491B7-1.jpeg]]
 
+**Review 1**
+I pretty much figured out the correct approach from the start but there were two things I missed before running the test cases:
+
+1. When you make a connection, you also have to **not** make the connection.
+2. You only need to consider the first match seen, as the first match leaves the most possibilities open for future matches (and thus connections). 
+
+Im tagging this one hard simply because IMO the recursion setup is kind of subtle. 
 
 #review 
+#hard 

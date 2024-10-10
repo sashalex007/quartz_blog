@@ -55,9 +55,9 @@ def edit_distance(word1, word2):
 	@cache
 	def dfs(i, j):
 		if i == len(word1):
-			return len(word2) - j #insert remaining letters in word2
+			return len(word2) - j #insert/delete remaining letters in word2
 		if j == len(word2):
-			return len(word1) - i #delete remaining letters in word1
+			return len(word1) - i #insert/delete remaining letters in word1
 
 		if word1[i] == word2[j]: #always keep if equal
 			return dfs(i+1, j+1) 
@@ -77,5 +77,7 @@ def edit_distance(word1, word2):
 
 ![[IMG_2ACFDEF016A3-1.jpeg]]
 
+**Review 1**
+Crushed this one on first try without ever running the test cases. I think I know why this one was so easy for me. I really took my time writing the editorial above and it's also quite well written. A noticeable jump in quality over what was written prior....we will see if this trend continues. 
 
 #review 
