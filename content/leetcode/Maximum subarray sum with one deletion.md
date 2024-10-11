@@ -11,7 +11,7 @@ This one was tough to wrap my head around. To solve for the maximum subarray wit
 
 There is actually a way to use two DP arrays (like in regular kadane's) to simulate a deletion at each index. One array is unmodified (regular kadanes), and the other allows deletions by referencing the unmodified array! It's important to keep one array unmodified because we are only allowed one deletion, so a reference to the original must exist.
 
-The implementation is very tricky, but the gist of it is that when when we use regular kadane's, we compare the current element against `dp[i-1]`...and to simulate a deletion, we can instead compare against `dp[i-2]` and store that result in the array that allows for deletions!
+The implementation is very tricky, but the gist of it is that when we use regular kadane's, we compare the current element against `dp[i-1]`...and to simulate a deletion, we can instead compare against `dp[i-2]` and store that result in the array that allows for deletions!
 
 So at each index, we are comparing the modified against the previous unmodified! And because this comparison always references the unmodified kadane's, we can never simulate more than one deletion.
 
@@ -39,6 +39,11 @@ def max_subarry(arr):
 **Visual** 
 
 ![[IMG_7FD2261FB6A8-1.jpeg]]
+
+**Review 1**
+Super tricky problem, but I was able to solve it partially from memory. Basically we run two kadanes algorithms simultaneously (but with arrays). One array is the a pure kadane's, the other allows for deletions. We simulate deletions by comparing the current element in the modified array to the previous-previous element in the pure kadanes array! 
+
+This way, we can enforce at most one deletion due to the fact that we "rebase" ourselves with the original....or we simply continue the sequence if deletion is not profitable. 
 
 #review 
 #hard 

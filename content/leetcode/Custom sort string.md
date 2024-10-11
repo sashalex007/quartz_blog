@@ -39,6 +39,8 @@ def custom_sort(order, s):
 
 ![[IMG_42AFEE97BD3A-1.jpeg]]
 
+**Review 1**
+Easy problem. Don't forget that there could be characters in `s` that don't exist in `order`, in which case the ordering of those characters are arbitrary, so don't forget to add them at the end. 
 
 #review 
 

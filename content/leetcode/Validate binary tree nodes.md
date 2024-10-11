@@ -43,6 +43,12 @@ def validate_nodes(n, leftChild, rightChild):
 
 ![[IMG_A73DB65C3C7B-1.jpeg]]
 
+**Review 1**
+Challenging problem. I got trapped in the out/in degree strategy used in town judge before realizing that out/in degree does not work on validating binary trees. Why? Because in/out degree doesn't care about cycles! While it's possible to identify the root and correct number of connections using in/out degree, nothing can be done about cycles because in/out degree is a counting strategy and **not a traversal**. 
+
+But [[in/out degree]] is not completely useless. We can use it to identify the root and then traverse the tree starting at the root while keeping a visited set. There is a cycle or multiple parents if a node has been seen! Why? **Because in a DFS traversal on a valid tree, every node is seen exactly once**. So while in graph cycle detection we require visiting/visited sets, for trees this is overkill because the nature of the tree is that each node can only have **one parent**. In a graph, nodes can have multiple parents so cycle detection is more involved. 
+
+Also, check the length of the visited set. It should be equal to `n`, otherwise there are disconnected components (and potentially valid ones, but we are looking for a single tree). 
 
 #review 
 #hard 

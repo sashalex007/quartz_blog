@@ -51,6 +51,19 @@ def max_subarray(nums):
 
 ![[IMG_6A9BAAD6C6FD-1.jpeg]]
 
+**Review 1**
+Classic Kadane's algorithm. I prefer this implementation:
+
+```python
+def max_subarray(nums):
+	res = float('-inf')
+	curr = 0
+	for num in nums:
+		curr = max(curr+num, num)
+		res = max(res, curr)
+	return res
+```
+
 #review 
 
 
