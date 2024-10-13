@@ -36,6 +36,31 @@ def distribute_candies(n, limit):
 **Mnemonic:**
 Triplets of children in queue entering candy store
 
+**Review 1**
+This is a great problem! I initially found the DFS solution but upon seeing the poor performance of the submission, I started to look for a better solution. I'm quite pleased that I managed to find the iterative solution because I have not seen many problems of this type and non-recursive permutation solutions are less intuitive to me at this point. 
+
+The key insight is that we have a hard constraint on the amount of candies given to the third child. If we give `x` candies to child 1 and `y` candies to child 2, then we **must** give `n-(x+y)` candies to child 3 in order to stay at exactly `n` candies given out! 
+
+What this means is that we can bring this problem down to `n*n` time complexity since the third number can be mathematically derived! 
+
+If the third number is greater than -1 and is under or at the limit, we can increment our result. But will this count all the possible permutations? This depends on how we set up our iteration. 
+
+if we allow `i` and `j` to iterate over the entire range `0-limit` then inevitable we will get permutations of `i`, `j`, and since `k` if fixed to complete `n`, this accounts for all the permutations. Why? Because if the range is `0-1` and the iteration is unconstrained, we will get the following values for `i, j`:
+
+```
+i, j
+----
+0, 0
+0, 1 -->  
+1, 0 -->  same numbers reached, different permutation, and k is fixed
+1, 1
+
+
+```
+
+I'm  giving this one a hard label, which may seem comical for an easy problem but this solution is unnatural to me so I'd like to keep this one in the hard filter. 
+
 #review 
+#hard 
 
 
