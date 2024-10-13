@@ -46,6 +46,8 @@ def colored_game(colors):
 **Visual** 
 ![[IMG_D90CC3B3560C-1.jpeg]]
 
+**Review 1**
+Fun greedy problem. My article here is quite good. Solved this one very fast...remember that both scores can be folded into a single "balance". If we increment for Alice and decrement for Bob, the result becomes the boolean `score > 0`. 
 
 #review 
 

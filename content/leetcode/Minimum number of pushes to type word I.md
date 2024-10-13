@@ -43,6 +43,9 @@ def min_pushes(word):
 **Visual** 
 ![[IMG_353DD9024FAC-1.jpeg]]
 
+**Review 1**
+Again, I didn't read the problem statement carefully enough and proceeded to solve this with a frequency map. Fortunately I did realize my oversight and got to the iterative solution pretty quickly. 
+
 #review 
 
 

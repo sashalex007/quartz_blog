@@ -31,12 +31,12 @@ def number_of_prov(isConnected):
 		if city in visited:
 			return False
 		visited.add(city)
-		has_conn = False
 		for i in range(len(isConnected)):
+			if i == city:
+				continue
 			if isConnected[city][i] == 1:
-				has_conn = True
 				dfs(i)
-		return has_conn
+		return True
 		
 	visited = set()
 	provs = 0
@@ -83,5 +83,11 @@ class Solution:
 **Visual** 
 ![[IMG_6F2F4E1D2D7A-1.jpeg]]
 
+**Review 1**
+The easiest solution here is to build an adjacency list and count components. The slightly better solution is to traverse the matrix as-is! This is a more subtle solution but eliminates the need for an adjacency list. The even more subtle solution is to use [[union find]]. 
+
+Its a tricky one because traversing the matrix is not straight forward. 
+
 #review 
+#hard 
 

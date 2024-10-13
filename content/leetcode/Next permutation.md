@@ -111,6 +111,43 @@ def next_permutation(nums):
 **Visual** 
 ![[IMG_0122DF170A7B-1.jpeg]]
 
+**Review 1**
+Tough problem! I correctly interpreted the problem and got most of the way to a solution but I made one key oversight. 
+
+Basically, when we swap two numbers, three things are possible:
+1. Increase in lexicographical value `[1, 2] ---> [2, 1]`
+2. Decrease in lexicographical value `[2, 1] ---> [1, 2]`
+3. No change `[1, 1] ---> [1, 1]`
+
+We are looking for the **next greater** permutation so we are only allowed to **increase** the lexicographical value. What this means is that when `nums[i] < nums[i+1]`, there is a valid swap available to us. So do we swap `nums[i]` and `nums[i+1]`? NOT NECESSARILY! Why?
+
+Consider the following:
+```
+nums = [1, 3, 2]
+
+We can see that 1 < 3....and swapping them would yield [3, 1, 2] which is indeed lexicographically greater. 
+
+But this is incorrect because we should swap with the 2 to make [2, 1, 3] !
+
+The later is lexicographically smaller than the former! 
+
+Also notice that 1, 3 swapped places after 1, 2 swapped places. This is due to the fact that everything past the 2 must be sorted in decreasing order. We already know that that partition is decreasing, so reversing it will make it sorted in increasing order!
+
+So does this mean we always swap nums[i] with nums[-1]? NO!
+
+Why? 
+
+Consider the case nums = [2, 3, 1]
+
+We can see that the swapping 2 and 1 is illegal because that results in a smaller permutation! 
+
+Essentially, we cannot know in advance what the leftmost greater element is in the right partition unless we acually look. So the solution is to iterate backwards from len(nums)-1, and the first number that is greater than nums[i] is swapped with nums[i]. You could also do binary search because the right partition is guaranteed to be sorted in decreasing order. 
+
+In the case that no swapping condition is met, we simply reverse the array as we are wrapping back to the smallest possible permutation. 
+
+```
+
+
 #review 
 #hard 
 

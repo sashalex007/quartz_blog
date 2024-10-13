@@ -58,6 +58,11 @@ def word_break(wordDict, s):
 **Visual** 
 ![[IMG_405F355DA644-1.jpeg]]
 
+**Review 1**
+There are some small errors in my editorial. The BFS solution is not more efficient than the cached DP one. They are the same. The reason we can cache this DFS function and not the one in [[Word break II]] is because in that one we actually want **all the ways** the end can be reached. In this one we don't care about all the possibilities...so caching the function is effectively terminating the recursion early as soon as a positive result is reached! The depth of this tree is the time complexity and it should also be the shortest path. 
+
+So I think the DP solution is the correct approach here after all. This is a pretty niche application of BFS and does not generically apply to most problems of this type. The only subtle part of the DP solution is the realizing that we need to cache because the actual path doesn't matter, we only need one. 
+
 #review 
 #hard
 

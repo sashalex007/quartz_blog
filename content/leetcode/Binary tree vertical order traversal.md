@@ -46,6 +46,31 @@ def vertical_order(root):
 **Visual** 
 
 ![[IMG_5864713FDE63-1.jpeg]]
+
+**Review 1**
+I pretty much instantly knew how to solve this but initially tried with a DFS algorithm. Unfortunately DFS yields the improper order. DFS is not impossible but the solution is contrived. BFS is the natural algorithm here because of the left-to-right traversal (its even in the problem statement). Why is this the case? 
+
+```
+    1
+   /
+  2  
+ / \ 
+4   5 
+ \
+  6
+   \
+    7
+
+We can see in the above tree that the result should be:
+[[4], [2,6], [1,5,7]]
+
+Lets look at the last column [1, 5, 7]. Is this the ordering we get in a DFS traversal? NO! 
+
+DFS seeks the leftmost node, so actually we would get [1, 7, 5]. The colunm is correct but the ordering is not. 
+
+For DFS to work, each node must be a tuple with it's row, and then we sort... or just use BFS. 
+```
+
 #review 
 
 
