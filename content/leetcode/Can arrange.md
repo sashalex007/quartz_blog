@@ -75,6 +75,58 @@ In forest, talking CANARY (can-arrange) bird trading (has/needs) REMAINING seeds
 **Visual** 
 ![[IMG_990A9CF4FA8E-1.jpeg]]
 
+**Review 1**
+This one was tricky for me but I figure out the right approach, just had some difficulty with the implementation. I'm tagging this one hard because of how long it took me to make the connection to modulus. 
+
+We must look at what actually makes a valid pair:
+
+```
+nums = [1, 9] 
+k = 5
+
+(1, 9) is a valid pair which sums to 10 which is divisible by 5
+
+1 % 5 = 1
+1 % 9 = 4
+
+We see that their remainders add up to make k, so we can use this property to find pairs using a hashmap of remainders!
+
+```
+
+Basically this is a has/needs pattern. Number `num` has a remainder `r` and to complete a pair we need a number `num2` with a remainder `k-r`! We can use a frequency map! 
+
+The one notable edge case is if `num` has a remainder of `0`. In that case `k-r` will equal to `k`, which is not possible to have as a remainder. What we actually need is another number with a remainder of `0` because the number `num` MUST have a pair. 
+
+Basically we iterate over `nums` and if `k-r` exists in the remainder hash map, we decrement it and delete it if the count is zero. Otherwise we add the current `r` to the hash map or increment it!
+
+At the end of this process, the length of the hash map must be zero! This indicates that every number has been paired. 
+
+There is also a great [[two pointer]] solution! If we sort the numbers by their remainders, we find that the smallest remainders will always be paired with the largest ones. So after sorting we can initialize a left and right pointer and move towards the middle. If a `arr[l] + arr[r]` does not form a valid pair, we return false. Otherwise return true at the end. 
+
+The notable edge case is again if the modulus is equal to zero. In that case we can only pair with another number whose remainder is also zero. This would break our 2 pointer algorithm so we must handle it up front. Basically we iterate over the start of the sorted array with a stride of 2 and if  `arr[i] % k != 0`  we stop. If `arr[i] % k != arr[i+1] % k`, we return false (odd number of numbers with remainder of 0). 
+
+**Implementation (two pointer)**
+```python
+def can_arrange(arr):
+	arr.sort(key=lambda x: x % k)
+	l = 0
+	for i in range(0, len(arr), 2):
+		if arr[i] % k != 0:
+			l = i
+			break
+		if arr[i+1] % k != 0:
+			return False
+
+	r = len(arr)-1
+	while l < r:
+		if (arr[l] + arr[r]) % k != 0:
+			return False
+		l += 1
+		r -= 1
+	return True
+```
+
 #review 
+#hard
 
 

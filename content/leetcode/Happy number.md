@@ -38,6 +38,9 @@ We are in number land. Each number is linked to the next number in a list. Its h
 **Visual** 
 ![[IMG_5AC0B84A5C9F-1.jpeg]]
 
+**Review 1**
+I was happy (haha) to find the linked list solution here. Just remember that the squared digits are summed, not concatenated (read the damn problem statement Alex). 
+
 #review 
 
 

@@ -86,6 +86,9 @@ You are wizard in a room with a square and a triangle. The square can only have 
 **Visual** 
 ![[IMG_FE3B19FC488D-1.jpeg]]
 
+**Review 1**
+Fun problem! Cute little modulus and integer division trick. The code above is not very clean but its also not worth rewriting. 
+
 #review 
 
 

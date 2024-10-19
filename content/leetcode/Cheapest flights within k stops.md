@@ -76,6 +76,23 @@ At airport. Clone myself to take every available flight to every possible city..
 **Visual** 
 ![[IMG_D6C767571B84-1.jpeg]]
 
+**Review 1**
+The main insight for this problem is that we must keep track of stops as well as costs. Its pretty obvious that costs must be tracked because we want to disallow visiting the same nodes with a higher cost...this part is standard optimized [[BFS]] or [[Dijkstra's]]. This problem is more complicated however. Why? Because there is a constraint on the length of the path! There must be no more than K stops. Simple right? Just put a hard constraint on `path_len`? Not so fast. 
+
+What if the cost of visiting the node again is the same, but the number of stops is lower than the last time around? Do we still explore? Yes! What if the cost is higher but the number of stops is lower? We also explore! Both of these cases could potentially lead to a lower end cost for reaching the destination! 
+
+The last edge case to consider is how we count stops. We want to make sure that we are not counting the level, or even the number of edges! The number of stops will in fact be the number of nodes in the path minus two. Why? This is the case because we don't count the start or the destination:
+
+```
+a-b-c   ---> 1 stop (3-2)
+  ^
+
+a-b-c-d-e ---> 3 stops (5-2)
+  ^ ^ ^
+```
+
+We must account for this in our stopping logic. It would seem that counting cities is the way to go here but this has too many edge cases because we can only discount the last city when we get to it, so its better to just start at zero and add stops as we need them (making sure to check if we are at our destination before adding a stop). 
+
 #review 
 
 
