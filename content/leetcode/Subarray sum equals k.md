@@ -41,5 +41,8 @@ Think of subtracting previous partitions from the current one. We don't know whe
 **Visual** 
 ![[IMG_E26F46FE0AFE-1.jpeg]]
 
+**Review 1**
+Too easy, crushed it. Nice editorial though.
+
 #review 
 #hard 

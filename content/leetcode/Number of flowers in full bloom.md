@@ -48,6 +48,9 @@ There is a pile (heap) of flowers. People come at different times to add freshly
 **Visual** 
 ![[IMG_43587F8244B5-1.jpeg]]
 
+**Review 1**
+Pretty much solved this instantly. Forgot to sort `people` though. The result array should be returned in the same order as the original ordering of `people`, so make sure to save the indices before sorting.
+
 #review 
 
 

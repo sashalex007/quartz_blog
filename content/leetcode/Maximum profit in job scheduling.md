@@ -74,6 +74,11 @@ You are given a list of jobs that can only be done in a fixed timeframe. You tak
 **Visual** 
 ![[IMG_FC88E56BB277-1.jpeg]]
 
+**Review 1**
+Pretty much instantly figured out the DP solution. I didn't read the constraints so I did not think it was necessary to further optimize with binary search...turns out you do. 
+
+Also, looking at the heap solution, this is not too different from [[Constrained subsequence sum]]! Basically, the constraint in this case is that we can only take **non-overlapping** jobs to create our subsequence of jobs. 
+
 #review 
 
 

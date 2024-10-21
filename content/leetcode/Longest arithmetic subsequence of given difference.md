@@ -37,6 +37,9 @@ You are looking for the longest word made up of another word minus the last lett
 **Visual** 
 ![[IMG_AB0F1CC0FE32-1.jpeg]]
 
+**Review 1**
+Amazingly, I did not fall into the DP trap! I guess this is a sign of improvement, so ill take it (even for a question as easy as this one). 
+
 #review 
 
 

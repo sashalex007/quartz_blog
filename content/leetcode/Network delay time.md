@@ -65,6 +65,9 @@ See [[Cheapest flights within k stops]] mnemonic
 **Visual** 
 See [[Cheapest flights within k stops]] visual
 
+**Review 1**
+Nice problem! There is a slight error in my dijistra implementation above. The `visited` set is spurious. 
+
 #review 
 
 

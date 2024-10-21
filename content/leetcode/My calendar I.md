@@ -74,6 +74,9 @@ Plastic transparent container  with sorted written in black sharpie on the side.
 **Visual** 
 ![[IMG_1E9EC89EF0CB-1.jpeg]]
 
+**Review 1**
+Ultra annoying problem. I totally forgot about [[SortedList]] module! The edge cases are wild for this one. 
+
 #review 
 #hard 
 

@@ -31,6 +31,9 @@ All valid sequential numbers with strictly increasing digits exist as a subarray
 **Visual** 
 ![[IMG_A818E8810056-1.jpeg]]
 
+**Review 1**
+My implementation above is kind of weird. Seems simpler just to do a left, right sliding window. 
+
 #review 
 
 

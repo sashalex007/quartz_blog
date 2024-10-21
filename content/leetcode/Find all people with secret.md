@@ -55,6 +55,9 @@ You are in a room with everyone you are meeting with first thing in the morning.
 **Visual** 
 ![[IMG_63C8336A2FD1-1.jpeg]]
 
+**Review 1**
+Logical problem, quite straight forward. The key here is understanding that meetings that are happening at the same time must be processed together. And IMO solutions 1-3 are absurdly dumb. Solution 4 is basically what I did but with a DFS for the search (it makes no difference). 
+
 #review 
 
 

@@ -42,6 +42,9 @@ You are playing tic-tac-toe, then you decide to play 4-square. You notice that t
 **Visual** 
 ![[IMG_8FAC1F4E4BB8-1.jpeg]]
 
+**Review 1**
+The above solution is a bit overcomplicated. There is no need for the modulus. If the position is the same, only add it once. 
+
 #review 
 
 

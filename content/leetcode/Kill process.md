@@ -41,6 +41,9 @@ Your are in an apple orchard feeling very ADJitated. In your agitation, you cut 
 **Visual** 
 ![[IMG_4CB90D787157-1.jpeg]]
 
+**Review 1**
+Nice little tree problem in non-standard format. The way the tree is defined is super weird, but once you realize that `ppid` are parents and `pid` are children, this become simple. Then its just a matter of building the graph and doing a [[DFS]] starting at the kill node. The ordering is not required so a [[DFS]] is the most optimal (ok, maybe [[BFS]] is slightly better). 
+
 #review 
 
 

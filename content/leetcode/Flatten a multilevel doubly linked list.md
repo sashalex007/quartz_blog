@@ -50,6 +50,34 @@ Imagine a string with many splits. Our job is to cut off at the split and tie th
 **Visual** 
 ![[IMG_E7926AD9C338-1.jpeg]]
 
+**Review 1**
+The above implementation is a bit too clever...its no wonder I was struggling with edge cases. There is no need to complicate things. We have a very simple task: flatten the list. All we need to do is get the last node in the child list and stitch the list back together....so we do exactly that. We can use a helper function `get_tail(node)` to get the last node and stitch the list. But wouldn't that list not be flat if we are only getting the tail? Potentially yes...does that matter? NO! Because we simply move the pointer to `node.next` and we are guaranteed to capture all nested lists regardless of their depth! In fact, even recursion is not needed here! 
+
+**Implementation (simple, iterative)**
+```python
+
+def flatten(head):
+	def get_tail(node):
+		while node.next:
+			node = node.next
+		return node
+
+	node = head
+	while node:
+		if node.child:
+			old_nxt = node.next
+			node.next = node.child
+			node.child = None
+			node.next.prev = node
+			if old_nxt:
+				tail = get_tail(node.next)
+				tail.next = old_nxt
+				old_nxt.prev = tail
+		node = node.next
+
+	return head
+```
+
 #review 
 
 

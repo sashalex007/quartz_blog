@@ -54,6 +54,9 @@ Two hurdlers take off on a race. One hurdler bears the number 4, and the other b
 **Visual** 
 ![[IMG_D610285C4E49-1.jpeg]]
 
+**Review 1**
+Too easy, skipping this one. 
+
 #review 
 
 

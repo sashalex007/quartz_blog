@@ -40,6 +40,9 @@ Same as [[Subarray sum equals k]], but remember to store index instead of freque
 **Visual** 
 Same as [[Subarray sum equals k]].
 
+**Review 1**
+Slightly harder than [[Subarray sum equals k]], but still not very challenging. Remember to convert `0` to `-1` to maintain the balance. 
+
 #review 
 
 

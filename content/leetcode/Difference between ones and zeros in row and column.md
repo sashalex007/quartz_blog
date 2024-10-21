@@ -38,6 +38,9 @@ We have `m` types of trees and `n` heights of trees. We want to know how many tr
 **Visual** 
 ![[IMG_AFFDB98DFDF3-1.jpeg]]
 
+**Review 1**
+Too easy. Remember that `num_zeros = n - num_ones`. 
+
 #review 
 
 

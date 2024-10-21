@@ -59,6 +59,12 @@ def lexico_nums(n):
 `*= 10, += 1, //= 10`
 times ten, plus one, integer divide 10
 
+**Review 1**
+Very tricky one. I got it but it was a struggle. Its important to remember that if the current number is smaller than `n`, we opportunistically multiply by 10 because this represents the smallest increment in lexicographical value! Otherwise we increment by 1. If the incremented number is greater than n, then we round it up to the nearest 10 and integer divide by 10 until we reach a single digit. 
+
+Also, appending to the result at the start of the loop is more elegant. 
+
 #review 
+#hard 
 
 

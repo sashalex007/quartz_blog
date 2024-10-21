@@ -44,6 +44,9 @@ You pick up a string at the middle and notice that both hanging ends are the sam
 **Visual** 
 ![[IMG_7086FD45CBEC-1.jpeg]]
 
+**Review 1**
+Classic problem. Solved it really fast. 
+
 #review 
 
 

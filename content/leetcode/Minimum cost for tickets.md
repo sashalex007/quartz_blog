@@ -39,6 +39,9 @@ You are traveling. Clone yourself 3 times and by 3 different train tickets (1, 7
 **Visual** 
 ![[IMG_7CB6852DE3AE-1.jpeg]]
 
+**Review 1**
+Very similar problem to [[Maximum profit in job scheduling]]! Basically, we must find the next position to optimize the DP tree. 
+
 #review 
 
 

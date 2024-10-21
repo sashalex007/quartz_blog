@@ -32,6 +32,9 @@ def relative_sort(arr1, arr2):
 #memory: o(n)
 ```
 
+**Review 1**
+Too easy. 
+
 #review 
 
 

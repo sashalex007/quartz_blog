@@ -57,6 +57,11 @@ Same as [[Balance a binary search tree]], but instead of picking up the string i
 **Visual** 
 ![[IMG_B941BACB21B9-1.jpeg]]
 
+**Review 1**
+Great problem! Quite tricky, but the main thing to remember is that we should be trying all possible values for the current node. In [[Balance a binary search tree]] we used the `mid` as the value for the current node, but here we must try **all possible** values. For the root of the tree that becomes all values between 1-n. Then we recursively get all possible left and right nodes, and create a new tree with each combination. 
+
+The time and space complexity is still bewildering to me. Just remember the **nth catalan number**. 
+
 #review 
 #hard 
 
