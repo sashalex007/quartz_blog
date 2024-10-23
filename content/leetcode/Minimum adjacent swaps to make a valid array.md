@@ -54,6 +54,9 @@ We have two people on the opposite side of a hallway. They each must run to the 
 **Visual** 
 ![[IMG_9B664122F331-1.jpeg]]
 
+**Review 1**
+Easy problem. Some edge cases to consider though. 
+
 #review 
 
 

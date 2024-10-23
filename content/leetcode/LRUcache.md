@@ -78,6 +78,10 @@ You have a measuring calliper. As you put more marbles in a line between the cal
 **Visual** 
 ![[IMG_808CB246B8D1-1.jpeg]]
 
+**Review 1**
+The two dummy nodes implementation is amazing....use it. Remember to implement add/remove methods.
+
 #review 
+#OOP 
 
 

@@ -13,7 +13,7 @@ The key is to store nodes in their own doubly linked lists by frequency...that w
 
 There is one slight complication for the `get` method. We must remove the node from its current list and insert it into the `count+1` list. Its also useful to delete empty lists as the number of lists can get very high. 
 
-The `put` method is slightly tricky...we have a hash map of lists that are keyed by frequency, so ho do we get the least frequent key? Well one way would be to take the min of the keys, but this is not the most efficient operation. `SortedDict` is very useful here, because its essentially a hash map sorted by key (red-black tree)  and we will be able to always access the least frequent (key, value) using the `peakitem(0)` method. 
+The `put` method is slightly tricky...we have a hash map of lists that are keyed by frequency, so how do we get the least frequent key? Well one way would be to take the min of the keys, but this is not the most efficient operation. `SortedDict` is very useful here, because its essentially a hash map sorted by key (red-black tree)  and we will be able to always access the least frequent (key, value) using the `peakitem(0)` method. 
 
 The implementation is not too bad if we use the lessons learned from [[LRUcache]]. Algorithmically, cache policies are not terribly interesting but the implementation is definitely a useful exercise in OOP (especially this one). 
 
@@ -109,7 +109,11 @@ Imagine pieces of string hanging from another piece of string.
 **Visual** 
 ![[IMG_A039EA7AD3C2-1.jpeg]]
 
+**Review 1**
+Nice problem. I solved it mentally because implementation would take a while. Revisit when preparing for OOP. 
+
 #review 
 #hard 
+#OOP
 
 

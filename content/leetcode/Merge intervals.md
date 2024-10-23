@@ -41,6 +41,15 @@ The rules of the line are such: If a person comes along who is too big for their
 **Visual** 
 ![[IMG_C3C504003A45-1.jpeg]]
 
+**Review 1**
+Don't forget about the following edge-case:
+
+```
+[1,5],[2,3]
+
+2,3 is contained within 1,5 so do nothing. 
+```
+
 #review 
 
 

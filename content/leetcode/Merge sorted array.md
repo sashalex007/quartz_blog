@@ -57,6 +57,9 @@ def merge_sorted(nums1, m, nums2, n):
 **Mnemonic**
 I don't have a good one here....just think   **in-place**--->**start-where-empty**
 
+**Review 1**
+This problem goes to show that my mnemonics and images don't work. I remembered the trick without issue. 
+
 #review 
 #hard 
 

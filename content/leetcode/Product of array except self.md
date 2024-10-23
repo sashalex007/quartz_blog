@@ -7,7 +7,7 @@ date: 2024-08-15
 **Topics**: [[prefix sums]]
 
 **Intuition**
-Not a very difficult problem...basically we borrow the idea from prefix and postfix sums, but instead of sums we make it the running product at every `i` . Then to get the product of the array except self, we can perform `prefix[i-1]*postfix[i+1]`. Thats all there is to it because multiplication is  commutative. 
+Not a very difficult problem...basically we borrow the idea from prefix and suffix sums, but instead of sums we make it the running product at every `i` . Then to get the product of the array except self, we can perform `prefix[i-1]*postfix[i+1]`. Thats all there is to it because multiplication is  commutative. 
 
 **Implementation**
 ```python
@@ -32,6 +32,9 @@ def product_except_self(nums):
 #time: o(n)
 #memory: o(n)
 ```
+
+**Review 1**
+Easy problem. Be mindful of edge cases. 
 
 #review 
 

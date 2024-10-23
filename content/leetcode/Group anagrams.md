@@ -27,6 +27,9 @@ def group_ana(strs):
 #memory: o(nk)
 ```
 
+**Review 1**
+Sorted string solution is much more elegant and memory efficient...although technically a bit slower in the worst case.
+
 #review 
 
 

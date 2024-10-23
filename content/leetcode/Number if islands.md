@@ -38,6 +38,9 @@ def num_islands(grid):
 #memory: o(1)
 ```
 
+**Review 1**
+Don't forget about in-place transformation instead of using a visited set. 
+
 #review 
 
 

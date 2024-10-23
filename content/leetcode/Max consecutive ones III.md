@@ -43,6 +43,9 @@ You are a bus driver. Your bus has an infinite number of seats, but there is a l
 **Visual** 
 ![[IMG_80AC2D93B838-1.jpeg]]
 
+**Review 1**
+I instantly knew this was sliding window but for whatever reason I thought there was something more clever (may have confused a memory). After spending some time proving to myself that there is in fact nothing more clever, I coded the sliding window solution in a couple minutes.
+
 #review 
 
 

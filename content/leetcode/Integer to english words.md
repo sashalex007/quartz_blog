@@ -22,7 +22,8 @@ triplet represents thousands.
 The same rules apply for subsequent triplets (million and billion)
 ```
 
-So lets move on to how we can process a triplet of digits. The third digit (from the end) always represents hundreds, the second is tens and the third is ones. There is only one edge case to worry about, which is if the value of the first two digits is greater than 9 and less than twenty. In that case, the first two digits form `ten, eleven, twelve...`.  And of course adding the units at the end `thousand, million, billion`. 
+So lets move on to how we can process a triplet of digits. The third digit (from the end) always represents hundreds, the second is tens and the third is ones. There is only one edge case(s)
+to worry about, which is if the value of the first two digits is greater than 9 and less than twenty. In that case, the first two digits form `ten, eleven, twelve...`.  And of course adding the units at the end `thousand, million, billion`. 
 
 So the logic is basically solved, but the implementation not as clear. Of course we will need hash maps to convert numbers to words, but what is the best way to process each triplet in the correct order?
 
@@ -103,6 +104,9 @@ You have long number in front of you. To delete all digits except the last 3, we
 
 **Visual** 
 ![[IMG_E04F87ADF203-1.jpeg]]
+
+**Review 1**
+Not very difficult algorithmically but the implementation is pretty interesting. 
 
 #review 
 #hard

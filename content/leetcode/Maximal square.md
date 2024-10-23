@@ -91,6 +91,9 @@ You are team captain on a 4 man team of soccer. Your team is only as strong as y
 **Visual** 
 ![[Open Leetcode 5.jpeg]]
 
+**Review 1**
+Had no issues with this one. Great DP problem. Progress! 
+
 #review 
 #hard 
 

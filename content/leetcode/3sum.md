@@ -45,6 +45,11 @@ def three_sum(nums):
 **Mnemonic**
 Same as [[Two sum II]] but imagine that we have a third person and the target is the average of all 3 laser lines. 
 
+**Review 1**
+Great problem. Remember two things:
+1. Use while loops
+2. while `nums[i] == nums[i+1]` increment `i`. Remember to increment once more after the loop! 
+
 #review 
 #hard 
 

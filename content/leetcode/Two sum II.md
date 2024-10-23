@@ -37,6 +37,8 @@ There is a very strange mountain. The mountain is strange because the slope is i
 **Visual** 
 ![[IMG_D662C8AB9ABA-1.jpeg]]
 
+**Review 1**
+Same as [[3sum]] but the constraints are much more lax and there are only 2 pointers instead of 3. 
 
 #review 
 
