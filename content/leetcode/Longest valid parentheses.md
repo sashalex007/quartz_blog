@@ -42,4 +42,8 @@ See [[Longest valid parentheses]].
 **Visual** 
 See [[Longest valid parentheses]].
 
+**Review 1**
+I knew instantly how to solve this but for some reason I struggled looking for a good implementation and also for whatever reason I thought this could be solved more greedily with a simple count stack. This problem can only be solved by pushing indices to the stack. I knew I could solve it that way but instead decided to complicate my life. Stick to the basics! 
+
 #review 
+#hard 

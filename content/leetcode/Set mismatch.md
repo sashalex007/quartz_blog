@@ -39,6 +39,9 @@ We have a bunch of people who we owe money to...but we have no way of writing do
 **Visual** 
 ![[IMG_AD500A123FF7-1.jpeg]]
 
+**Review 1**
+I was pleased to have found the constant space solution in a short time. Fun problem. 
+
 #review 
 
 

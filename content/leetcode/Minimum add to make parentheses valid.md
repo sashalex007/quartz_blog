@@ -45,6 +45,30 @@ We have a very demanding restaurant owner. The waiters must bring the customer *
 **Visual** 
 ![[IMG_9A73C7A8D380-1.jpeg]]
 
-#review 
+**Review 1**
+Struggled with this one, but I had the right idea. Firstly the constraints threw me off. They were so generous that I thought the solution might be non-linear. Finally decided to go for a linear solution and pretty much used the same solution as in [[Longest valid parentheses]]...except I made a key oversight. In [[Longest valid parentheses]] we are looking for a single contiguous valid parentheses, whereas here we want the the length of ALL valid parentheses...so a valid subsequence. The length of `s` minus the length of the valid subsequence  is the answer. 
 
+I think the solution above is a bit confusing. IMO it's more elegant to count valid pairs rather than this whole rebalancing business. I'm tagging this hard because my thought process was erratic for this one even though I solved it very fast. 
+
+**Implementation (valid pairs)**
+```python
+def min_valid(s):
+	stack = 0
+	valid_pairs = 0
+	for i, char in enumerate(s):
+		if char == ')':
+			stack -= 1
+			if stack == -1:
+				stack = 0
+			else:
+				valid_pairs += 2
+		else:
+			stack += 1
+			
+	return len(s) - valid_pairs
+		
+```
+
+#review 
+#hard 
 

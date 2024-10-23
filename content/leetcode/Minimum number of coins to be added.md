@@ -46,7 +46,7 @@ This is the case because we can never extend beyond `current_max + 1` and still 
 [0,1,2,5] invalid because 4 cannot be formed. 
 ```
 
-For `current_max + 1` to be formed, it must exist **ALONE** because any number that exists before it, would by definition create a subset with `current_max + 1` that would exceed the value of `current_max + 1`.  The `current_max`  is the cumulative sum of the array...the does not exist a subset inside the array that could form `current_max+1` or greater because `current_max` **already contains all elements...it is the limit**. 
+For `current_max + 1` to be formed, it must exist **ALONE** because any number that exists before it, would by definition create a subset with `current_max + 1` that would exceed the value of `current_max + 1`.  The `current_max`  is the cumulative sum of the array...there does not exist a subset inside the array that could form `current_max+1` or greater because `current_max` **already contains all elements...it is the limit**. 
 
 **Implementation**
 ```python
@@ -57,7 +57,7 @@ def min_coins(coins, target):
 	i = 0
 	
 	while reachable < target:
-		if i != len(coins) and reachable + 1 > coins[i]: 
+		if i != len(coins) and reachable + 1 >= coins[i]: 
 			reachable += coins[i]
 			i += 1
 		else:
@@ -76,6 +76,15 @@ If the water in a jug weighs less than or equal to the plant's weight + 1ml...we
 
 **Visual** 
 ![[Open Leetcode 2.jpeg]]
+
+**Review 1**
+Absurdly hard problem! I made a lot more headway on it than the first time though so I guess I should be happy about that. I understood the problem and even how to solve it but this one in particular is so particular about the implementation. 
+
+The key is doing two things:
+1. use a while loop and a pointer `i` for coins. 
+2. explicitly code the condition where we take the current coin, otherwise add a coin (and increment the result)
+
+As a side note, understanding my mnemonic is more mind bending than the problem itself...
 
 #review 
 #hard 

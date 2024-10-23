@@ -45,6 +45,9 @@ Imagine piles of dirt in a line. We have to scoop these piles in a maximum of `h
 **Visual** 
 ![[IMG_05800BCE21D1-1.jpeg]]
 
+**Review 1**
+Fun binary search problem. Very easy though. 
+
 #review 
 
 

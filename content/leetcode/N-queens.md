@@ -59,6 +59,9 @@ You are **visiting** prof Tzudner and he offers to play a special game of chess.
 **Visual** 
 ![[IMG_2EC0B8F0C344-1.jpeg]]
 
+**Review 1**
+Spent a bit of time figuring out the best way to implement this. Ultimately, I think I was wrong in the above approach. Its better to keep the states outside of the recursion and then convert the board rows into strings when we hit the base case. I think this is more efficient, cleaner, and simpler than building the pre-formatted result inside the call stack. Fun problem though, don't forget about the diagonals and anti-diagonals!
+
 #review 
 
 

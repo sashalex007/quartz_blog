@@ -40,7 +40,13 @@ There is a marble some distance away from you. Your task is to pick up the marbl
 **Visual** 
 ![[IMG_E5D3B6D9B1BE-1.jpeg]]
 
+**Review 1**
+I was pretty disappointed at my performance in this problem. I think I was trying to solve it from memory and got lost trying to find a greedy solution. What's funny is that BFS was the first thing that came to mind and my faulty memory convinced me to discard it. 
+
+It should be clear why there is no greedy solution: its impossible to know if we should reverse or accelerate in the case that acceleration would overshoot the target. Only in the overshoot case do we explore the reverse branch, as it is always more optimal to accelerate otherwise. 
+
 #review 
 #hard 
+#insane 
 
 
