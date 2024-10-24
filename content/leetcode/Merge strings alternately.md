@@ -25,6 +25,19 @@ def merge_strings(word1, word2):
 #memory: o(1)
 ```
 
+**Review 1**
+Not a huge fan of the above implementation. There is no need to treat `word1` so generically. Just iterate over it and add the remainder from `word2` if it exists. 
+
+```python
+def merge_strings(word1, word2):
+	res = ''
+	for i in range(len(word1)):
+		res += word1[i]
+		if i < len(word2):
+			res += word2[i]
+	return res + word2[i+1:]
+```
+
 #review 
 
 

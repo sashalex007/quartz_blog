@@ -27,6 +27,9 @@ def longest_unique_sub(s):
 #memory: o(n)
 ```
 
+**Review 1**
+Nice problem. Move on. 
+
 #review 
 
 

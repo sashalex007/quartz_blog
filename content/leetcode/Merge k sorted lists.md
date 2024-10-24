@@ -72,6 +72,9 @@ The correct strategy is to combine each pair of balls until only one ball is rem
 **Visual** 
 ![[IMG_EA8ECB3DE6C1-1.jpeg]]
 
+**Review 1**
+This is very interesting. I found the heap approach almost instantly and in fact it's the same time complexity as the divide and conquer solution, but worse memory. Cool to have found an approach that I had not considered previously! Progress! I like the heap solution better, but divide and conquer is technically better although not the first thing that would come to mind (probably). 
+
 #review 
 
 

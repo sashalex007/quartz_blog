@@ -27,6 +27,9 @@ def min_pushes(word):
 #memory: o(n)
 ```
 
+**Review 1**
+Nice problem. Spent a minute on computing the right number of presses. The above is nice and simple. You can also use `(i+8)//8`
+
 #review 
 
 

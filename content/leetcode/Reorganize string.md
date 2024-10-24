@@ -39,6 +39,8 @@ def reorg_string(s):
 #memory: o(k)
 ```
 
+**Review 1**
+Nice problem. Crushed it. 
 
 #review 
 

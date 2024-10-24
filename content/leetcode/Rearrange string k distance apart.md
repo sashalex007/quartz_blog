@@ -43,6 +43,8 @@ def rearrange(s)
 #memory: o(K)
 ```
 
+**Review 1**
+Easy, crushed it (helps that the previous problem was [[Reorganize string]])!
 
 #review 
 

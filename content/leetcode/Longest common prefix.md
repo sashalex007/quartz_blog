@@ -30,6 +30,9 @@ def longest_pre(strs):
 #memory:
 ```
 
+**Review 1**
+Too easy.
+
 #review 
 
 

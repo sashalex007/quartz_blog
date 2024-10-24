@@ -35,6 +35,29 @@ def gen_par(n):
 #memory: o(n)
 ```
 
+**Review 1**
+The implementation above is not really backtracking....although it could be. In the leetcode editorial they actually do implement backtracking but their way of doing it is super weird. There is actually no point in doing the "pop" part of the backtracking for this problem, but I'll add it for rigour. 
+
+```python
+def gen_par(n):
+	state = [None]*(n*2)
+	res = []
+	def dfs(open, closed, i):
+		if i == n*2:
+			res.append(''.join(state))
+			return
+		if open < closed:
+			state[i] = ')'
+			dfs(open, closed-1, i+1)
+			state[i] = None #this is spurious
+		if open > 0:
+			state[i] = '('
+			dfs(open-1, closed, i+1)
+			state[i] = None
+	dfs(n, n, 0)
+	return res
+```
+
 #review 
 
 

@@ -24,6 +24,9 @@ def kth_largest(nums):
 #memory: o(k)
 ```
 
+**Review 1**
+Too easy. 
+
 #review 
 
 

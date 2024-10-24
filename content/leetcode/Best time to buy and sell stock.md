@@ -25,6 +25,9 @@ def best_stock(prices):
 #memory: o(1)
 ```
 
+**Review 1**
+Nothing to say here. 
+
 #review 
 
 

@@ -23,6 +23,9 @@ def top_k(nums):
 #memory: o(n)
 ```
 
+**Review 1**
+Cute little problem. Solved in 10 seconds.
+
 #review 
 
 

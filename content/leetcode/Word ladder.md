@@ -42,6 +42,8 @@ def word_ladder(beginWord, endWord, wordList):
 #memory: o((n**2)*m)
 ```
 
+**Review 1**
+Solved it almost instantly. One thing to consider is that instead of keeping a `visited` set, we can simply remove words from `wordList` to achieve the same effect. 
 
 #review 
 

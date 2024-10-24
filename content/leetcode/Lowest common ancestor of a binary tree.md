@@ -37,6 +37,9 @@ You are turning on a faucet. You turn on the cold water, and then the hot water.
 **Visual** 
 ![[IMG_388F9F9ECD46-1.jpeg]]
 
+**Review 1**
+Nice problem. Don't forget to propagate the result of left/right up the tree! The implementation above is pretty clever, gotta say. 
+
 #review 
 
 

@@ -33,6 +33,8 @@ def add_two_nums(l1, l2):
 #memory: o(1)
 ```
 
+**Review 1**
+Cute problem. I like the above implementation. Very concise. 
 
 #review 
 

@@ -55,7 +55,12 @@ def jump_game(nums):
 #time: o(n)
 #memory: o(1)
 ```
- 
+
+**Review 1**
+I initially thought that this was solvable by DP and BFS (and it is), but then I found the greedy solution very quickly. DFS will be better than BFS in this case because the branching factor is very high, but both are quite terrible. 
+
+The complexity for DP is a bit confusing, its basically linear (1d), but inside the recursion we must iterate over possible jumps which have an upper bound of `n` in the worst case, so thus the time cost is `n*n`. BFS with a visited set would be the same I believe...I don't think it is worse.  
+
 #review 
 
 
