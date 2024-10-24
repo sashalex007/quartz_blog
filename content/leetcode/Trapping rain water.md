@@ -112,6 +112,42 @@ You and a friend are climbing a mountain from opposite sides. You have an agreem
 **Visual** 
 ![[IMG_DAACF2CDFBA3-1.jpeg]]
 
+**Review 1**
+I don't know how many times I have solved this problem, but every time I get destroyed by the edge cases. I have realized why this is the case after seeing the implementation above. Simply put, this is the ugliest and weirdest code that I have ever seen in my life. Why? Well lets start with `while l < r:`...this is weird and rarely used, prefer `while l <= r:`. Also, incrementing the pointers at the start of the conditional should be illegal. These are contrived devices I came up with to deal with edge cases. No chance to come up with these in an interview. 
+
+The two-pointer implementation in the editorial is too clever and I think not generic enough for followups. Also the stacks implementation feels extremely contrived. 
+
+I'm going to solve this once and for all with a non-contrived implementation that is not too clever and is also generic. The key is to compute `l_max` and `r_max` FIRST and THEN shift the pointers depending on which is greater. This has the benefit of greatly simplifying the code while also staying generic for followups like "which cavity holds the most water". 
+
+```python
+def trap_rain(height):
+	res = 0
+	l = 0
+	r = len(height)-1
+	l_max = 0
+	r_max = 0
+	l_res = 0
+	r_res = 0
+	
+	while l <= r:
+		if height[l] >= l_max:
+			res += l_res 
+			l_res = 0
+			l_max = height[l]
+		if height[r] >= r_max:
+			res += r_res
+			r_res = 0
+			r_max = height[r]
+
+		if l_max < r_max:    #this gets evaluated even when a new max was just 
+			l_res += l_max - height[l] #found, it evaluates to 0. 
+			l += 1
+		else:
+			r_res += r_max - height[r]
+			r -= 1
+	return res
+```
+
 #review 
 #hard 
 
