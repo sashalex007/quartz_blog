@@ -18,7 +18,7 @@ def valid_par(s):
 	stack = []
 	for char in s:
 		if char in pairs:
-			if len(stack) == 0 or (stack and stack[-1] != pairs[char]):
+			if not stack or stack[-1] != pairs[char]:
 				return False
 			stack.pop()
 		else:
@@ -29,6 +29,8 @@ def valid_par(s):
 #memory: o(n)
 ```
 
+**Review 1**
+Improved the implementation above.
 
 #review 
 

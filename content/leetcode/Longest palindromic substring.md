@@ -36,6 +36,24 @@ def longest_palin(s):
 #memory: o(1)
 ```
 
+**Review 1**
+I knew right away how to solve it with the [[grow]] method but I decided to wander a bit into binary search. There is actually a very cool binary search solution, but It will be `o(n*n(logn))`. You might be thinking, how do we use binary search to look for a palindrome? Two passes! A pass for odd length and a pass for even length!
+```
+'aaaaaaa'
+
+palindrome lengths: 1, 3, 5, 7
+
+'bbbbbbbb'
+
+palindrome lengths: 2, 4, 6, 8
+```
+
+Notice that the lengths have a monotonic property! We can use binary search on even and odd lengths separately. You can't use binary search on the entire range at once because the monotonic property would be broken. In other words, for a palindrome of length 3, it is not guaranteed that there exists a palindrome of length 2....however length 1 is guaranteed. 
+
+Complexity will still be `o(n*n(logn))` because we have to slice and reverse the string to identify the palindrome, however we can bring this down to `o(nlogn)` if we use `memoryview`. 
+
+Note that [[KMP]] only words for palindromes that start at index 0. It cannot actually find a palindrome that starts at the middle of the string. [[Mancher's]] algorithm is the one to use for this...but I won't get into it. 
+
 #review 
 
 
