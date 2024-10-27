@@ -49,6 +49,9 @@ def rotate_arr(nums):
 **Mnemonic**
 Rotate ---> Reflect! (this works for rotate matrix too, minus the transpose)
 
+**Review 1**
+Happy to have solved this one quickly in constant space. Progress! Don't forget to mod k. 
+
 #review 
 
 

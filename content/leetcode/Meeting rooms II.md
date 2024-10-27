@@ -28,6 +28,12 @@ def meeting_rooms2(intervals):
 #memory: o(n)
 ```
 
+**Review 1**
+I struggled with this one. I of course thought of heap but then I thought there was a more greedy solution possible by merging intervals. Merging intervals simply will not work because we can never know how many meetings are currently ongoing. Merging intervals breaks the temporal relationship because it does the equivalent of creating a "longer" meeting and keeping it active. We need to retain the ability to start and end meetings! Therefore heap! 
+
+I'm tagging this hard because my thought process went off the rails on this one. 
+
 #review 
+#hard 
 
 

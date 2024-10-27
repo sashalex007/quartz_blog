@@ -55,6 +55,16 @@ You are standing somewhere on a hill. One side of the hill is smooth, the other 
 **Visual** 
 ![[IMG_6E7F6DAC6799-1.jpeg]]
 
+**Review 1**
+I don't know why I always struggle with this problem. I did get there but it took me way too long. This problem should take no more than 30 seconds of thinking!
+
+Its very simple: If the left partition is sorted and the target is in it's range, go left! Otherwise, go right! If the right partition is sorted and the target is in it's range, go right! Otherwise, go left! 
+
+**REMEMBER, YOU CAN ONLY SEARCH THROUGH A SORTED LIST** so determine which side is sorted and search it or go to the unsorted part!!!. 
+
+I'm tagging this hard, not because it's hard (it's absurdly easy) but because for reasons unbeknownst to me, my brain shuts off for this problem. 
+
 #review 
+#hard 
 
 

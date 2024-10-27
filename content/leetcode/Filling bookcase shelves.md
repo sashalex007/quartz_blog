@@ -39,7 +39,31 @@ def fill_shelves(books, shelfWidth):
 ```
 
 **Mnemonic**
-You have a pile of books. You can either add the book to the current shelf, or build a new shelf with the current book as it's start. 
+You have a pile of books. You can either add the book to the current shelf, or build a new shelf     with the current book as it's start.
+
+**Review 1**
+Very fun and tricky DP problem! The above implementation is very nice, but this time around I managed to come up with a very nice 1d DP solution. It will still be the same time complexity, but it saves a bit of space. This solution takes inspiration from backtracking (but without the state change).
+
+**Implementation (1d)**
+```python
+def fill_shelves(books, shelfWidth):
+	@cache
+	def dfs(i):
+		if i == len(books):
+			return 0
+		min_height = float('inf')
+		width = 0
+		height = 0
+		for j in range(i, len(books)):
+			w, h = books[j]
+			width += w
+			if width > shelfWidth:
+				break
+			height = max(height, h)
+			min_height = min(min_height, height + dfs(j+1))
+		return min_height
+	return dfs(0)
+```
 
 #review 
 

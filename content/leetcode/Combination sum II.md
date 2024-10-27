@@ -4,7 +4,7 @@ date: 2024-08-23
 **Link:** https://leetcode.com/problems/combination-sum-ii/
 #### Solution:
 
-**Topics**: [[DFS]]
+**Topics**: [[DFS]], [[back tracking]]
 
 **Intuition**
 This is clearly a DFS backtracking problem, but I think its very tricky to come up with an efficient solution that will pass all the test cases. Initially, I interpreted this as a subsequence problem...more specifically, find all the subsequences that sum to `target`. This is not unreasonable, but treating this as a subsequence problem does not disallow duplicates in the final result because `candidates` are not distinct. 
@@ -77,6 +77,34 @@ A parent **can not** have duplicate children.
 
 **Visual** 
 ![[IMG_BE496F166FD0-1.jpeg]]
+
+**Review 1**
+Very nice problem! I did get there but it took some brain power! The above implementation is kind of bad and doesn't actually implement backtracking.
+
+The key insight is understanding that we cannot reuse the same number in same position! So we structure our recursion such that duplicates are not possible....or in other words, we process all possible children before changing the parent (topological order)! Children in this case will be any index that is greater than the current one. 
+
+```python
+def combo2(candidates, target):
+	candidates.sort()
+	res = []
+	path = []
+	def dfs(i, total):
+		if total == target:
+			res.append(tuple(path))
+			return
+		if total > target or i == len(candidates):
+			return
+
+		for j in range(i, len(candidates)):
+			if j != i and candidates[j] == candidates[j-1]:
+				continue
+			path.append(candidates[j])
+			dfs(j+1, total + candidates[j])
+			path.pop()
+			
+	dfs(0, 0)
+	return res
+```
 
 #review 
 #hard 
