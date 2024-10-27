@@ -28,6 +28,9 @@ def min_swaps(nums):
 #memory: o(1)
 ```
 
+**Review 1**
+Same as [[Minimum swaps to group all 1s together]]
+
 #review 
 
 

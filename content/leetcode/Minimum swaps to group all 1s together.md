@@ -29,6 +29,10 @@ def min_swaps(data):
 #memory: o(1)
 ```
 
+**Review 1**
+Nice problem! While the solution is easy, I felt I had to strain a bit to get to the optimal approach. I'm going to tag this as hard, not because it's hard but because I think I had to strain a little bit too hard for this one even though I solved it fast. 
+
 #review 
+#hard 
 
 
