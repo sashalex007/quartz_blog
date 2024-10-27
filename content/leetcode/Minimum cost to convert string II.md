@@ -262,6 +262,9 @@ Think one string at a time. You gave a graph of strings and we want the shortest
 **Visual** 
 ![[IMG_D402776381B4-1.jpeg]]
 
+**Review 1** 
+Truly an awesome problem! I found the right approach and every optimization fairly quickly but I missed [[trie]] search!  Very pleased with my progress on this problem.
+
 #review 
 #hard 
 #insane
