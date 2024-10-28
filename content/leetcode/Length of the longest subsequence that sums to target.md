@@ -31,6 +31,9 @@ def longest_sub(nums, target):
 #memory: o(n*m)
 ```
 
+**Review 1**
+Very simple problem, but leetcode is still punishing cache solution. I won't bother with it. 
+
 #review 
 
 

@@ -77,6 +77,24 @@ def rev_k_nodes(head, k):
 #memory: o(n) stack space
 ```
 
+**Review 1**
+Very annoying problem! I got to the solution but it took me a while! Basically, the only way to solve something like this is with recursion. Why? Because if we reverse a portion of the list, we cannot know what the next node will be because that node represents the start of the next partition that must also be reversed...so that node should be the tail of the next, reversed partition. 
+
+Lets look at what happens if we try to do this iteratively:
+```
+list = [1,2,3,1,2,3] k = 3
+
+[3,2,1][1,2,3] -> reverse the first partition
+     |      |
+     --------
+     
+Acually we cannot reverse the first partiton before reversing the second because notice that the first 1 must eventually point to the second 3! 
+
+Technically this can be done iteratively but you would have to convert into a doubly linked list...probably not recommended. 
+```
+
+I came up with a slightly different approach from above. Basically i stored the nodes in a list and if `len(list) == k`, I reversed everything in the list and reset the list. This is using `o(k)` memory, but it will be twice as fast as the above implementation, since we are not checking if `k` nodes are available every increment. However the above is way simpler, so I would stick to it. 
+
 #review 
 #hard 
 

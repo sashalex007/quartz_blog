@@ -65,6 +65,37 @@ Try 3 digits, build the tree.
 **Visual** 
 ![[IMG_A3ED341B0A6B-1.jpeg]]
 
+**Review 1**
+This is really a [[back tracking]] problem. The above implementation is not great and does not actually use back tracking properly (arguably at all). Here is a much better implementation:
+
+**Implementation (back tracking)**
+```python
+def restoreip(s):
+	ips = []
+	ip = [None, '.', None, '.', None, '.', None]
+	def dfs(i, j):
+		if i == len(s) and j == 8:
+			ips.append(''.join(ip))
+			return
+		if k == 8:
+			return
+
+		curr = ''
+		for k in range(i, min(i+3, len(s))):
+			curr += s[k]
+			if len(curr) > 1 and curr[0] == '0':
+				break
+			if int(curr) > 255:
+				break
+			ip[j] = curr
+			dfs(k+1, j+2)
+			ip[j] = None
+			
+	dfs(0, 0)
+	return ips
+	
+```
+
 #review 
 
 

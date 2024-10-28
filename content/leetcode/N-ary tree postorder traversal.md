@@ -26,6 +26,9 @@ def post_order(root):
 #memory: o(n)
 ```
 
+**Review 1**
+Too easy. Remember that post-order is after the recursion (children added before parents).
+
 #review 
 
 

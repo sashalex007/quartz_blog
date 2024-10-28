@@ -42,6 +42,9 @@ def peak(arr):
 #memory: o(1)
 ```
 
+**Review 1**
+Easy problem. I spent a bit of time thinking about duplicate adjacent values, but then I realized that such a thing is impossible in a mountain array (strictly increasing or decreasing). 
+
 #review 
 
 

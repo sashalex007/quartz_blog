@@ -46,6 +46,21 @@ def stone_game(piles):
 #memory: o(n**2) there are n**2 combinations of l, r
 ```
 
+**Review 1**
+Great intro to "optimal play" problems. This time around I came up with a much cleaner solution with a more canonical implementation. 
+
+**Implementation**
+```python
+def stone_game(l, r):
+	@cache
+	def dfs(l, r):
+		if l > r:
+			return 0
+		return max(piles[l] - dfs(l+1, r), piles[r] - dfs(l, r-1))
+		
+	return dfs(0, len(piles)-1) > 0
+```
+
 #review 
 
 

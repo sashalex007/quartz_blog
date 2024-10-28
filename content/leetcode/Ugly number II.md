@@ -88,6 +88,10 @@ You go to a beauty salon and there are 3 makeup artists, so you clone yourself 3
 **Visual** 
 ![[IMG_46955494BEFD-1.jpeg]]
 
+**Review 1**
+I confused this with another problem from memory, so I wasted alot of time. After I stopped  trying to solve the problem through (faulty) memory, I found the heap solution very fast. Remember that we can encounter duplicates, so keep a visited set. I'm tagging this hard because of how much time I wasted here.
+
 #review 
+#hard 
 
 

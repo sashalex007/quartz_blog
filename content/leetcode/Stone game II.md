@@ -60,6 +60,29 @@ def stone_game2(piles):
 #memory: o(n*m) 
 ```
 
+**Review 1**
+I figured out the right approach almost instantly and quickly coded up a solution...and a simpler one than the above. Unfortunately, I initialized `max_piles` in the recursion to `0`...and since I used a balance to keep track of who has what, this precludes the possibility of `max_piles` dipping into negatives...which is fatal if you are using a balance (it would be negative whenever player1 ends up with less than player 2). So I spent like an hour debugging the recursion, somehow not noticing this fatal flaw, however I can't be too unhappy since apart from this stupid oversight, I coded this in 5 minutes and far simpler than the above.
+
+Also, I looked at some of the solutions and everyone seems to be fixated on prefix sums. There is literally no point of doing this since you have to iterate from `1-(m*2)` anyway. All they have done is increased the memory complexity. 
+
+**Implementation**
+```python
+def stone_game2(piles):
+	@cache
+	def dfs(i, m):
+		if i == len(piles):
+			return 0
+		balance = float('-inf')
+		curr_stones = 0
+		for j in range(i, min(i+(m*2), len(piles))):
+			curr_stones += piles[j]
+			balance = max(balance, curr_stones - dfs(j+1, max(m, (j-i+1))))
+		return balance
+	return (sum(piles) + dfs(0, 1)) // 2
+		
+```
+
+
 #review 
 
 

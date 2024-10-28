@@ -68,7 +68,7 @@ Possibilities if filling from the left:
 
 Now, to count the arrangements of this pseudo-distribution we apply the product rule from combinatorics, which will simplify to `9!   (9*8*7...)` . This is the same rule we use to calculate the arrangements of a binary string using `2^n`, because if we enumerate the possibilities, the distribution would look like this: `[2,2,2,2,2....]`...thus the product rule simplifies in this case to `2^n`. 
 
-If `9!` is the number of legal arrangements in a row, and we have 9 rows, the arrangement distribution is `[9!, 9!, 9!, 9!, 9!, 9!, 9!, 9!, 9!]`, and application of the product rule give us `(9!)^9`. 
+If `9!` is the number of legal arrangements in a row, and we have 9 rows, the arrangement distribution is `[9!, 9!, 9!, 9!, 9!, 9!, 9!, 9!, 9!]`, and application of the product rule gives us `(9!)^9`. 
 
 Thus the time complexity is `o((9!)**9)`. 
 
@@ -77,6 +77,9 @@ You are stuck on a sudoku puzzle, but you have no choice but to solve it. Unfort
 
 **Visual** 
 ![[IMG_B9D3240B85A7-1.jpeg]]
+
+**Review 1**
+Very fun backtracking problem. Solved this one quite easily, not much to add. Progress!
 
 #review 
 #hard 
