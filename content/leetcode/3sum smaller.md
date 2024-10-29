@@ -22,7 +22,7 @@ nums = [1,2,3,4,5,6]
 
 nums[i] + nums[l] + nums[r] = 9
 
-The total is les than 10, definitely we have found at least one triplet, but look closely at the values between l and r...
+The total is less than 10, definitely we have found at least one triplet, but look closely at the values between l and r...
 
 [1,2,3,4,5,6]
  ^ ^ - - - ^
@@ -56,6 +56,10 @@ def 3sum_smaller(nums, target):
 #memory: o(1)
 ```
 
+**Review 1**
+I'm tagging this one hard because it took me a bit too long to get to the solution. I did realize that we had to do something with indices, but it wasn't immediately clear to me how to proceed. The above editorial is great. The solution is so simple. Simply consider the fact that when `total < target`, all values for `nums[r]` where `l < r <= curr_r ` will make a triplet less than `total` because `nums` is sorted. Its really that simple. 
+
 #review 
+#hard 
 
 
