@@ -65,6 +65,14 @@ def set_zeros(matrix):
 **Visual** 
 ![[IMG_514717C48ED1-1.jpeg]]
 
+**Review 1**
+The implementation was no less annoying this time around, but I'm happy to have found the right approach relatively quickly! There are three key ideas to remember:
+
+1. Using the first row and first column as flags (and a variable to handle the overlap)
+2. Set the zeros in the range `1-m, 1-n` using the flags. Reason we don't touch the first row and column is because our flags our there and we cannon overwrite them!
+3. Handle the first row and column at the end. 
+
+I'm going to mark this as hard because my thought process was not very clear on this one. 
 
 #review 
 

@@ -39,6 +39,9 @@ def min_path(grid):
 **Visual** 
 ![[IMG_BDAE6A2FFBC3-1.jpeg]]
 
+**Review 1**
+Too easy. Move on. 
+
 #review 
 
 

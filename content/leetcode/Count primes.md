@@ -80,6 +80,15 @@ def count_primes(n):
 
 ![[Animation_Sieve_of_Eratosth.gif]]
 
+**Review 1**
+Very cool problem. Even the second time around I was completely stumped! But I did remember that I had to use the [[Sieve of Eratosthenes]], I just could not remember what it actually was! After re-reading the wiki, I was able to implement it but missed a couple optimizations. 
+
+Basically this is a process of elimination, so we create a list of `True` of length `n`...this is how we will flag elements in `n` as primes or not. We initialize all to `True` because we will go about eliminating them, and at the end of the algorithm, the sum will be the number of primes (because `True` evaluates as `1` in arithmetic operations)! 
+
+So we don't know what a prime is...in fact we have no way to compute them directly, but we do know **what is not a prime**. A number that is not a prime will be a composite of some other numbers. So the idea here is to start at a prime number (2 is the first), and mark all multiples of 2 as **not primes!** Move on to the next number whose flag is still `True` (in this case 3), repeat the process! Do this for all numbers up to `n`, and in the end only the numbers whose flags have not been flipped are primes! 
+
+Now, `n` can be large, so do we have to do this for every number up until `n`? NO! We can stop at `sqrt(n)`. Why? Since we start the next prime at `i*i`, it means that once we reach `sqrt(n)`, we have already reached `n` and have no more primes to count!
+
 #review 
 #hard 
 

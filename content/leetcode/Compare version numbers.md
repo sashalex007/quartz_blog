@@ -28,6 +28,8 @@ def version_nums(version1, version2):
 #memory: o(n)
 ```
 
+**Review 1**
+Cute little problem! Clean implementation is not obvious, so it's a good one. 
 
 #review 
 
