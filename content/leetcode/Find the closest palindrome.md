@@ -94,6 +94,22 @@ def closest_palin(n):
 **Visual** 
 ![[IMG_D65798EC7CFF-1.jpeg]]
 
+**Review 1**
+Insane problem! I will admit, even the second time around I did not make the connection to binary search. I did understand that the smallest change to make a number a palindrome would be mirroring the left half, but it was not clear to my why we wouldn't just do this for `n` in `o(1)` time. Well, you can almost do that, but the constraints prevent it. Why?
+
+Well, what if `n` was already a palindrome? Mirroring it would just return itself, which is not permitted. 
+
+Also, if `n == 999`, we have two possible palindromes: `989`, `1001`. This is all pretty reasonable, but how do we implement this programatically? Binary search!
+
+We can search in the range `0-n` for the largest palindrome and search `n-(10**18)` for the smallest palindrome! 
+
+But how do we search through those ranges while ensuring the numbers are all palindromes? Here is the neat part: you don't. This is some binary search witchcraft, yet it's so simple. **We simply convert the number to it's closest palindrome by mirroring the left partition**. This way, yes we get many duplicate palindromes, but it doesn't matter because it's binary search!
+
+```
+original:  ...21, 22, 23, 24, 25...
+converted: ...22, 22, 22, 22, 22...
+```
+
 #review 
 #hard 
-
+#insane 
