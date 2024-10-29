@@ -52,6 +52,23 @@ def power(x, n):
 #memory: o(1)
 ```
 
+I'm tagging this as hard because it's a math rule that you more or less have to remember. Remember that in [[binary exponentiation]] we don't use exponentiation itself! Think of binary exponentiation as accumulating a result while decreasing `n` and/or modifying `x`. Not too dissimilar from a [[reservoir]]. 
+
+So we initialize our reservoir to `1`. If `n` is odd, we take out a factor and multiply the reservoir by `x`, and decrement `n`. If `n` is even, we square `x` and integer divide `n` by 2! Now you might think, how does this eventually accumulate into the result if we only square the base and do nothing to the reservoir? The fact is, when `n == 1` , the result will get multiplied by the base, so eventually the complete the result will get updated. 
+
+We have to turn negative cases into positive cases prior to using this algorithm. How? We can ignore the polarity of `x` because the algorithm will take care of itself through multiplication, but if `n` is negative this is a problem. How do we transform this into a positive case? We simply make `n` positive and set `x` to the inverse of itself `1/x`. Why?
+
+```
+a = x^(-n)
+a = x^(-1*n)
+a = x^(-1)*(n)
+    ^^^^^ 
+a = (1/x)^n   
+
+So we isolate the negative, which is equivalet to inverting the base!
+```
+
+#hard 
 #review 
 
 
