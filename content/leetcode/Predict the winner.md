@@ -63,6 +63,9 @@ def predict(nums):
 #memory: o(n*n)
 ```
 
+**Review 1**
+For some reason I thought there was a math trick here because the constraints were suspicious, but I did eventually rule that out and proceeded to solve this cleanly with DP! Nice problem. 
+
 #review 
 
 

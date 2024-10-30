@@ -55,6 +55,9 @@ def eval_div(equations, values, queries):
 **Visual** 
 ![[IMG_DF24C2837AC0-1.jpeg]]
 
+**Review 1**
+Tricky, but I crushed this one on first try again. 
+
 #review 
 
 
