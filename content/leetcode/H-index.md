@@ -56,6 +56,12 @@ def h_index(citations):
 #memory: o(n)
 ```
 
+**Review 1**
+Pretty tricky if don't use binary search! I did the same thing as in the greedy implementation, but with sorting `citations`. Still `nlogn` because I used sort instead of a counting sort. The linear solution is very clever though! Basically we have a frequency array, and then we accumulate the frequencies by iterating backwards through the frequency array. When the accumulating matches or exceeds the current index, return the index (this represents number of papers, and also why we initialize the frequency array to length `n+1`)! 
+
+I'm tagging this as hard because the greedy solution is tough. 
+
 #review 
+#hard 
 
 

@@ -41,6 +41,8 @@ class MyQueue:
 **Mnemonic**
 Imagine you have a green cup and a red cup. You fill up the green cup, and drink only from the red cup. If the red cup is empty, fill it up by pour out all the water from the greed cup. 
 
+**Review 1**
+Classic problem. Nailed it. 
 
 #review 
 

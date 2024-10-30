@@ -49,6 +49,13 @@ def maj_elementII(nums):
 #memory: o(1)
 ```
 
+**Review 1**
+Very tricky problem, with very tricky logic. Even the order of the conditions matter! First two condition should be the increments, second two should be the reassignments, and the last one will be the decrement condition (decrement both count1 and count2). 
+
+Some edge cases:
+1. if `cand1 == cand2`  return only one
+2. validate the algorithm with a second pass
+
 #review 
 #hard 
 
