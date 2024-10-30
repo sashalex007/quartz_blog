@@ -43,6 +43,9 @@ def maj_element(nums):
 **Mnemonic**
 Imagine a political election where each voter can either support the current candidate or oppose them. The majority candidate will always have more supporters than opponents, so they'll be the last one standing even if their support drops to zero at times.
 
+**Review 1**
+Got this one pretty quickly. Remember that depending on how you set up the conditions, we may allow `count` to dip into `-1` before reassigning the candidate. Its better to use three separate conditions though with one of them being `if count == 0: #reassign`. 
+
 #review 
 
 

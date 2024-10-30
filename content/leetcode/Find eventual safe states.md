@@ -40,6 +40,8 @@ def safe_states(graph):
 #memory: o(nm)
 ```
 
+**Review 1**
+Fun little problem. Solved this one fast on first try....no idea why it took me a couple tries last time I solved this. Can also be solved with [[kahn's algorithm]].
 
 #review 
 
