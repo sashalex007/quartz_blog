@@ -74,6 +74,30 @@ def two_keys(n):
 	
 ```
 
+
+**Review 1**
+Nice problem. DP solution is easy but the prime factorization solution is very interesting and I did a poor job explaining it above. 
+
+Basically it goes like this:
+```
+Lets look at the following case:
+n = 25
+
+We start at prime = 2 and while n is divisible by the prime, we divide it. 
+In this case there are no primes until 5, so lets start there and see what happens. 
+
+25 
+5  -> you have to paste 5, 5 times to get 25!
+1  -> you have to paste 1, 5 times to get 25
+
+So more programatically, while n % 2 == 0, do n //= prime and increment the result by the prime!
+
+25 -> divisible by 5, add 5 to the result
+5  -> divisible by 5, add 5 to the result
+1  -> not divisible, stop
+
+It can be shown that the minimum operations required to reach 25 is 10!
+```
+
 #review 
 #hard  (at least the prime factorization solution is)
-

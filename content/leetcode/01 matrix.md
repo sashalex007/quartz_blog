@@ -41,6 +41,9 @@ Imagine a virus spreading from multiply locations
 **Visual** 
 ![[Screenshot 2024-09-17 at 8.54.43 AM.png]]
 
+**Review 1**
+Nice and simple BFS problem. I did solve this by modifying the original array in place instead of using a visited set, but maybe this is overkill because the [[bfs]] queue is `o(m*n)` anyway, so might as well keep it simple and use a visited set. 
+
 #review 
 
 
