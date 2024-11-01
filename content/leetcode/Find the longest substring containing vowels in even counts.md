@@ -87,6 +87,9 @@ def even_voweled(s):
 		
 ```
 
+**Review 1**
+Solved this one very quickly with the bit shifting solution! Progress! 
+
 #review 
 #hard 
 

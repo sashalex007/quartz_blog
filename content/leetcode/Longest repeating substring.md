@@ -52,6 +52,9 @@ def repeating_sub(s):
 #memory: o(n)
 ```
 
+**Review 1**
+Came up with this solution easily, but it would be ideal to have [[rabin-karp]] in my back pocket for this types of problems....not sure if `memoryview` would particularly impress anyone. 
+
 #review 
 
 

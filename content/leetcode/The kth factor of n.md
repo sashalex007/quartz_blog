@@ -75,6 +75,21 @@ def kth_factor(n, k):
 **Visual** 
 ![[IMG_4243C7CCF2C0-1.jpeg]]
 
+**Review 1**
+Cool problem! Remembered the optimal solution here. What is  factor? 
+
+```
+A = B * C
+
+B and C are factors of A. 
+
+So if we know A and we know B, then we can derive C. 
+
+C = A / B
+```
+
+What we are doing here is finding the smaller factor, and then generating the larger factor. 
+
 #review 
 
 

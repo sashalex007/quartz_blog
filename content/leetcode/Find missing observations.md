@@ -31,6 +31,9 @@ def find_missing(rolls, mean, n):
 #memory: o(n)
 ```
 
+**Review 1**
+Fun problem. Easy though. 
+
 #review 
 
 

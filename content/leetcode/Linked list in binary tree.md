@@ -28,13 +28,11 @@ def list_in_tree(root, head):
 			return True
 		if tree_node == None:
 			return False
-
-		if tree_node.val == list_node.val:
-			if verify(tree_node.left, list_node.next):
-				return True
-			if verify(tree_node.right, list_node.next):
-				return True
-		return False
+		if tree_node.val != list_node.val:
+			return False
+		left = verify(tree_node.left, list_node.next)
+		right = verify(tree_node.right, list_node.right)
+		return left or right
 			
 	find_starts(root)
 	for tree_node in starts:
@@ -42,12 +40,15 @@ def list_in_tree(root, head):
 			return True
 	return False
 
-#time: o(n**n)
+#time: o(n**m)
 #memory: o(n)
 ```
 
 **Visual** 
 ![[IMG_1F674B0FE17F-1.jpeg]]
+
+**Review 1**
+Crushed this one. 
 
 #review 
 
