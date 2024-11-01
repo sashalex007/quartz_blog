@@ -65,6 +65,9 @@ def min_time_diff(timePoints)
 **Visual** 
 ![[IMG_B3C699589624-1.jpeg]]
 
+**Review 1**
+I remember struggling quite alot with this one. Crushed it, almost too easy. 
+
 #review 
 
 

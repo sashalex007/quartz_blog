@@ -36,6 +36,9 @@ Laser shooting targets in a periodic motion.
 **Visual** 
 ![[IMG_B2D0B9C887C2-1.jpeg]]
 
+**Review 1**
+Easy, removing the hard tag. I think a better approach than above is to set up a base case for if `numRows == 1`, in which case `return s`. This eliminates some edge cases. 
+
 #review 
-#hard 
+
 

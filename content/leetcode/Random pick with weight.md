@@ -81,6 +81,21 @@ def pickIndex(self) -> int:
 #memory: o(1)
 ```
 
+**Review 1**
+This one kicked my ass again, but I got very close to the solution. Basically my idea was create a new array of tuples `(weight, index)` and sort it. Then binary search for a random number between 0 and the max weight. This actually almost works but it has a very subtle flaw. 
+
+The problem arises when we get duplicate weights! For example:
+```
+suppose a weight array..
+w = [1, 1, 1, 1]
+
+No matter what random value we choose from, it will always be between 0 and 1. No matter what that number is, if we search for it in this array, we always get index 0 if we use a leftmost search or index 5 if a rightmost search!
+
+So doing it like this takes away from the scope of the search. 
+```
+
+We must transform `w` in a way that allows us to search through all the possibilities. Prefix sum! If we transform `w` into a prefix sum, this ensures all elements are unique because `w` must be greater than 0! Actually an interesting side note is that if weights were permitted to be 0, you would get the same effect as in the above example because there would be duplicate values in the prefix sums array so the algorithm would still work as expected (cool!). 
+
 #review 
 #hard 
 

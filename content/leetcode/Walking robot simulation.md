@@ -38,6 +38,24 @@ def walking_robot(commands, obstacles):
 #memory: o(len(obstacles))
 ```
 
+**Review 1**
+Fun problem! The key to remember for clean implementation in these euclidian simulation problems is to create a directions array that whose tuple represents one unit of movement in that direction if added to the current position. 
+
+For example:
+```
+Lets say we are starting at positon (0,0), how do we go up by one unit?
+
+add (0, 1) to the position! 
+
+Therefore...
+
+dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
+         up      right   left     down
+
+So if we need to move n steps down, add (-1, 0) to the current position n times!
+```
+
+Of course we don't have to do it this way, but it gets bloated quick. 
 
 #review 
 
