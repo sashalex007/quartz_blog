@@ -60,6 +60,9 @@ def smallest_substr(s):
 **Visual**
 ![[IMG_AD4F0D01AF26-1.jpeg]]
 
+ **Review 1**
+ Not sure why I marked this as hard. I took a different approach than above and split the string by `a`. The first non empty string in the resulting list gets converted. Join by `a`  and return. If the string is all `a`'s, change the last character to z. 
+
 #review 
 #hard 
 
