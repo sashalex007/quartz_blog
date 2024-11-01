@@ -64,6 +64,8 @@ def count_nodes_score(parents):
 #memory: o(n)
 ```
 
+**Review 1**
+Cool problem, super annoying implementation! Also, you don't need `scores` hash map...some simple max logic and `max_score, count` variables would suffice. 
 
 #review 
 
