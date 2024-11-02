@@ -20,7 +20,7 @@ this represents the intervals (0, 2), (3, 5), (6, 8)
 if we choose a score of 6, we can see that in the best case we choose 0 as the first integer, and then we must choose 6 as the next integer (0+6). We can see that by doing so we have skipped over the range (3, 5)! so this is an invalid score. 
 ```
 
-It's very tricky to recognize this as a binary search problem but the key intuition is that chosen integers will be at least `x` apart, but can be more than `x` apart if the intervals are not overlapping. If the integers are more than `x` apart, this makes no difference to the result because we are after the **minimum** score. Or in other words, you will have two intervals with a local score that is greater than `x`; this does not matter because we constrain `x`  to a lower bound. 
+It's very tricky to recognize this as a binary search problem but the key intuition is that chosen integers will be at least `x` apart, but can be more than `x` apart if the intervals are not overlapping. If the integers are more than `x` apart, this makes no difference to the result because we are after the **minimum** absolute difference. Or in other words, you will have two intervals with a difference that is greater than `x`; this does not matter because we constrain `x`  to a lower bound. 
 
 This makes sense because if we use `x` directly to jump to the next interval, this ensures that the `abs(chosen1-chosen2)` is the minimum for the entire set of integers chosen (assuming the ranges are in sorted order). 
 
@@ -90,6 +90,46 @@ def max_score(start, d):
 
 **Visual** 
 ![[IMG_9C902F52B548-1.jpeg]]
+
+**Review 1**
+Even having seen this problem before, it still took me some time to re-understand it! Its very confusing in the sense that we are after the the **maximum minimum difference**. Thats hard to wrap your head around! I got more insight into this on the second time around.
+
+Lets put the intervals on a number line:
+![[IMG_977CC6893E6F-1.jpeg]]
+
+Lets now set score to 0:
+![[IMG_EEF05CD1DABE-1.jpeg]]
+
+Setting a score of zero is equivalent to choosing the start of every interval. In this case, we choose `0, 3, 6`. This is indeed a valid choice as all these selections are guaranteed to be in range. 
+
+Lets set the score to 1:
+![[IMG_A26B0430CA17-1.jpeg]]
+
+Setting the score to 1 represents the exact same traversal through the intervals as 0. Why? Because if increasing the start interval by the score is less than the start of the next interval, we take the start of the next interval! 
+
+Set the score to 2:
+![[IMG_0DB7272CA470-1.jpeg]]
+
+Again, this represents the same traversal as 0, 1. 
+
+Set score to 3:
+![[IMG_54E08FDC252B-1.jpeg]]
+
+Same as 0, 1, 2.
+
+Set score to 4:
+![[IMG_283276DEFEE9-1.jpeg]]
+
+We have a new max score of 4! We chose 0, 4, 8 and all are in range!
+
+Set score to 5:
+![[IMG_A105DE847029-1.jpeg]]
+
+We chose 0, 5, 10! By choosing 10, we have overshot the last interval! So 5 and every score above it is invalid. We end with a max-score of 4! 
+
+This problem is ultra confusing in the way it is formulated, but we can restate it as such: What is the maximum jump we can make through the intervals such that no interval is over-shot. Under-shooting is fine. 
+
+How do you make the connection from "minimum difference" to "jumps"? Well if you think about it, the size of a jump `x`  **guarantees** that no two numbers landed on (chosen) will be **less than `x` apart**. Admittedly, this is a subtle connection. 
 
 #review 
 #hard 
