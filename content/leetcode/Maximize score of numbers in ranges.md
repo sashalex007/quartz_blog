@@ -127,7 +127,7 @@ Set score to 5:
 
 We chose 0, 5, 10! By choosing 10, we have overshot the last interval! So 5 and every score above it is invalid. We end with a max-score of 4! 
 
-This problem is ultra confusing in the way it is formulated, but we can restate it as such: What is the maximum jump we can make through the intervals such that no interval is over-shot. Under-shooting is fine. 
+This problem is ultra confusing in the way it is formulated, but we can restate it as such: What is the maximum jump we can make through the intervals such that no interval is over-shot. Under-shooting is allowed. 
 
 How do you make the connection from "minimum difference" to "jumps"? Well if you think about it, the size of a jump `x`  **guarantees** that no two numbers landed on (chosen) will be **less than `x` apart**. Admittedly, this is a subtle connection. 
 
