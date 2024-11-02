@@ -62,6 +62,8 @@ def path_sum2(root, targetSum):
 	
 ```
 
+**Review 1**
+Really like the backtracking approach. I think I had a breakthrough when I originally did this problem, because i'm using this approach everywhere I can now. It's just so much better than propagating the state. 
 
 #review 
 

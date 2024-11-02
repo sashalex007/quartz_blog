@@ -26,7 +26,7 @@ Consider the case:
 
 In this evaluation tree, we inevitably get duplicate configurations of parentheses on opposing sides of the tree! In the above case, we get `(2+2)+(2+2)` twice! 
 
-And this is where I got stuck. I could not figure out how to make progress from here. What I missed is that we can treat the the **operations as nodes**, and in the same way as in [[Unique binary search trees II]], we can set each operation as the root, and then subsequent operations as the parents! A leaf is reached when only a number remains! 
+And this is where I got stuck. I could not figure out how to make progress from here. What I missed is that we can treat the the **operations as nodes**, and in the same way as in [[Unique binary search trees II]], we can set each operation as the root, and then subsequent operations as the children! A leaf is reached when only a number remains! 
 
 For example:
 ```
@@ -105,6 +105,9 @@ def unique_par(expression):
 ```
 
 A note on the complexity... it seems that the complexity should be the same as [[Unique binary search trees II]] `o(n*catalan(n))`. In that problem we do cache the function but thats because it's a 2d recursion. The 2d cached function should be the same as a 1d uncached function. 
+
+**Review 1**
+Crushed this one. I put a lot of effort into this article and it shows. I still don't understand the complexity though.`o(n*catalan(n))` still makes more sense to to me than `o(n*(2**n))`
 
 #review 
 #hard 
