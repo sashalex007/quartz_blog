@@ -22,6 +22,9 @@ def missing_num(nums):
 #memory: o(1)
 ```
 
+**Review 1**
+Not much to say here...not sure If I agree with myself about the connection to the voting algorithm, but ill leave it. 
+
 #review 
 
 

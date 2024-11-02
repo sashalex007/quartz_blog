@@ -38,6 +38,9 @@ def path_sum3(root, targetSum):
 **Visual** 
 Same as [[Path sum II]]
 
+**Review 1**
+Fun problem! Not much to add. 
+
 #review 
 
 

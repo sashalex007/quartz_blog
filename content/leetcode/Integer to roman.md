@@ -29,6 +29,9 @@ def int_to_roman(num)
 #memory: o(1)
 ```
 
+**Review 1**
+Not much to add. Easy. Remember to hard code the edge cases (4,9,40,90,400,900)
+
 #review 
 
 
