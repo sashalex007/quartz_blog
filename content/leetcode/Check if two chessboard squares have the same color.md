@@ -99,6 +99,9 @@ def same_color(coordinate1, coordinate2):
 #memory: o(1)
 ```
 
+**Review 1**
+Too easy. Nothing to add. 
+
 #review 
 
 
