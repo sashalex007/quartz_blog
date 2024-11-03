@@ -48,7 +48,15 @@ def k_smallest_pairs(nums1, nums2, k):
 #memory: o(k) 
 ```
 
+**Review 1**
+Insane problem! I knew it was heap but I went down the wrong path. I thought this could be treated like kth smallest...but this only works if you work through all possible pairs. The simpler approach alluded me. 
+
+Essentially, we keep a min heap. The top of the heap is always the current smallest pair....so we pop it off and add it to the result. Then the next smallest pair is either `(i+1, j)` or `(i, j+1)`! So we add both to the min heap and repeat k times. Thats it. 
+
+I'm labeling this niche because you would rarely use a heap in this way, but it does make sense. 
+
 #review 
 #hard 
+#niche 
 
 
