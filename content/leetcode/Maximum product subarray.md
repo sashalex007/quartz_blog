@@ -106,6 +106,9 @@ def max_prod(nums):
 	return res
 ```
 
+**Review 1**
+I came up with the first solution quite quickly, but I could not get to the second. Just remember that we can use kadane's for either the min OR the max. In this case we do both! Still hard. 
+
 #review 
 #hard 
 

@@ -26,7 +26,7 @@ def max_path_sum(root):
 		right = dfs(node.right)
 		max_path = max(node.val, node.val+left, node.val+right)
 		self.res = max(self.res, max_path, node.val+left+right)
-		return m
+		return max_path
 	dfs(root)
 	return self.res
 	
@@ -37,6 +37,8 @@ def max_path_sum(root):
 **Visual**
 ![[IMG_6A05BA25584F-1.jpeg]]
 
+**Review 1**
+Found the solution fast. Spent a bit of time trying to figure out if the path had to terminate at a leaf (it does not). Don't forget that any connected path is a possible max path (including a single node). 
 
 #review 
 

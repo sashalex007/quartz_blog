@@ -157,7 +157,7 @@ def generate_lps(pattern):
 So now using this LPS array, lets just implement a straight forward `o(n)` string matching function before we solve the actual problem. This function will just count the number of occurrences of `pattern` in `s`.
 
 ```python
-def kmp_search(pattern, s)
+def kmp_search(pattern, s):
 	lps = generate_lps(pattern)
 	count = 0
 	i = 0
@@ -166,7 +166,7 @@ def kmp_search(pattern, s)
 		if s[i] == pattern[j]:
 			i += 1
 			j += 1
-			if j == len(s):
+			if j == len(pattern):
 				count += 1
 				j = lps[j-1] #reset pattern
 		else:
@@ -241,7 +241,13 @@ def shortest_palin(s):
 	
 ```
 
+**Review 1**
+Insanely hard problem. I couldn't figure out how to implement [[KMP]] correctly, but I remembered that we needed it and how to use it. I just need to memorize [[KMP]] because the logic is a little bit alien to me, and I'm unlikely to implement it through procedural logic. Definitely need to revisit this one once in a while. 
+
+I'm creating a new tag "niche" for revisiting obscure techniques that I'm unlikely to remember or even see very often.  
+
 #review 
 #hard 
 #insane 
+#niche
 
