@@ -33,8 +33,8 @@ def search_mat2(matrix, target):
 ![[IMG_4514A4E66766-1.jpeg]]
 
 **Review 1**
-Remembered the trick! Very tricky to come up with though. Starting at row 0 in rightmost position is not something natural. 
+Remembered the trick! Very tricky to come up with though. Starting at row 0 in rightmost position is not something natural. I will label this as niche.
 
 #review 
 #hard 
-
+#niche 

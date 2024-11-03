@@ -62,6 +62,10 @@ def longest_sub(s, k):
 #memory: o(n)
 ```
 
+**Review 1**
+Amazing problem. I did not remember doing this one, so I was happy to have solved it quite quickly. I ruled out sliding window fast because there is no way to shrink the window. I also considered binary search, but that would result in a complexity of `o(n*nlogn)`...not very good. Then I realized the same thing stated further up in the article. 
+
+The final string is **guaranteed** not to contain any strings with characters that appear less than `k` times! The rest of the solution pretty much writes itself. We split the string by the offending characters and recurse an each! If the frequency count of the string has no values less than `k`, we consider the it's length towards the result!
 
 #review 
 #hard 
