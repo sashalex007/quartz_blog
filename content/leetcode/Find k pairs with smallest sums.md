@@ -49,9 +49,11 @@ def k_smallest_pairs(nums1, nums2, k):
 ```
 
 **Review 1**
-Insane problem! I knew it was heap but I went down the wrong path. I thought this could be treated like kth smallest...but this only works if you work through all possible pairs. The simpler approach alluded me. 
+Insane problem! I knew it was heap but I went down the wrong path. I thought this could be treated like kth smallest...but this only works if you work through all possible pairs because we must rely on the top of the heap to increment `i` and `j`! If we use the kth smallest technique then we would have to maintain a max_heap...and if we do that, there is no way to traverse the pairs because we get stuck with k values in the heap and the top remains static. The simpler approach alluded me. 
 
 Essentially, we keep a min heap. The top of the heap is always the current smallest pair....so we pop it off and add it to the result. Then the next smallest pair is either `(i+1, j)` or `(i, j+1)`! So we add both to the min heap and repeat k times. Thats it. 
+
+The idea here is that there is potentially alot more than `k` elements in in the heap, and we rely on the heap to tell us which is smallest. So kth smallest cannot work because it can never exceed size `k`. 
 
 I'm labeling this niche because you would rarely use a heap in this way, but it does make sense. 
 
