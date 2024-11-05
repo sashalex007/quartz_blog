@@ -16,13 +16,40 @@ Essentially, we continue the algorithm until the heap is empty, and incur costs 
 **Implementation**
 ```python
 def task_sched(tasks, n):
-	
+	freq = {}
+	for t in tasks:
+		freq[t] = freq.get(t, 0) + 1
+	max_heap = []
+	for count in freq.values():
+		heappush(max_heap, -count)
+		
+	time = 0
+	while max_heap:
+		put_back = []
+		processed = 0
+		cycle = n+1
+		while cycle > 0:
+			if not max_heap:
+				break
+			count = heappop(max_heap)
+			if count < - 1:
+				put_back.append(count+1)
+			processed += 1
+			cycle -= 1
+			
+		while put_back:
+			heappush(max_heap, put_back.pop())
+			
+		time += n+1 if max_heap else processed
+	return time
 
-
-#time:
-#memory:
+#time: o(n) #because the heap is at most 26 long, o(log(26)) == o(1)
+#memory: o(26) = o(1)
 ```
 
-#review 
+I'm tagging this niche. You would rarely use a heap in this way.
 
+#review 
+#hard 
+#niche 
 
