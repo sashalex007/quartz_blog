@@ -113,7 +113,7 @@ You and a friend are climbing a mountain from opposite sides. You have an agreem
 ![[IMG_DAACF2CDFBA3-1.jpeg]]
 
 **Review 1**
-I don't know how many times I have solved this problem, but every time I get destroyed by the edge cases. I have realized why this is the case after seeing the implementation above. Simply put, this is the ugliest and weirdest code that I have ever seen in my life. Why? Well lets start with `while l < r:`...this is weird and rarely used, prefer `while l <= r:`. Also, incrementing the pointers at the start of the conditional should be illegal. These are contrived devices I came up with to deal with edge cases. No chance to come up with these in an interview. 
+I don't know how many times I have solved this problem, but every time I get destroyed by the edge cases. I have realized why this is the case after seeing the implementation above. Simply put, this is the ugliest and weirdest code that I have ever seen in my life. Why? Well lets start with `while l < r:`...this is weird and rarely used, prefer `while l <= r:`. Also, incrementing the pointers at the start of the conditional should be punishable by jail. These are contrived devices I came up with to deal with edge cases. No chance to come up with these in an interview. 
 
 The two-pointer implementation in the editorial is too clever and I think not generic enough for followups. Also the stacks implementation feels extremely contrived. 
 
@@ -150,4 +150,4 @@ def trap_rain(height):
 
 #review 
 #hard 
-
+#niche 
