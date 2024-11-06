@@ -13,7 +13,6 @@ Very simple and classic Kth largest/smallest problem. Simply add every number to
 ```python
 def kth_largest(nums):
 	min_heap = []
-	heapify(min_heap)
 	for num in nums:
 		heappush(min_heap, num)
 		if len(min_heap) > k:
@@ -26,6 +25,10 @@ def kth_largest(nums):
 
 **Review 1**
 Too easy. 
+
+**Review 2**
+Counting sort can also be used if we create a bucket for every unique number and set it to `true` when said number is seen. The `kth` largest would simple then be the `kth` index of bucket array that is `true`, from the back. 
+
 
 #review 
 
