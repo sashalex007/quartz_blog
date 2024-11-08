@@ -24,8 +24,8 @@ def longest_cons_seq(nums):
 			res = max(res, length)
 	return res
 
-#time:
-#memory:
+#time: o(n)
+#memory: o(n)
 ```
 
 #review 
