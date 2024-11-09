@@ -31,7 +31,7 @@ def spiral_array(matrix):
 	return spiral
 
 #time: o(n)
-#memory: o(1)
+#memory: o(1) #if we are not counting the result
 ```
 
 #review 
