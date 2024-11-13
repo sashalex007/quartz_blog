@@ -112,6 +112,9 @@ Imagine pieces of string hanging from another piece of string.
 **Review 1**
 Nice problem. I solved it mentally because implementation would take a while. Revisit when preparing for OOP. 
 
+**Review 2**
+I re-implemented it. Still a nightmare of edge-cases. 
+
 #review 
 #hard 
 #OOP

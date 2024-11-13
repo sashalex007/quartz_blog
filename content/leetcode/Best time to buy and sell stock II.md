@@ -7,7 +7,7 @@ date: 2024-11-12
 **Topics**: [[greedy]]
 
 **Intuition**
-I initially came up with a very contrived recursive [[DP]] solution. In fact, it was so contrived that it was impressive! I essentially mapped it onto an optimal play pattern and still solved it linearly, but did could not come up with the greedy `o(1)` solution. 
+I initially came up with a very contrived recursive [[DP]] solution. In fact, it was so contrived that it was impressive! I essentially mapped it onto an optimal play pattern and still solved it linearly, but could not come up with the greedy `o(1)` memory solution. 
 
 I'm going to do something that I usually don't do. I will write the implementation first, and discussion will follow.
 
