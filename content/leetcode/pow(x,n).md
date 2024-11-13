@@ -52,6 +52,8 @@ def power(x, n):
 #memory: o(1)
 ```
 
+**Review 1**
+
 I'm tagging this as hard because it's a math rule that you more or less have to remember. Remember that in [[binary exponentiation]] we don't use exponentiation itself! Think of binary exponentiation as accumulating a result while decreasing `n` and/or modifying `x`. Not too dissimilar from a [[reservoir]]. 
 
 So we initialize our reservoir to `1`. If `n` is odd, we take out a factor and multiply the reservoir by `x`, and decrement `n`. If `n` is even, we square `x` and integer divide `n` by 2! Now you might think, how does this eventually accumulate into the result if we only square the base and do nothing to the reservoir? The fact is, when `n == 1` , the result will get multiplied by the base, so eventually the complete the result will get updated. 
