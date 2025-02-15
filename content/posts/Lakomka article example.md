@@ -4,12 +4,9 @@ At a time when industrial food production prioritizes convenience over quality, 
 
 Our selection of smoked and salted fish is carefully curated to bring you the finest quality, right here in Ottawa. Whether you seek the delicate texture of cold-smoked salmon or the bold intensity of salted herring, each product tells a story of craftsmanship, tradition, and taste.  
 
----
-
 ## The Art of Smoking Fish  
 
 Smoking fish is more than just a preservation method—it is an ancient culinary art that enhances taste and texture while maintaining the fish’s natural richness. There are two primary smoking techniques:  
-
 ### **Cold Smoking**  
 Cold smoking is a slow and delicate process, typically performed at temperatures between **20-30°C (68-86°F)**. Since the fish is not cooked, it retains a silky texture while absorbing the deep, aromatic flavors of the smoke. The result is a refined, melt-in-your-mouth experience.  
 
@@ -26,8 +23,6 @@ Our hot-smoked selection includes:
 - **Hot Smoked Mackerel** – A rich, flavorful fish with a golden-brown, delicate crust.  
 - **Smoked Eel** – A delicacy with a silky, fatty texture and a deep, smoky aroma.  
 - **Salmon Bellies** – The most succulent part of the salmon, prized for its high oil content and luscious texture.  
-
----
 
 ## The Tradition of Salted and Dried Fish  
 
@@ -48,8 +43,6 @@ Our dried fish selection includes:
 - **Vobla** – A Russian classic, traditionally eaten as a snack with beer.  
 - **Smelt, Lesch, Krasnapeorka, Rybets** – A variety of dried fish, each offering a unique balance of saltiness, chewiness, and deep oceanic flavor.  
 
----
-
 ## Why Choose Traditional Smoked and Salted Fish?  
 
 ### **Unmatched Flavor**  
@@ -60,8 +53,6 @@ Smoking and salting retain the essential nutrients found in fish, including **om
 
 ### **A Culinary Experience**  
 Each bite of our smoked and salted fish is a journey through history and tradition—a taste that connects us to the generations before us who perfected these methods. Whether enjoyed on its own, paired with fresh vegetables, or incorporated into classic recipes, our fish offers a depth of flavor that is simply unmatched.  
-
----
 
 ## Experience the Best in Smoked and Salted Fish  
 
