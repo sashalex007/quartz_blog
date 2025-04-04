@@ -50,6 +50,9 @@ Great problem. Remember two things:
 1. Use while loops
 2. while `nums[i] == nums[i+1]` increment `i`. Remember to increment once more after the loop! 
 
+**Review 2**
+Tricky problem, but a fun one! The key is to skip duplicates in `i` and one of `r` or `l`! When it comes to `r, l` only one of them need to be different! 
+
 #review 
 #hard 
 

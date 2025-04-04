@@ -59,6 +59,9 @@ def 3sum_smaller(nums, target):
 **Review 1**
 I'm tagging this one hard because it took me a bit too long to get to the solution. I did realize that we had to do something with indices, but it wasn't immediately clear to me how to proceed. The above editorial is great. The solution is so simple. Simply consider the fact that when `total < target`, all values for `nums[r]` where `l < r <= curr_r ` will make a triplet less than `total` because `nums` is sorted. Its really that simple. 
 
+**Review 2**
+Crushed it on first try. 
+
 #review 
 #hard 
 
