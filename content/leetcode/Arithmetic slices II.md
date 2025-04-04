@@ -43,6 +43,11 @@ So then why do we add the seen value to the current hash map? Because this is ak
 
 Overall this problem is very confusing, but still a great one. 
 
+**Review 2**
+Actually came up with the right idea but again failed to implement correctly such that subsequences were counted correctly. The key insight is that we add the count of `diffs[j]` to the result, not `diffs[i]`. Why?
+
+For example say we have `[1,2,3]`. When we reach 2, we find that there is a difference of `1` with index 0, so we add `1: 1` to the hashmap of index 1. Note that this still is not an arithmetic sequence because the length is only 2! When we reach 3 (index 2), we see that there is a difference of 1 with index 2 and that this difference (1) exists already in the index 2 hashmap! Therefore we add the count that is already there! 
+
 #review 
 #hard 
 #insane 
