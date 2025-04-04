@@ -63,6 +63,9 @@ def calculator(s):
 **Review 1**
 Super annoying problem! Remember to feed the evaluate function a list (or deque) and if the first element is a `-`, then append a `0` to the front. 
 
+**Review 2**
+Pretty much solved first try except a couple minor edge cases. 
+
 #review 
 #hard 
 #insane 
