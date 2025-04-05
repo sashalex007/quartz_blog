@@ -126,6 +126,9 @@ def can_arrange(arr):
 	return True
 ```
 
+**Review 2**
+This problem was kind of hard, took me a while (again) to figure out the modulus connection and hash map approach. 
+
 #review 
 #hard
 

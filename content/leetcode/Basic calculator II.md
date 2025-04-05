@@ -59,6 +59,9 @@ def calc_2(s):
 
 I'm marking this one as hard and insane simply because of the amount of edge cases, and also my thought process was not very good on this one.
 
+**Review 1**
+The edge cases messed me up! Initially thought I could solve it with a divide and conquer approach, and I think its possible but there are some complicated edge cases that were failing...not sure if its worth diving into them. Anyway, the stack approach is simple but not the easiest to code and full of edge cases! 
+
 #review 
 #hard 
 #insane 
