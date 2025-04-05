@@ -47,6 +47,8 @@ Basically, we are applying [[kadanes]] at every possible index but the current s
 
 Essentially we maintain a heap of "running sums" (so to speak) and we constrain them by popping off the ones that cannot be selected. This is essentially [[kadanes]], but we take our sum from the top of the heap (if it is inside the constraint)
 
+**Review 2**
+Tricky problem! It took me a few minutes of thinking but I found the right approach and solved it without too much difficulty. 
 
 #review 
 #hard
