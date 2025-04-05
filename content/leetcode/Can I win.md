@@ -82,6 +82,9 @@ return False
 
 Also don't forget if the sum of the moves available is smaller than the desired total, return False. 
 
+**Review 2**
+Pretty crazy problem, but with experience and some memory I was able to solve this pretty quickly. The fact that we have to cache the tuple of choices is pretty insane. 
+
 #review 
 #hard 
 
