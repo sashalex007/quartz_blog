@@ -30,6 +30,9 @@ def climb(n)
 If you look carefully at the code above, what we are actually doing is producing the `nth` [[fibonacci]] number! So we can also implement it iteratively in a space optimized way (`o(1)`). 
 I'm going to tag this hard, because I fumbled the thought process and complexity, even though I still solved it fast. 
 
+**Review 1**
+Neat problem. Remembered that this was just a fib. 
+
 #review 
 #hard 
 
