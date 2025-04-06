@@ -68,6 +68,9 @@ def heaters(houses, heaters):
 **Review 1**
 Don't forget to sort if you are trying to use binary search :clown:
 
+**Review 2**
+Found both implementations without much difficulty. The greedy implementation took a bit of brain power. 
+
 #review 
 #hard 
 
