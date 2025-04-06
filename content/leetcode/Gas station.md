@@ -80,6 +80,9 @@ def gas_station(cost, gas):
 	return -1
 ```
 
+**Review 2**
+
+Interesting problem! Solved it with a couple hitches in the implementation but overall I found the right approach immediately. 
 
 #review 
 #hard 

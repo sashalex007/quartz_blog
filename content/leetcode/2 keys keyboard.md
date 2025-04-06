@@ -99,5 +99,8 @@ So more programatically, while n % 2 == 0, do n //= prime and increment the resu
 It can be shown that the minimum operations required to reach 25 is 10!
 ```
 
+**Review 2**
+Solved it with DP. 
+
 #review 
 #hard  (at least the prime factorization solution is)

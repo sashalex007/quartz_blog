@@ -43,6 +43,9 @@ def gcd_string(str1, str2):
 **Review 1**
 I don't think I explained this problem very well. It makes sense why if `str1 + str2 == str2 + str1`, there would exists a common divisor, but what makes less sense is why that divisor is the GCD of their lengths. Well, it's beyond my intuition for now. Ill leave this for future revisions. Ill tag this as hard.
 
+**Review 2**
+I more or less remembered the trick for this problem. Still don't truly understand why it's GCD even though I solved it very fast. 
+
 #hard 
 #review 
 
