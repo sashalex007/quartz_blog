@@ -110,6 +110,9 @@ original:  ...21, 22, 23, 24, 25...
 converted: ...22, 22, 22, 22, 22...
 ```
 
+**Review 2**
+I made the connection to binary search, but it took me a while to realize that we need to search both left and right halves of the range to get both the smaller and bigger palindromes. Overall a good result for a problem that caused me so much difficulty in the past. 
+
 #review 
 #hard 
 #insane 
