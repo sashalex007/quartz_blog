@@ -57,6 +57,9 @@ The idea here is that there is potentially alot more than `k` elements in in the
 
 I'm labeling this niche because you would rarely use a heap in this way, but it does make sense. 
 
+**Review 2**
+Took me a few minutes to figure this one out, obviously I don't remember this problem. Solved it without any problems. I even realized that we need a visited set because we are adding `(i+1, j)` and `(i, j+1)` to the heap so there are guaranteed to be duplicates (same reason why we cache in DP take/skip patterns).
+
 #review 
 #hard 
 #niche 
