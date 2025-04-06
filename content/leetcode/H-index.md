@@ -61,6 +61,9 @@ Pretty tricky if don't use binary search! I did the same thing as in the greedy 
 
 I'm tagging this as hard because the greedy solution is tough. 
 
+**Review 2**
+Came up with the `nlogn` sorting solution again (not binary search). The linear solution with the counting sort is pretty insane though! 
+
 #review 
 #hard 
 
