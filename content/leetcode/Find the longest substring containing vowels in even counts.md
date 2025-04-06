@@ -90,6 +90,9 @@ def even_voweled(s):
 **Review 1**
 Solved this one very quickly with the bit shifting solution! Progress! 
 
+**Review 2**
+Got to the right approach pretty fast but spent a while thinking about a few edge cases that did not in fact exist (did not look at the examples). Solved it pretty fast once I stopped being lazy and looked at the example cases. 
+
 #review 
 #hard 
 
