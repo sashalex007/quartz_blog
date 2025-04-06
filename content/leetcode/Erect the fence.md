@@ -58,6 +58,9 @@ Note: when we compute slope with the formula `(y-y2)/(x-x2)`, division by 0 is p
 
 ![[IMG_46C3B0C2BA34-1.jpeg]]
 
+**Review 2**
+Had some minor problems with the implementation but solved without too much trouble. 
+
 #review 
 #hard 
 #niche 

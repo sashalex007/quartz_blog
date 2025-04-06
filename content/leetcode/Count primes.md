@@ -7,7 +7,7 @@ date: 2024-09-09
 **Topics**: [[math]], [[Sieve of Eratosthenes]]
 
 **Intuition**
-This problem uses a cool ancient algorithm called the [[Sieve of Eratosthenes]]. Conceptually, this algorithm finds primes by process of elimination. We know that the first prime is 2, so we know any multiply of 2 between 2 and `n` is NOT a prime (primes are only divisible by 1 and themselves). So essentially, we mark non-primes and then move to the next prime...which in the case of 2 is 3.
+This problem uses a cool ancient algorithm called the [[Sieve of Eratosthenes]]. Conceptually, this algorithm finds primes by process of elimination. We know that the first prime is 2, so we know any multiple of 2 between 2 and `n` is NOT a prime (primes are only divisible by 1 and themselves). So essentially, we mark non-primes and then move to the next prime...which in the case of 2 is 3.
 
 For example:
 ```
@@ -88,6 +88,9 @@ Basically this is a process of elimination, so we create a list of `True` of len
 So we don't know what a prime is...in fact we have no way to compute them directly, but we do know **what is not a prime**. A number that is not a prime will be a composite of some other numbers. So the idea here is to start at a prime number (2 is the first), and mark all multiples of 2 as **not primes!** Move on to the next number whose flag is still `True` (in this case 3), repeat the process! Do this for all numbers up to `n`, and in the end only the numbers whose flags have not been flipped are primes! 
 
 Now, `n` can be large, so do we have to do this for every number up until `n`? NO! We can stop at `sqrt(n)`. Why? Since we start the next prime at `i*i`, it means that once we reach `sqrt(n)`, we have already reached `n` and have no more primes to count!
+
+**Review 2**
+Awesome problem. Solved it fairly easily without too many problems, however I missed the `sqrt(n)` optimization in the outer loop. 
 
 #review 
 #hard 

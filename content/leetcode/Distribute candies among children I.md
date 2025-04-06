@@ -60,6 +60,9 @@ i, j
 
 I'm  giving this one a hard label, which may seem comical for an easy problem but this solution is unnatural to me so I'd like to keep this one in the hard filter. 
 
+**Review 2**
+I didn't go into the DFS rabbit hole for this one which is good, but it still took me a few minutes to figure out the nested loop situation with the hard constraint on the third child! Fun problem though, solved it. 
+
 #review 
 #hard 
 

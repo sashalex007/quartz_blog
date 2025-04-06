@@ -109,6 +109,9 @@ A note on the complexity... it seems that the complexity should be the same as [
 **Review 1**
 Crushed this one. I put a lot of effort into this article and it shows. I still don't understand the complexity though.`o(n*catalan(n))` still makes more sense to to me than `o(n*(2**n))`
 
+**Review 2**
+Crushed it again.
+
 #review 
 #hard 
 #insane 
