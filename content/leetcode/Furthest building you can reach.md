@@ -45,6 +45,9 @@ The intuition is quite hard because the mind goes to using ladders greedily with
 
 This is basically the same as [[Kth largest element in an array]]! But in this case we are keeping our `k` is `ladders`! So we are guaranteed to have all the largest differences at any point in the heap! 
 
+**Review 2**
+Solved this pretty fast with the optimal heap approach from the start.  
+
 #review 
 #hard
 
