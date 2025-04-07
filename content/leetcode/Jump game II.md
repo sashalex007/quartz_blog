@@ -48,6 +48,9 @@ def jump_game2(nums):
 
 This solution is a bit of a mind bender...I still much prefer the stack solution...it's both generic and draws from the [[Jump game]] solution. 
 
+**Review 1**
+Pretty difficult problem! I found both the top-down and bottom-up DP solutions quite fast...considered stack for a moment but jumped straight into greedy and could not get out of the weeds. The stack solution is so elegant! The pure greedy `o(1) memory` solution is somewhat of a mind bender, but it does make sense. 
+
 #review 
 #hard 
 

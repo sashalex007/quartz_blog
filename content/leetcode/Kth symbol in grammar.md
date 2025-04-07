@@ -102,6 +102,9 @@ def kthgrammar(n, k):
 	return 0 if res else 1
 ```
 
+**Review 2**
+Tricky problem, but I found a very nice iterative solution using essentially the same logic as the above implementation. 
+
 #review 
 #hard 
 
