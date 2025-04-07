@@ -108,6 +108,9 @@ You have long number in front of you. To delete all digits except the last 3, we
 **Review 1**
 Not very difficult algorithmically but the implementation is pretty interesting. 
 
+**Review 2**
+Not difficult but super annoying. 
+
 #review 
 #hard
 
