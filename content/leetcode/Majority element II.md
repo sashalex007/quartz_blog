@@ -56,6 +56,12 @@ Some edge cases:
 1. if `cand1 == cand2`  return only one
 2. validate the algorithm with a second pass
 
+**Review 2**
+I pretty much solved it exactly, but messed up the order of the conditions. It goes as follows:
+```
+increment -> reassign if 0 -> decrement both
+```
+
 #review 
 #hard 
 

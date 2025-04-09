@@ -63,6 +63,9 @@ def smallest_substr(s):
  **Review 1**
  Not sure why I marked this as hard. I took a different approach than above and split the string by `a`. The first non empty string in the resulting list gets converted. Join by `a`  and return. If the string is all `a`'s, change the last character to z. 
 
+**Review 2**
+Crushed it. 
+
 #review 
 #hard 
 

@@ -99,6 +99,9 @@ heap = [5]
 
 So essentially, sorting the events tells us when they can be started and the min_heap tells us when they are ending. We choose the ones that end the soonest (top of the heap). 
 
+**Review 2**
+Solved this one pretty easily. 
+
 #review 
 #hard 
 

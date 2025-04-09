@@ -109,6 +109,9 @@ def max_prod(nums):
 **Review 1**
 I came up with the first solution quite quickly, but I could not get to the second. Just remember that we can use kadane's for either the min OR the max. In this case we do both! Still hard. 
 
+**Review 2**
+Went for the kadane's solution right away...hard. I don't quite follow the logic. 
+
 #review 
 #hard 
 

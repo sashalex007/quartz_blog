@@ -67,6 +67,9 @@ Amazing problem. I did not remember doing this one, so I was happy to have solve
 
 The final string is **guaranteed** not to contain any strings with characters that appear less than `k` times! The rest of the solution pretty much writes itself. We split the string by the offending characters and recurse an each! If the frequency count of the string has no values less than `k`, we consider the it's length towards the result!
 
+**Review 2**
+Again, didn't remember this one but after quite some time thinking (considered binary search...hint: it's not possible) I found the divide and conquer approach. Insane problem...very unintuitive. The key is realizing that we must split the string at the characters that appear less than k times. The correct complexity is actually `26n`.
+
 #review 
 #hard 
 

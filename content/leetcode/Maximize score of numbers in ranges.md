@@ -131,6 +131,9 @@ This problem is ultra confusing in the way it is formulated, but we can restate 
 
 How do you make the connection from "minimum difference" to "jumps"? Well if you think about it, the size of a jump `x`  **guarantees** that no two numbers landed on (chosen) will be **less than `x` apart**. Admittedly, this is a subtle connection. 
 
+**Review 2**
+Took a few minutes of thinking, but I solved this without too many problems. 
+
 #review 
 #hard 
 #insane 

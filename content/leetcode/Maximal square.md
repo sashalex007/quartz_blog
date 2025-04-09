@@ -94,6 +94,9 @@ You are team captain on a 4 man team of soccer. Your team is only as strong as y
 **Review 1**
 Had no issues with this one. Great DP problem. Progress! I think I prefer the two pass constant space solution. 
 
+**Review 2**
+Solved this pretty easily in one pass. Forgot that we also need to look at the diagonal `i-1, j-1`
+
 #review 
 #hard 
 

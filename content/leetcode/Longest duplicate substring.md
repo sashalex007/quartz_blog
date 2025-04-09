@@ -51,6 +51,9 @@ def longest_dup(s):
 **Review 1**
 Nice problem. I actually came up with a pretty clever and somewhat `o(n*n)` solution using a trie search...unfortunately this approach results in MLE. I forgot that we must use [[rabin-karp]] and binary search for this class of problems. Use `memoryview(s.encode())` for `o(1)` slicing. TODO: learn how to implement [[rabin-karp]] rolling hash from scratch. 
 
+**Review 2**
+I just used `memoryview`. 
+
 #review 
 #hard 
 
