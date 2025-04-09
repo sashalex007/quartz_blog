@@ -45,6 +45,9 @@ Super tricky problem, but I was able to solve it partially from memory. Basicall
 
 This way, we can enforce at most one deletion due to the fact that we "rebase" ourselves with the original....or we simply continue the sequence if deletion is not profitable. 
 
+**Review 2**
+Solved it mentally quite fast, but the implementation is tricky. 
+
 #review 
 #hard 
 
