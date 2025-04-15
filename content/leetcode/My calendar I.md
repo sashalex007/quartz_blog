@@ -77,6 +77,9 @@ Plastic transparent container  with sorted written in black sharpie on the side.
 **Review 1**
 Ultra annoying problem. I totally forgot about [[SortedList]] module! The edge cases are wild for this one. 
 
+**Review 2**
+I realized that we need SortedList and binary search, but then hit a ton of edge cases in the implementation. Ultra annoying problem! 
+
 #review 
 #hard 
 

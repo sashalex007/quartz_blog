@@ -33,6 +33,9 @@ I struggled with this one. I of course thought of heap but then I thought there 
 
 I'm tagging this hard because my thought process went off the rails on this one. 
 
+**Review 2**
+Solved this one with a heap pretty quickly. I looped through all possible days so it was not the most efficient but I'm happy that I didn't go into the greedy merging intervals rabbit hole! 
+
 #review 
 #hard 
 

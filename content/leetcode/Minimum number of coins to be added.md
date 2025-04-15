@@ -86,6 +86,9 @@ The key is doing two things:
 
 As a side note, understanding my mnemonic is more mind bending than the problem itself...
 
+**Review 2**
+Insane problem. Again I was able to figure out the mathematical intuition but could not implement correctly...got close though! I guess the key is to "try" reaching reachable + 1, not forcing to reach it. Not that different to simulation problems where we "try" to reach a position before going there (to check if the position is valid for example). I consider this more of an implementation challenge than an algorithmic one because the mathematical intuition is not that hard. 
+
 #review 
 #hard 
 

@@ -45,6 +45,9 @@ def most_expensive(primeOne, primeTwo):
 **Review 1**
 What a funky problem! I remembered that we had to use the [[chicken mcnugget theorem]], but I couldn't remember it. I guess that's not a bad thing. The DP solution is also kind of interesting...but you still need to know that `primeOne*primeTwo` is the upper bound. All numbers past this can be formed so in the context of this problem, all gifts that cost more than `primeOne*primeTwo` can be bought....so we can use DP to find a sequence of `primeOne` and `primeTwo` that cannot form the highest number starting from `primeOne*primeTwo-1`, and decrementing. The sum is all that matters, so caching here greatly improves the complexity. 
 
+**Review 2**
+Remembered the chicken mcnugget theorem! 
+
 #hard 
 #review 
 

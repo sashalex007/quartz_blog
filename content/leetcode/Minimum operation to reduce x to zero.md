@@ -57,6 +57,9 @@ Upon further analysis, this problem wants us to find the smallest partitions on 
 
 Spend a bit more time thinking about the problem rather than assume one approach is correct...especially if the first thing that comes to mind is DP. 
 
+**Review 2**
+Thought about DP at first but then realized we have a linear solution! Thats progress! Got hit with the edge case `sum(nums) < x`, but other than that this one was not an issue.
+
 #review 
 #hard
 

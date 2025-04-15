@@ -111,6 +111,21 @@ for count in freq.values()
 return res
 ```
 
+**Review 1**
+Interesting problem! My analysis above is partially wrong! You actually can just sort the frequencies and iterate backwards while incrementing the result if `count[i] == count[i+1]` and then set `count[i] = count[i+1]-1`! The important edge is if `count[i] > count[i+1]`. How can this happen if you sorted counts?
+
+```
+s = abc
+counts = [1, 1, 1]
+
+after setting counts[1] to 0 we get:
+
+counts = [1, 0, 1]
+```
+
+So in the case that `counts[i] > counts[i+1]` we must add the entire value of `counts[i]` to the result and set `counts[i] = counts[i+1]-1`....in the case that `counts[i+1] = 0`, we add the entire value of `counts[i]` to the result and set it to `0`!
+
+Of course the hash map solution is more clever and more efficient, but this was not the first thing that came to mind. Pretty hard! 
 
 #review 
 #hard 

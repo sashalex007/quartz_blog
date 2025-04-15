@@ -36,6 +36,9 @@ def merge_sorted_ll(list1, list2):
 #memory: o(1)
 ```
 
+**Review 1**
+Nailed this first try. 
+
 #hard 
 #review 
 

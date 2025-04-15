@@ -147,6 +147,19 @@ In the case that no swapping condition is met, we simply reverse the array as we
 
 ```
 
+**Review 2**
+Solved it pretty fast but missed the edge case where the swap is not necessarily between `nums[i]` and `nums[i+1]`! Because of course we want the number that is JUST GREATER than `nums[i]` and that will not necessarily be `nums[i+1]`. For example:
+
+```
+nums = [2, 4, 3, 2]
+           ^
+           the condition nums[i] < nums[i+1] is reached, however the correct
+           swap value is actually 3, not 4 because 3,4,2,2 is lexicographically
+           smaller than 4,3,2,2!
+```
+
+When I realized this it was quick to solve. Of course you can't forget to reverse the remaining partition so that It represents the lexicographically smallest sub-permutation. 
+
 #review 
 #hard 
 

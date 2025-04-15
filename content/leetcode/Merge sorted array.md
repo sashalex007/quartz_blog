@@ -60,6 +60,25 @@ I don't have a good one here....just think   **in-place**--->**start-where-empty
 **Review 1**
 This problem goes to show that my mnemonics and images don't work. I remembered the trick without issue. 
 
+**Review 2**
+Solved this one fast, but ran into an edge case. The implementation above is overly complicated, here is improved code:
+
+```python
+def merge(nums1, nums2, m, n):
+	i = m-1
+	j = n-1
+	k = m+n-1
+	while j > -1:
+		if i > -1 and nums1[i] > nums2[j]:
+			nums1[k] = nums1[i]
+			i -= 1
+		else:
+			nums1[k] = nums2[j]
+			j -= 1
+		k -= 1
+```
+
+
 #review 
 #hard 
 

@@ -54,6 +54,9 @@ def find_median(nums1, nums2):
 #memory: o(1)
 ```
 
+**Review 1**
+Insane problem. Riddled with edge cases. Definitely revisit this one. 
+
 #review 
 #insane 
 #hard 
