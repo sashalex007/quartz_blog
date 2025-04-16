@@ -96,6 +96,9 @@ So doing it like this takes away from the scope of the search.
 
 We must transform `w` in a way that allows us to search through all the possibilities. Prefix sum! If we transform `w` into a prefix sum, this ensures all elements are unique because `w` must be greater than 0! Actually an interesting side note is that if weights were permitted to be 0, you would get the same effect as in the above example because there would be duplicate values in the prefix sums array so the algorithm would still work as expected (cool!). 
 
+**Review 2**
+Must have remembered this one subconsciously because I solved it almost instantly.
+
 #review 
 #hard 
 

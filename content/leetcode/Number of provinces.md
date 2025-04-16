@@ -88,6 +88,9 @@ The easiest solution here is to build an adjacency list and count components. Th
 
 Its a tricky one because traversing the matrix is not straight forward. 
 
+**Review 2**
+Solved pretty easily using DFS and a visited set. Probably can also mark visited in-place, but I suspect there are annoying edge cases there. 
+
 #review 
 #hard 
 

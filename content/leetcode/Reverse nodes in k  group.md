@@ -95,6 +95,10 @@ Technically this can be done iteratively but you would have to convert into a do
 
 I came up with a slightly different approach from above. Basically i stored the nodes in a list and if `len(list) == k`, I reversed everything in the list and reset the list. This is using `o(k)` memory, but it will be twice as fast as the above implementation, since we are not checking if `k` nodes are available every increment. However the above is way simpler, so I would stick to it. 
 
+**Review 2**
+My analysis above is slightly incorrect. You can actually solve this iteratively and it's arguably easier. Took a few minutes but solved this one without much trouble.
+
+
 #review 
 #hard 
 

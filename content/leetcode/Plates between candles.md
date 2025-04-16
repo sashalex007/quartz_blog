@@ -106,6 +106,9 @@ def plates_candles(s, queries):
 #memory: o(n)
 ```
 
+**Review 1**
+Fun little problem. Solved with a monotonic stack...essentially the same solution as the above. Almost missed the fact that we need  the candle count! Got caught on a dumb edge case. 
+
 #review 
 #hard 
 

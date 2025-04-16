@@ -110,6 +110,9 @@ def pseudo_palin_count(root):
 **Visual** 
 ![[IMG_27C7A26C888F-1.jpeg]]
 
+**Review 1**
+Solved it almost instantly with a DFS and binary array. Bitwise is slightly better but whatever. 
+
 #review 
 #hard 
 

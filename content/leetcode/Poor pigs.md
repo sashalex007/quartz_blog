@@ -66,6 +66,13 @@ visuals from this solution https://leetcode.com/problems/poor-pigs/solutions/935
 **Review 1**
 Just remember that 1 pig can test 2 buckets (lives or dies) in one round of testing...likewise 2 pigs can test `2**2` buckets...or `2**n` more generally. So we keep increasing `n` until we reach or exceed buckets. If more tests are permitted (`minutesToTest//minutesToDie`) we increase the base. 
 
+**Review 2**
+I understood that `buckets` are essentially the number of states, but it took a few minutes to realize what was the base and what was the exponent. The state of one pig is `2^1`. Why? Because the base (2) represents the two possible states of a pig- dead or alive, and the exponent (1) is the number of pigs. 
+
+Basically, the possible states of a pig is `number_of_tests+1` and the exponent is the number of pigs. So we just increase the value of pigs by 1 while `(number_of_test+1)**pigs < buckets`. 
+
+Cool problem. 
+
 #review 
 #hard 
 

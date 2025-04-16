@@ -28,6 +28,9 @@ def remove(nums, val):
 #memory: o(1)
 ```
 
+**Review 1**
+Gave up on 1 pass lol. 2 pass is trivial. The above implementation is actually awesome because it does not rely on monotonic pointer movement! 
+
 #review 
 #hard 
 

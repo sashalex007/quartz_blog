@@ -45,6 +45,9 @@ I was pretty disappointed at my performance in this problem. I think I was tryin
 
 It should be clear why there is no greedy solution: its impossible to know if we should reverse or accelerate in the case that acceleration would overshoot the target. Only in the overshoot case do we explore the reverse branch, as it is always more optimal to accelerate otherwise. 
 
+**Review 2**
+Was extremely close. Solved almost all the edge cases and came up with a pretty nice BFS solution. What I missed was that its always better to make decisions based on the next position `pos + speed` rather than just `pos`. It's really no different to other simulation problems where you "try" the next position rather than actually going there. Because of this oversight there is a rare potential to make 1 or 2 more steps than necessary. Implementation above is very good. 
+
 #review 
 #hard 
 #insane 
