@@ -26,6 +26,9 @@ def reverse(x):
 #memory: o(1)
 ```
 
+**Review 1**
+Should not be hard. 
+
 #hard 
 #review 
 
