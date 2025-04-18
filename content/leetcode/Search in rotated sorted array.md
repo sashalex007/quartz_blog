@@ -64,6 +64,9 @@ Its very simple: If the left partition is sorted and the target is in it's range
 
 I'm tagging this hard, not because it's hard (it's absurdly easy) but because for reasons unbeknownst to me, my brain shuts off for this problem. 
 
+**Review 2**
+Still somehow struggled more than I had to, but overall figured it out pretty fast despite hitting an edge case. I missed the fact that `left_sorted = nums[mid] > nums[l]` actually fails when the list is smaller than length 3. I made this oversight because all numbers in `nums` are guaranteed to be distinct however when `len(nums) < 3`, then `mid = l` . It should be `left_sorted = nums[mid] >= nums[l]`. Dumb oversight. 
+
 #review 
 #hard 
 

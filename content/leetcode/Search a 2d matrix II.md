@@ -35,6 +35,23 @@ def search_mat2(matrix, target):
 **Review 1**
 Remembered the trick! Very tricky to come up with though. Starting at row 0 in rightmost position is not something natural. I will label this as niche.
 
+**Review 2**
+Cool problem. Remembered the trick. I think the code above is overly complicated though. Here is a better implementation:
+
+```python
+def search_matrix(matrix, target):
+	row = 0
+	col = len(matrix[0])-1
+	while row < len(matrix):
+		if matrix[row][col] == target:
+			return True
+		elif matrix[row][col] < target or col == 0:
+			row += 1
+		else:
+			col -= 1
+	return False
+```
+
 #review 
 #hard 
 #niche 
