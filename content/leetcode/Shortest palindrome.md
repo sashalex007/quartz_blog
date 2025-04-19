@@ -246,6 +246,11 @@ Insanely hard problem. I couldn't figure out how to implement [[KMP]] correctly,
 
 I'm creating a new tag "niche" for revisiting obscure techniques that I'm unlikely to remember or even see very often.  
 
+**Review 2**
+Managed to solve it almost all the way. Missed a few things though. I knew that we should do a kmp comparing `s` to `s[::-1]` however I missed that since kmp starts at `i=1`, we need to actually search for `s` in `s + '#' + s[::-1]` to account for the first character. Also missed that the only value that matters in the kmp array is `lps[-1]` Why? Because this is represents the first character in `s`, and that's the only one we are concerned about because we are looking for the longest palindrome that starts at `s[0]`! All others do not matter. 
+
+As far as KMP intuition, basically if the characters match, we move on and increase the length. If the characters do not, then we set the current length to `lps[length-1]`...if length is zero we just increment `i`. This is kind of similar to DP in the sense that we "try" previously attained lengths to see if results can be reused.  
+
 #review 
 #hard 
 #insane 

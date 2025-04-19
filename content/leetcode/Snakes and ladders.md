@@ -50,6 +50,9 @@ def snakes_and_ladders(board):
 **Review 1**
 I immediately understood how to solve it but struggled for a while with the edge cases. Basically, as I understood the problem, if the end of a ladder is the start of a new ladder, then we could follow it on the next move. This is not the case. When you take a ladder, you **CANNOT** follow the subsequent ladder...you just treat it as if it is a `-1`. This simplifies the problem immensely. 
 
+**Review 2**
+Pretty much solved it immediately but got stumped again by what it actually means to follow the next ladder. Basically you CAN'T follow it no matter what. For some reason I interpreted this as you are allowed, but only on the next move. Kind of annoying, but good problem. 
+
 #review 
 #hard 
 
