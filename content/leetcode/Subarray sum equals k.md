@@ -44,5 +44,8 @@ Think of subtracting previous partitions from the current one. We don't know whe
 **Review 1**
 Too easy, crushed it. Nice editorial though.
 
+**Review 2**
+Too easy. 
+
 #review 
 #hard 

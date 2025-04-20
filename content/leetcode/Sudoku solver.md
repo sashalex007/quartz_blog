@@ -81,6 +81,9 @@ You are stuck on a sudoku puzzle, but you have no choice but to solve it. Unfort
 **Review 1**
 Very fun backtracking problem. Solved this one quite easily, not much to add. Progress!
 
+**Review 2**
+Crushed it. 
+
 #review 
 #hard 
 #insane 
