@@ -49,6 +49,37 @@ def task_sched(tasks, n):
 
 I'm tagging this niche. You would rarely use a heap in this way.
 
+**Review 1**
+Tricky little problem! Took a few minutes to figure this one out. The above implementation is kind of confusing and unintuitive. Its better to just pop off the heap `n+1` times while incrementing `cycles` and simply return `cycles` if the heap is empty AND the there are no tasks to put back in the heap! This insures that we don't over count `cycles`. The above implementation accomplishes the same thing but with two spurious variables `time, processed`. 
+
+**Implementation (cleaner)**
+```python
+def leastInterval(tasks, n):
+	freq = {}
+	for t in tasks:
+		freq[t] = freq.get(t, 0) + 1	
+	max_heap = []
+	for task, count in freq.items():	
+		heappush(max_heap, (-count, task))
+	
+	cycles = 0
+	while max_heap:
+		popped = []
+		for _ in range(n+1):
+			cycles += 1
+			if max_heap:			
+				count, task = heappop(max_heap)
+			if count + 1 < 0:
+				popped.append((count+1, task))
+			if not popped and not max_heap:  #key condition
+				return cycles
+		
+		for count, task in popped:		
+			heappush(max_heap, (count, task))
+	
+	return cycles
+```
+
 #review 
 #hard 
 #niche 

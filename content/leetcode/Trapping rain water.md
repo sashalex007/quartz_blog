@@ -148,6 +148,9 @@ def trap_rain(height):
 	return res
 ```
 
+**Review 2**
+Such an annoying implementation! After getting stuck for a bit, I solved it easily with the above implementation. They key is to **separate** the `l_max, r_max` setting logic from the `l, r` pointer moving logic. 
+
 #review 
 #hard 
 #niche 

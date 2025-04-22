@@ -62,6 +62,9 @@ Great problem! Quite tricky, but the main thing to remember is that we should be
 
 The time and space complexity is still bewildering to me. Just remember the **nth catalan number**. 
 
+**Review 2**
+Fun problem. Crushed it. 
+
 #review 
 #hard 
 
