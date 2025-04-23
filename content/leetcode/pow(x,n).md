@@ -67,8 +67,11 @@ a = x^(-1)*(n)
     ^^^^^ 
 a = (1/x)^n   
 
-So we isolate the negative, which is equivalet to inverting the base!
+So we isolate the negative, which is equivalent to inverting the base!
 ```
+
+**Review 2**
+Solved it fairly easily. 
 
 #hard 
 #review 

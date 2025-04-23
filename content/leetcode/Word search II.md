@@ -67,6 +67,9 @@ Great problem! It was very easy this time around. Don't forget to put the word i
 
 Also don't forget to pop off `trie[char]` if the hash-map is empty....otherwise there is no effect to popping the delimiter. 
 
+**Review 2**
+Solved it easily with all optimizations. 
+
 #review 
 #hard 
 
