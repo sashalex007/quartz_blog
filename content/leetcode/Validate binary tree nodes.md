@@ -50,6 +50,9 @@ But [[in/out degree]] is not completely useless. We can use it to identify the r
 
 Also, check the length of the visited set. It should be equal to `n`, otherwise there are disconnected components (and potentially valid ones, but we are looking for a single tree). 
 
+**Review 2**
+Annoying problem. Missed the fact that you can't do this with a topological traversal...(well you almost can but there are some edge cases). Find the root, DFS or BFS with a visited set. 
+
 #review 
 #hard 
 

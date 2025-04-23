@@ -63,6 +63,9 @@ There are some small errors in my editorial. The BFS solution is not more effici
 
 So I think the DP solution is the correct approach here after all. This is a pretty niche application of BFS and does not generically apply to most problems of this type. The only subtle part of the DP solution is the realizing that we need to cache because the actual path doesn't matter, we only need one. 
 
+**Review 2**
+Crushed it easily. 
+
 #review 
 #hard
 
