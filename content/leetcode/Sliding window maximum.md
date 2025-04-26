@@ -66,5 +66,7 @@ def max_win(nums, k):
 	return res
 ```
 
-#review 
+Tagging this as hard because the linear solution is tricky.
 
+#review 
+#hard 
