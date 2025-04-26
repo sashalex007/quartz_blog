@@ -42,5 +42,29 @@ nums = [-7,-8,7,5,7,1,6,0]
               start adding to result here.
 ```
 
+**Review 2**
+Not the greatest implementation above. It's better to simply push indices to the stack and clean out the front of the stack if it's outside the window. The key insight for these type of problems (max/min in window) is that we don't need to consider smaller numbers (in the case of max) after bigger ones have already been seen...hence we can pop them off the stack to maintain decreasing order (in the case of max). 
+
+**Implementation**
+```python
+
+def max_win(nums, k):
+	res = []
+	dec_stack = deque()
+	l = 0
+	for r in range(len(nums)):
+		while dec_stack and dec_stack[0] < l: #remove from window
+			dec_stack.popleft()
+
+		while dec_stack and nums[dec_stack[-1]] < nums[r]: #maintain decreasing property
+			dec_stack.pop()
+		dec_stack.append(r)
+
+		if r - l + 1 == k: #add to result and shrink window
+			res.append(nums[dec_stack[0]])
+			l += 1
+	return res
+```
+
 #review 
 
