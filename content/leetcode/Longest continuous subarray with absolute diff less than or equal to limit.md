@@ -33,7 +33,7 @@ But lets look at another case:
 
 Basically whenever we shrink or grow the window, we need an efficient way to get the new min and max, because it's possible that by shrinking the window we have just **discarded the old min or max**, or by growing the window we have just **encountered a new min or max**. 
 
-The answer is [[monotonic stack]]. We keep an increasing stack such that `inc_stack[0]` is always the minimum and a decreasing stack such that `dec_stack[0]` is always the maximum! One property of monotonic stacks is that they will discard all elements that *no longer need be considered* (like in example 1), and *keep all elements that should be considered in the future*. 
+The answer is [[monotonic stack]]. We keep an increasing stack such that `inc_stack[0]` is always the minimum and a decreasing stack such that `dec_stack[0]` is always the maximum! One property of monotonic stacks is that they will discard all elements that *no longer need be considered* (like in example 1), and *keep all elements that should be considered in the future* (like in example 2). 
 
 While `nums[dec_stack[0]] - nums[inc_stack[0]] > limit`, we shrink the window until the left pointer reaches either `dec_stack[0]` or `inc_stack[0]`. This way we can discard offending integers while keeping an accurate window size. 
 
