@@ -99,8 +99,9 @@ def shortestsub(nums, k):
 #memory: o(n)
 ```
 
+There is also a queue solution but It's a bit beyond me. Revisit it upon revision. 
 
-
+#hard 
 #review 
 
 
