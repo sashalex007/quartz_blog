@@ -68,8 +68,8 @@ def trap(heightMap):
 	return res
 		
 
-#time:
-#memory:
+#time: (n*m)log(n*m)
+#memory: n*m
 ```
 
 #hard 
