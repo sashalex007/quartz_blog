@@ -31,7 +31,7 @@ Here, the height 1 at position (2,1) forms a lower wall than the rest of the bou
 
 The idea is to start the boundary as the outermost walls, and visit the the nodes adjacent to the **smallest height in the current boundary**. If a node adjacent to the smallest boundary height is **lower** than the smallest boundary height, then it is **guaranteed** that water can be trapped there. Add the adjacent node to the current boundary (if water is filled, update it) and continue while there are nodes in the boundary. Keep a visited set (or in-place cycle avoidance).
 
-Essentially the idea here is to **dynamically update the current boundary** while keeping track of the trapped water. 
+Essentially the idea here is to **dynamically update the current boundary** while keeping track of the trapped water. In terms of implementation, this is not much different from [[Dijkstra's]].
 
 **Implementation**
 ```python
