@@ -4,7 +4,7 @@ date: 2024-07-22
 **Link:** https://leetcode.com/problems/longest-valid-parentheses/
 #### Solution:
 
-**Topics**: [[Valid parentheses]], [[stack]]
+**Topics**: [[Valid parentheses]], [[blog/DSA/stack]]
 
 **Intuition**
 This is an interesting twist on the [[Valid parentheses]] problem. I didn't know the nicest implementation for that problem when solving this one, so I ended up using a bit more memory than needed on my first try. Just o(n) more, so its no biggie but the proper solution is way cleaner...although maybe slightly harder to understand if one is not familiar with the cleanest implementation of [[Valid parentheses]]. 

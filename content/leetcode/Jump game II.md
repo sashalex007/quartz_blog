@@ -4,7 +4,7 @@ date: 2024-11-09
 **Link:** https://leetcode.com/problems/jump-game-ii/
 #### Solution:
 
-**Topics**: [[greedy]], [[Jump game]], [[stack]]
+**Topics**: [[greedy]], [[Jump game]], [[blog/DSA/stack]]
 
 **Intuition**
 Super fun problem, I really enjoyed solving this one! I found a super nice stack solution but there is an `o(1)` memory solution as well. Ill go over the stack solution because I think it's really creative. 

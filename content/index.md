@@ -21,9 +21,9 @@ When I'm not programming, I'm spending time with my [[family]] or busy on a [[3d
 SaaS for large scale apiculture applications.
 
 [Synther](https://synther.io)
-Media watch-together service.
+Media watch-together service. (Defunct)
 
-[Winter Instruments](https://winterinstruments.store)
+[Winter Instruments]([https://winterinstruments.store](https://winter-instruments.herokuapp.com/))
 Sporting equipment engineering and manufacturing. [github](https://github.com/sashalex007/winter-instruments)
 
 [CloudlessCam](https://github.com/sashalex007/cloudlessCam)

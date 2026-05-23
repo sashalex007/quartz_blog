@@ -4,7 +4,7 @@ date: 2024-11-12
 **Link:** https://leetcode.com/problems/evaluate-reverse-polish-notation/
 #### Solution:
 
-**Topics**: [[stack]]
+**Topics**: [[blog/DSA/stack]]
 
 **Intuition**
 Fun little stack problem! Too easy though. Remember that `'-1'.isdigit()` returns false, and these numbers can be negative, so either check the counter case or use `try/except`. 

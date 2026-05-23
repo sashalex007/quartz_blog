@@ -2,7 +2,7 @@
 date: 2024-05-13
 ---
 
-**DSA:** [[stack]], [[subarray]], [[sorted order]]
+**DSA:** [[blog/DSA/stack]], [[subarray]], [[sorted order]]
 
 **Intuition**
 Always related to [[subarray]] problems, typically counting the number of subarrays that meet some condition, or finding the next bigger/smaller. The basic intuition is that when you need to see future elements to decide something about the current element (does it meet some condition), AND the condition involves being the biggest or smallest, monotonic stack is used.

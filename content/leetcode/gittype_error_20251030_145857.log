@@ -1,0 +1,11 @@
+ERROR OCCURRED AT: 2025-10-30 14:58:57 UTC
+ERROR TYPE: "gittype::error::GitTypeError"
+ERROR MESSAGE: Application panic: Invalid screen transition: Title -> Animation
+
+Location: src/game/screen_transition_manager.rs:119:17
+EXECUTABLE: "/usr/local/bin/gittype"
+WORKING_DIR: "/Users/alexandrepokhodoun/Documents/Obsidian_vault/blog/leetcode"
+COMMAND_ARGS: ["gittype"]
+OS: macos
+ARCH: aarch64
+

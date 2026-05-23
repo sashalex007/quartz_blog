@@ -4,7 +4,7 @@ date: 2024-05-15
 **Link:** https://leetcode.com/problems/sliding-window-maximum/
 #### Solution:
 
-**Topics**: [[stack]], [[deque]], [[sliding window]]
+**Topics**: [[blog/DSA/stack]], [[deque]], [[sliding window]]
 
 **Intuition**
 Kind of tricky problem, my first intuition was to use a heap which actually works very well but the efficiency is a little bit worse than optimal (although still good). The most optimal solution is pretty clever. We use a monotonically increasing stack and just pop off the left side to keep all the values in the window. 

@@ -4,7 +4,7 @@ date: 2024-07-23
 **Link:** https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
 #### Solution:
 
-**Topics**: [[stack]]
+**Topics**: [[blog/DSA/stack]]
 
 **Intuition**
 This is a nice little problem, not because of difficulty but more as an example for the clean implementation of various stack problems. 

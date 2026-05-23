@@ -4,7 +4,7 @@ date: 2024-05-15
 **Link:** https://leetcode.com/problems/erect-the-fence/
 #### Solution:
 
-**DSA**: [[convex hull]], [[monotone chain]], [[math]], [[stack]]
+**DSA**: [[convex hull]], [[monotone chain]], [[math]], [[blog/DSA/stack]]
 
 **Intuition**
 The core intuition is that the determinant of 3 points is positive if the 3rd point creates a left turn, and negative if it creates a right turn. 

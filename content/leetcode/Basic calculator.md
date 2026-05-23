@@ -4,7 +4,7 @@ date: 2024-10-02
 **Link:** https://leetcode.com/problems/basic-calculator/
 #### Solution:
 
-**Topics**: [[stack]]
+**Topics**: [[blog/DSA/stack]]
 
 **Intuition**
 This problem is riddled with edge cases, but overall it is not that difficult. The basic idea is to use a stack to evaluate the expression. Essentially, whenever a `)` is seen, we can evaluate everything between the closed bracket and the next open bracket on the stack. 

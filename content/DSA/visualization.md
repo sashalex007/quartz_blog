@@ -5,7 +5,7 @@ date: 2024-05-13
 **Visual complexity**
 Try to compress the visualization to take less space in the mind. Use a 3d compression! 
 
-[[stack]]
+[[blog/DSA/stack]]
 1. imagine adding numbers to a stack
 2. make the stack monotonic and imagine popping off numbers (increasing/decreasing)
 3.  imagine next-greater / next-smaller problems

@@ -4,7 +4,7 @@ date: 2024-11-12
 **Link:** https://leetcode.com/problems/basic-calculator-ii/
 #### Solution:
 
-**Topics**: [[Basic calculator]], [[stack]]
+**Topics**: [[Basic calculator]], [[blog/DSA/stack]]
 
 **Intuition**
 This one is much, much harder than [[Basic calculator]] even though it is marked as a medium. The logic was just kind of difficult to wrap my mind around. Normally for stack problems we have a clear delineator, like a closed parentheses or something but here its much more subtle. 
